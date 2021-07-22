@@ -1,0 +1,17 @@
+format: jb-book
+root: FrontPage
+parts:
+ 
+  - caption: Lecture Notes
+    chapters:
+    - file: Lectures/Index.md
+      sections: 
+      - file: Lectures/Lecture_example_1.md
+      - file: Lectures/Lecture_example_2.md
+
+  - caption: Notebooks
+    chapters:
+    - file: Notebooks/Index.md
+      sections:
+      - file: Notebooks/Example1.ipynb
+      - file: Notebooks/Example2.md
