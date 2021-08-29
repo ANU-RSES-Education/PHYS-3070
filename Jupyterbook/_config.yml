@@ -35,7 +35,7 @@ sphinx:
     - substitution
 
 repository:
-  url         : https://github.com/underworld-geodynamics-cloud/self-managing-jupyterhub  # Online location of this book
+  url         : https://github.com/ANU-RSES-Education/PHYS-3070  # Online location of this book
   branch      : master  # Which branch of the repository should be used when creating links (optional)
 
 launch_buttons:
