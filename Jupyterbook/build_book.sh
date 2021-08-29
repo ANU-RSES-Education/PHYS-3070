@@ -16,3 +16,4 @@ cp -r Lectures/static_slides/slideshows _build/html
 
 mkdir -p _build/html/Figures/Movies
 cp -r Figures/Movies _build/html/Figures
+cp -r Figures/PDFs _build/html/Figures
