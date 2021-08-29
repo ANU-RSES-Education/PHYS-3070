@@ -1,6 +1,6 @@
 # Lecture - Convection and the Connection to Heat Flow
 
-<iframe src="../Figures/PDfs/PHYS3070_2.convection+rheology+heatflow.pdf" width="100%" height="500px", allowfullscreen>
+<iframe src="../Figures/PDFs/PHYS3070_2.convection+rheology+heatflow.pdf" width="100%" height="500px", allowfullscreen>
 </iframe>
 
 (This is a placeholder pdf presentation) 

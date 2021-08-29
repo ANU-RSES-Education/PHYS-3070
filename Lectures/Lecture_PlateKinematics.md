@@ -3,7 +3,7 @@
 The "rules" of plate boundary kinematics and how they can be used. 
 
 
-<iframe src="../Figures/PDfs/PHYS3070_2_pt_rules_upload.pdf" width="100%" height="500px", allowfullscreen>
+<iframe src="../Figures/PDFs/PHYS3070_2_pt_rules_upload.pdf" width="100%" height="500px", allowfullscreen>
 </iframe>
 
 (This is a placeholder pdf presentation) 
