@@ -1,14 +1,12 @@
 # RSES / Physics of the Earth PHYS-3070
 
- 
 ![Health check](https://github.com/ANU-RSES-Education/PHYS-3070/workflows/Health%20check/badge.svg)
-
 
 ## Jupyterbook
 
 For this example, you can see the [online version](https://anu-rses-education.github.io/PHYS-3070/FrontPage.html) which is automatically built by github using this repository.
 
-## Try out the Nbgitpuller
+## Try out the Jupyterhub
 
 
 You can launch this example particular example to try it out by clicking on this link. Your work is persistent. 
@@ -17,7 +15,7 @@ You can launch this example particular example to try it out by clicking on this
     
 ## Administration tasks
 
-<!-->
+<!--
 If the hub has a signup page it can be reached here:
     
 [![Signup](https://img.shields.io/badge/User-Signup-blue)](https://test.rses.underworldcloud.org/hub/signup)
@@ -26,7 +24,7 @@ And the corresponding page for an admin user to authorise the users after they s
     
 [![Authorize](https://img.shields.io/badge/Admin-Authorize-Red)](https://test.rses.underworldcloud.org/hub/authorize)
 
-<!-->
+-->
    
 Admin users have access to the hub control panel to shut down wayward servers and add / remove users. 
     
