@@ -1,6 +1,6 @@
 # Lecture - Continuum Mechanics Background
 
-<iframe src="../Figures/PDfs/PHYS3070_2_continuum_mechanics.pdf" width="100%" height="500px", allowfullscreen>
+<iframe src="../Figures/PDFs/PHYS3070_2_continuum_mechanics.pdf" width="100%" height="500px", allowfullscreen>
 </iframe>
 
 (This is a placeholder pdf presentation) 

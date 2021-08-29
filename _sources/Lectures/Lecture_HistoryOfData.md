@@ -6,7 +6,7 @@ However, these rich datasets are a relatively recent luxury and we actually lear
 
 It also helps to think about some of the theories that are equally plausible when the data are sparse. 
 
-<iframe src="../Figures/PDfs/PHYS3070_2_intro_history.pdf" width="100%" height="500px", allowfullscreen>
+<iframe src="../Figures/PDFs/PHYS3070_2_intro_history.pdf" width="100%" height="500px", allowfullscreen>
 </iframe>
 
 (This is a placeholder pdf presentation) 
