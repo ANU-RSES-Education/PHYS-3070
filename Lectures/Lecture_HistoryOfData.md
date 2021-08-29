@@ -1,4 +1,4 @@
-# Lecture 2 - How the Data Shape our Ideas
+# Lecture - How the Data Shape our Ideas
 
 The concept of plate tectonics is most easily demonstrated by plotting a few maps from data that can be downloaded on the web in a few seconds (an exercise we will undertake as part of this course).
 
