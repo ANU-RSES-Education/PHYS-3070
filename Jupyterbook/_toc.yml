@@ -1,6 +1,13 @@
 format: jb-book
 root: FrontPage
 parts:
+
+
+  - caption: Introduction
+    chapters:
+    - file: Introductory_Remarks.md
+    - file: Background_Reading.md
+    - file: Practical_Exercises.md
  
   - caption: Lecture Notes
     chapters:

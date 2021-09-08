@@ -4,6 +4,9 @@
 
 ## Jupyterbook
 
+[![https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>](https://img.shields.io/badge/EMSC3002-Course_Notes-blue)](https://ANU-RSES-Education.github.io/PHYS-3070)
+
+
 For this example, you can see the [online version](https://anu-rses-education.github.io/PHYS-3070/FrontPage.html) which is automatically built by github using this repository.
 
 ## Try out the Jupyterhub
