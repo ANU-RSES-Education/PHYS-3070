@@ -2,7 +2,6 @@ format: jb-book
 root: FrontPage
 parts:
 
-
   - caption: Introduction
     chapters:
     - file: Introductory_Remarks.md

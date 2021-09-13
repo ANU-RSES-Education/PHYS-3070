@@ -33,7 +33,6 @@ We will also assume that the composition does not diffuse (hence the thermal dif
 
 ## The Lava Lamp
 
-
 ```{figure} Figures/LavaLamp/LAX-Airport-Theme-Building-Architecture-William-Pereira-Charles-Luckman-Lavalamp-6.jpg
 ---
 width: 60%
@@ -45,7 +44,7 @@ The Los Angeles airport (LAX) *Theme Building* once featured a 1960's futuristic
 To learn more about the dynamics of the Earth, we turn to the space-race inspired household [*Astro Lamp* (a.k.a. Lava Lamp)](https://www.mathmos.com.au/home.php). In the 1960s, the mesmerising, dancing fluids of the ubiquitous lava lamp symbolised a future of peace and prosperity and the glamorous life of the [international jet set](https://untappedcities.com/2013/05/28/inside-lax-airport-theme-building-modernist-icon/). 
 
 
-The lava lamp consists of two immiscible liquids of different density (and contrasting colour) in a clear bottle and an incandescent bulb as a heat source. The density of the two fluids is close enough that heating the denser one by a few degrees is enough to make it lighter than the other. The competition between composition and temperature results in the chaotic and unpredictable behaviour over time and the relaxing effect. The viscosity of the lava (heavier) component of the lamp is important because it determines the size and speed of the rising drips that form in the lamp. 
+The lava lamp consists of two immiscible liquids of different density (and contrasting colour) in a clear bottle and an incandescent bulb as a heat source. The density of the two fluids is close enough that heating the denser one by a few degrees is enough to make it lighter than the other. The competition between composition and temperature results in the chaotic and unpredictable behaviour over time and the relaxing effect. The viscosity of the lava (heavier) component of the lamp is important (aesthetically) because it determines the size and speed of the rising drips that form in the lamp. 
 
 
 ## Hands on Lava
@@ -58,44 +57,53 @@ We are interested in following the different modes of behaviour as the relative 
 
 The exercise itself is to document the process of **designing** and then **building** the lava-lamp and making a connection to the physics of the Earth. The actual lava lamp is configured with much more overturning than we see between the continental crust and the mantle but we learn quite a bit more if we study the cases close to a transition in behaviour. 
 
-There are many interesting discussion points that this demonstration can trigger:
+Practical details that are important to consider:
 
-    - Can you visualise the convective motion inside the layers and the blobs as they form ?
-    - Is the thermal expansivity of each material the same and does it affect the experiments ?
-    - Is the convective vigour really proportional to $d^3$ ?  
-    - Can you document examples you see in your experiments that apply to other geophysical problems such as salt diapirs or lithospheric drips (Rayleigh-Taylor instabilities) ? 
-    - How can we make this experiment more quantitative ?
-    - Are there any tricks that you figured out that you want to pass along ?
+ - you will need a glass container that is not at risk of cracking or shattering when heated (a pyrex measuring jug, for example, or laboratory glassware that you happen to be able to rehome for a short while in your kitchen).
+ - and you want a heat source that does not risk igniting anything. If you only have a gas stove, consider using a large frying pan over low heat to provide a uniform, moderate temperature surface and maybe using water to keep the temperature capped at 100&deg;.
+ - good lighting so you can see what is going on.
+ - a camera / phone that you can use to record experiments and a means of supporting it hands free.
+ - measuring cylinder and digital scale to estimate densities (optional)
+ - a thermometer to estimate temperatures (optional)
+ - ink, dyes, crayons, candles, food colouring, oil / water paint etc to experiment with visualisation
 
+::::{admonition} Instructions 
 
-### Instructions
+The task is to run the lava lamp experiment and make the connection between the thermochemical convection "regimes" that you see in the experiment and those in the Earth (e.g. continental crust v. mantle; D'' layer v. mantle; cratonic lithospheric roots v. phanerozoic).
 
+Explore not only the classical lava lamp (almost-balanced) regime, but also the other end members with compositional buoyancy dominant (and more viscous / less viscous on top). 
 
+Explore the effects of changing $Ra$, for example by changing the layer depth or the basal temperature. 
 
+Write up a report and brief presentation that explains the relevance to the Earth and concentrate on what you have learned from undertaking the experiment. Include any advice you have for anyone coming back to try their own lava lamp. 
+
+::::
 
 ## What do we learn ?
 
-It doesn't matter whether the lava lamp works like the real thing, what we 
+It doesn't matter whether the lava lamp works like the real thing, what we learn is how the changes in density associated with composition (unchanging in a given experiment) and that associated with temperature (changing as a result of advection and diffusion of heat) interact to produce complicated, chaotic dynamics. 
 
-  - How 
+The experiment can be quite revealing and challenging:
 
+ - Can you visualise the convective motion inside the layers and the blobs as they form ?
+ - Is the thermal expansivity of each material the same and does it affect the experiments ?
+ - Is the convective vigour really proportional to $d^3$ ?  
+ - Can you document examples you see in your experiments that apply to other geophysical problems such as salt diapirs or lithospheric drips (Rayleigh-Taylor instabilities) ? 
+ - How can we make this experiment more quantitative ?
+ - Are there any tricks that you figured out that you want to pass along ?
+
+
+## Help !
+
+```{tip} 
+Some lava lamp examples and some frequently asked questions that might help you with some of the practical details of lava lamp construction are in [this blog post](https://www.geo-down-under.org.au/lava-lamps-thermochemical-convection/)
+
+```
 
 ## History
 
 We need to thank Rebecca Farrington and students from the Monash University astrophysics program for helping this experiment to evolve over time. 
 
-
 <iframe src="https://widgets.figshare.com/articles/811913/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
 
 
-<!--
-::::{admonition} Q1 - How to create a question
-
-Suppose you want to create a series of textbook style questions for your jupyterbook. 
-The goal might be just to have a bunch of questions to choose from or it may be that you would 
-like to release a worksheet.
-
-Try using a general jupyterbook admonition to create a question card and see if that works for you.
-
-::::
--->
