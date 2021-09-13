@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises - Lava Lamp Demonstration of Thermochemical Convection &#8212; Physics of the Earth</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/AuWorldEQ.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Physics of the Earth</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FrontPage.html">
+   Physics of the Earth 2021
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Introductory_Remarks.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Background_Reading.html">
+   Background Reading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Practical_Exercises.html">
+   Practicals and Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Lecture Notes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lectures/Lecture_Planets.html">
+   Introduction - Earth among Planets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lectures/Lecture_HistoryOfData.html">
+   The Data That Led to Plate Tectonics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lectures/Lecture_Convection_HeatFlow.html">
+   Mantle Convection Observations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lectures/Lecture_Lithosphere.html">
+   The Deforming Lithosphere
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Lectures/Lecture_PlateKinematics.html">
+   Plate Kinematics
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Exercises/LavaLamp.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ANU-RSES-Education/PHYS-3070"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Exercises - Lava Lamp Demonstration of Thermochemical Convection
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-lava-lamp">
+   The Lava Lamp
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hands-on-lava">
+   Hands on Lava
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-do-we-learn">
+   What do we learn ?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#help">
+   Help !
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#history">
+   History
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="exercises-lava-lamp-demonstration-of-thermochemical-convection">
+<h1>Exercises - Lava Lamp Demonstration of Thermochemical Convection<a class="headerlink" href="#exercises-lava-lamp-demonstration-of-thermochemical-convection" title="Permalink to this headline">¶</a></h1>
+<p>This exercise is intended to be an at-home practical demonstration of thermo-chemical convection. All the ingredients are commonly available from the supermarket and most of them are everyday kitchen items.</p>
+<div class="figure align-default" id="lava">
+<a class="reference internal image-reference" href="../_images/LavaCoffee.png"><img alt="../_images/LavaCoffee.png" src="../_images/LavaCoffee.png" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="section" id="background">
+<h1>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h1>
+<p>Our zero-order picture of the Earth’s convecting mantle / plate-tectonic system is of an isoviscous, Rayleigh-Bénard, overturning layer which can be characterised by a single Rayleigh number with</p>
+<div class="math notranslate nohighlight">
+\[
+Ra = \frac{g \rho \alpha \Delta T d^3}{\kappa \eta}
+\]</div>
+<p>and this model does a very good job of explaining how the heat flow (and hence depth) in the oceanic lithosphere varies with age.</p>
+<p>The <em>other</em> zero-order observation about the Earth is that the continents and the oceans are fundamental different in the way that they respond to convective forcing from the mantle. The oceanic lithosphere is very obviously part of the convecting system while the continental lithosphere is very obviously not. This stands out in the dichotomy in the age distribution (oceans are all young, continents don’t have to be and can be very, very old). The primary reason for this difference is the buoyancy of continental crust that prevents it from being recycled <em>en masse</em> by mantle convection.</p>
+<p>This is a form of <em>thermochemical convection</em>: a system in which compositional as well as thermal buoyancy plays a role. Convection can be driven by compositional effects (e.g. the primary driving mechanism for convection in the Earth’s outer core is the release of lighter fluid by crystalisation of the inner core) or it can be opposed by the inherent buoyancy associated with compositional variations. This is the situation for the continental crust which is negatively buoyant due to thermal effects (it’s cold) and positively buoyant because it is an immiscible, light material. The D’’ layer is the mirror image of this situation found at the core-mantle boundary.</p>
+<p>Corresponding to the familiar thermal Rayleigh number is an equivalent quantity that accounts for the  buoyancy difference between materials with different composition. Here we assume that there is a <em>compositional field</em> analogous to temperature with 0 and 1 representing the two end-member compositions.</p>
+<div class="math notranslate nohighlight">
+\[
+    Ra_C = \frac{\Delta \rho g d^3}{\kappa \eta}
+\]</div>
+<p>We will also assume that the composition does not diffuse (hence the thermal diffusivity provides the timescale) which is a very reasonable assumption for the large-scale examples of our whole-Earth model.</p>
+</div>
+<div class="section" id="the-lava-lamp">
+<h1>The Lava Lamp<a class="headerlink" href="#the-lava-lamp" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-default" id="theme-building-lava-lamp">
+<a class="reference internal image-reference" href="../_images/LAX-Airport-Theme-Building-Architecture-William-Pereira-Charles-Luckman-Lavalamp-6.jpg"><img alt="../_images/LAX-Airport-Theme-Building-Architecture-William-Pereira-Charles-Luckman-Lavalamp-6.jpg" src="../_images/LAX-Airport-Theme-Building-Architecture-William-Pereira-Charles-Luckman-Lavalamp-6.jpg" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">The Los Angeles airport (LAX) <em>Theme Building</em> once featured a 1960’s futuristic theme including a centrepiece Lava Lamp. Photo credit <a class="reference external" href="https://untappedcities.com/2013/05/28/inside-lax-airport-theme-building-modernist-icon/">Untapped Cities 2013</a>.</span><a class="headerlink" href="#theme-building-lava-lamp" title="Permalink to this image">¶</a></p>
+</div>
+<p>To learn more about the dynamics of the Earth, we turn to the space-race inspired household <a class="reference external" href="https://www.mathmos.com.au/home.php"><em>Astro Lamp</em> (a.k.a. Lava Lamp)</a>. In the 1960s, the mesmerising, dancing fluids of the ubiquitous lava lamp symbolised a future of peace and prosperity and the glamorous life of the <a class="reference external" href="https://untappedcities.com/2013/05/28/inside-lax-airport-theme-building-modernist-icon/">international jet set</a>.</p>
+<p>The lava lamp consists of two immiscible liquids of different density (and contrasting colour) in a clear bottle and an incandescent bulb as a heat source. The density of the two fluids is close enough that heating the denser one by a few degrees is enough to make it lighter than the other. The competition between composition and temperature results in the chaotic and unpredictable behaviour over time and the relaxing effect. The viscosity of the lava (heavier) component of the lamp is important (aesthetically) because it determines the size and speed of the rising drips that form in the lamp.</p>
+</div>
+<div class="section" id="hands-on-lava">
+<h1>Hands on Lava<a class="headerlink" href="#hands-on-lava" title="Permalink to this headline">¶</a></h1>
+<p>To build a lava lamp of our own, our first goal is to find two immiscible liquids of similar density. Safety calls for materials than be handled in the home without special protective equipment and we need to be able to heat everything up without it catching fire or giving off poisonous fumes.</p>
+<p>So let’s imagine we restrict ourselves to items from the food section of the supermarket. We might consider edible oil and water for our two immiscible fluids as we already know that they are immiscible. The question is whether they are close enough in density to overturn when heated and whether it matters that the low density oil is also the more viscous of the two fluids.</p>
+<p>We are interested in following the different modes of behaviour as the relative density differences change and how these trade off with the thermal buoyancy changes. We can change the temperature difference, the container size and the choice of materials. We can also fine tune the densities of the fluids themselves if we add some secondary components miscible with only one of the two (e.g salt in water to make it more dense).</p>
+<p>The exercise itself is to document the process of <strong>designing</strong> and then <strong>building</strong> the lava-lamp and making a connection to the physics of the Earth. The actual lava lamp is configured with much more overturning than we see between the continental crust and the mantle but we learn quite a bit more if we study the cases close to a transition in behaviour.</p>
+<p>Practical details that are important to consider:</p>
+<ul class="simple">
+<li><p>you will need a glass container that is not at risk of cracking or shattering when heated (a pyrex measuring jug, for example, or laboratory glassware that you happen to be able to rehome for a short while in your kitchen).</p></li>
+<li><p>and you want a heat source that does not risk igniting anything. If you only have a gas stove, consider using a large frying pan over low heat to provide a uniform, moderate temperature surface and maybe using water to keep the temperature capped at 100°.</p></li>
+<li><p>good lighting so you can see what is going on.</p></li>
+<li><p>a camera / phone that you can use to record experiments and a means of supporting it hands free.</p></li>
+<li><p>measuring cylinder and digital scale to estimate densities (optional)</p></li>
+<li><p>a thermometer to estimate temperatures (optional)</p></li>
+<li><p>ink, dyes, crayons, candles, food colouring, oil / water paint etc to experiment with visualisation</p></li>
+</ul>
+<div class="admonition-instructions admonition">
+<p class="admonition-title">Instructions</p>
+<p>The task is to run the lava lamp experiment and make the connection between the thermochemical convection “regimes” that you see in the experiment and those in the Earth (e.g. continental crust v. mantle; D’’ layer v. mantle; cratonic lithospheric roots v. phanerozoic).</p>
+<p>Explore not only the classical lava lamp (almost-balanced) regime, but also the other end members with compositional buoyancy dominant (and more viscous / less viscous on top).</p>
+<p>Explore the effects of changing <span class="math notranslate nohighlight">\(Ra\)</span>, for example by changing the layer depth or the basal temperature.</p>
+<p>Write up a report and brief presentation that explains the relevance to the Earth and concentrate on what you have learned from undertaking the experiment. Include any advice you have for anyone coming back to try their own lava lamp.</p>
+</div>
+</div>
+<div class="section" id="what-do-we-learn">
+<h1>What do we learn ?<a class="headerlink" href="#what-do-we-learn" title="Permalink to this headline">¶</a></h1>
+<p>It doesn’t matter whether the lava lamp works like the real thing, what we learn is how the changes in density associated with composition (unchanging in a given experiment) and that associated with temperature (changing as a result of advection and diffusion of heat) interact to produce complicated, chaotic dynamics.</p>
+<p>The experiment can be quite revealing and challenging:</p>
+<ul class="simple">
+<li><p>Can you visualise the convective motion inside the layers and the blobs as they form ?</p></li>
+<li><p>Is the thermal expansivity of each material the same and does it affect the experiments ?</p></li>
+<li><p>Is the convective vigour really proportional to <span class="math notranslate nohighlight">\(d^3\)</span> ?</p></li>
+<li><p>Can you document examples you see in your experiments that apply to other geophysical problems such as salt diapirs or lithospheric drips (Rayleigh-Taylor instabilities) ?</p></li>
+<li><p>How can we make this experiment more quantitative ?</p></li>
+<li><p>Are there any tricks that you figured out that you want to pass along ?</p></li>
+</ul>
+</div>
+<div class="section" id="help">
+<h1>Help !<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Some lava lamp examples and some frequently asked questions that might help you with some of the practical details of lava lamp construction are in <a class="reference external" href="https://www.geo-down-under.org.au/lava-lamps-thermochemical-convection/">this blog post</a></p>
+</div>
+</div>
+<div class="section" id="history">
+<h1>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h1>
+<p>We need to thank Rebecca Farrington and students from the Monash University astrophysics program for helping this experiment to evolve over time.</p>
+<iframe src="https://widgets.figshare.com/articles/811913/embed?show_title=1" width="568" height="351" allowfullscreen frameborder="0"></iframe>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Exercises"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Louis Moresi<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
