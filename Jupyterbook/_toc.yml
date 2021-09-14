@@ -14,7 +14,7 @@ parts:
       title: "Introduction - Earth among Planets"
     - file: Lectures/Lecture_HistoryOfData.md
       title: "The Data That Led to Plate Tectonics"
-    - file: Lecutres/Lecture_Continuum_Mechanics_bg.md
+    - file: Lectures/Lecture_Continuum_Mechanics_bg.md
       title: "Mantle Convection Theory"
     - file: Lectures/Lecture_Convection_HeatFlow.md
       title: "Mantle Convection Observations"
