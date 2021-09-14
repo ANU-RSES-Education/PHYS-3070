@@ -2,26 +2,36 @@ format: jb-book
 root: FrontPage
 parts:
 
-  - caption: Introduction
-    chapters:
-    - file: Introductory_Remarks.md
-    - file: Background_Reading.md
-    - file: Practical_Exercises.md
- 
-  - caption: Lecture Notes
-    chapters:
-    - file: Lectures/Lecture_Planets.md
-      title: "Introduction - Earth among Planets"
-    - file: Lectures/Lecture_HistoryOfData.md
-      title: "The Data That Led to Plate Tectonics"
-    - file: Lectures/Lecture_Continuum_Mechanics_bg.md
-      title: "Mantle Convection Theory"
-    - file: Lectures/Lecture_Convection_HeatFlow.md
-      title: "Mantle Convection Observations"
-    - file: Lectures/Lecture_Lithosphere.md
-      title: "The Deforming Lithosphere"
-    - file: Lectures/Lecture_PlateKinematics.md
-      title: "Plate Kinematics"
+- caption: Introduction
+  chapters:
+  - file: Introductory_Remarks
+  - file: Background_Reading
+
+- caption: Lecture Notes
+  chapters:
+  - file: Lectures/Lecture_Planets.md
+    title: "Introduction - Earth among Planets"
+  - file: Lectures/Lecture_HistoryOfData.md
+    title: "The Data That Led to Plate Tectonics"
+  - file: Lectures/Lecture_Continuum_Mechanics_bg.md
+    title: "Mantle Convection Theory"
+  - file: Lectures/Lecture_Convection_HeatFlow.md
+    title: "Mantle Convection Observations"
+  - file: Lectures/Lecture_Lithosphere.md
+    title: "The Deforming Lithosphere"
+  - file: Lectures/Lecture_PlateKinematics.md
+    title: "Plate Kinematics"
+
+- caption: Practicals and Exercises
+  chapters:
+  - file: Practical_Exercises
+    sections:
+    - file: Exercises/Calculations
+    - file: Exercises/Convection
+    - file: Exercises/PlateKinematics1
+    - file: Exercises/PlateKinematics2
+    - file: Exercises/LavaLamp
+    
 
   # - caption: Notebooks
   #   chapters:
