@@ -1,4 +1,4 @@
-## Exercises - Lava Lamp Demonstration of Thermochemical Convection
+# Lava Lamp Demonstration of Thermochemical Convection
 
 This exercise is intended to be an at-home practical demonstration of thermo-chemical convection. All the ingredients are commonly available from the supermarket and most of them are everyday kitchen items. 
 

@@ -1,11 +1,11 @@
-# Exercises: Plate Kinematics (I)
+# Plate Kinematics (I)
 
 A basic understanding of plate kinematics is helpful in understanding how systems of plates evolve and  the boundary conditions they apply to the continental crust. It is also important to appreciate that the "rules" of plate boundary evolution are, in fact, emergent from complicated, multiscale systems. 
 
 You will need to read the notes on plate kinematics (section 2 of module 1) and it will help to have read John Dewey's “PLATE TECTONICS.” Scientific American 226, no. 5 (1972): 56–72. [10.1038/scientificamerican0572-56](https://doi.org/10.1038/scientificamerican0572-56)
 
 
-::::{admonition} 2.1 RRR triple junction velocities
+::::{admonition} Q1 RRR triple junction velocities
 
 <div style="width:50%;float:left;" >
 
@@ -21,7 +21,7 @@ Draw a selection of magnetic stripes on this diagram (in the reference frame of 
 
 ---
 
-::::{admonition} 2.2 RRR triple junction evolution
+::::{admonition} Q2 RRR triple junction evolution
 
 ![](Figures/kinematics/TripleJunctionExerciseFigure2.svg)
 
@@ -36,7 +36,7 @@ If we assume that plate A is fixed, which of the 3 configurations below represen
 
  ---
 
-::::{admonition} 2.3 RRR triple junction vectors
+::::{admonition} Q3 RRR triple junction vectors
 
 Which combination of relative velocity vectors for the diagram of the ridge-ridge-ridge triple junction below is a possible solution . 
 
@@ -54,7 +54,7 @@ Notes: (1) the diagram is drawn to scale, although you don’t need this informa
 
 ---
 
-::::{admonition} 2.4 Locking plate boundaries
+::::{admonition} Q4 Locking plate boundaries
 
 
 <div style="width:50%;float:right;" >
@@ -70,7 +70,7 @@ Note. The velocity vectors are not drawn precisely to scale.
 
 ---
 
-::::{admonition} 2.5 Plate velocity closures and rollback
+::::{admonition} Q5 Plate velocity closures and rollback
 
 
 <div style="width:50%;float:right;" >
