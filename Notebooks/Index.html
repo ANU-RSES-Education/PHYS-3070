@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample notebooks &#8212; Physics of the Earth</title>
+    <title>Computational Resources &#8212; Physics of the Earth</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -84,7 +84,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../FrontPage.html">
-   Physics of the Earth 2021
+   Physics of the Earth 2021 (part 2)
   </a>
  </li>
 </ul>
@@ -111,35 +111,47 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Lectures/Lecture_Planets.html">
-   Introduction - Earth among Planets
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Lectures/Index.html">
+   Index
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Lectures/Lecture_HistoryOfData.html">
-   The Data That Led to Plate Tectonics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Lectures/Lecture_Continuum_Mechanics_bg.html">
-   Mantle Convection Theory
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Lectures/Lecture_Convection_HeatFlow.html">
-   Mantle Convection Observations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Lectures/Lecture_Lithosphere.html">
-   The Deforming Lithosphere
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../Lectures/Lecture_PlateKinematics.html">
-   Plate Kinematics
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Lectures/Lecture_Planets.html">
+     Earth Among Planets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Lectures/Lecture_HistoryOfData.html">
+     The Data &amp; Plate Tectonics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Lectures/Lecture_Continuum_Mechanics_bg.html">
+     Mantle Convection Theory
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Lectures/Lecture_Convection_HeatFlow.html">
+     Mantle Convection Observations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Lectures/Lecture_Lithosphere.html">
+     The Deforming Lithosphere
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Lectures/Lecture_PlateKinematics.html">
+     Plate Kinematics
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p class="caption">
@@ -150,10 +162,10 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../Practical_Exercises.html">
-   Practicals and Exercises
+   Index
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -184,6 +196,18 @@
     </a>
    </li>
   </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Bibliography.html">
+   Bibliography
+  </a>
  </li>
 </ul>
 
@@ -270,8 +294,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-packages">
-   Python packages
+  <a class="reference internal nav-link" href="#jupyter-notebooks">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyterhub">
+   Jupyterhub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github">
+   Github
   </a>
  </li>
 </ul>
@@ -285,16 +319,22 @@
         
               <div>
                 
-  <div class="section" id="sample-notebooks">
-<h1>Sample notebooks<a class="headerlink" href="#sample-notebooks" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="computational-resources">
+<h1>Computational Resources<a class="headerlink" href="#computational-resources" title="Permalink to this headline">¶</a></h1>
+<p>These online practicals are in the form of Jupyter notebooks that you can access from this page once you have logged into the server. You may be logged out if you are away for a while but once you return to this page, your work should be saved. Any computer system can fail, however, so you should download a backup of any work that you want to keep.</p>
+<div class="section" id="jupyter-notebooks">
+<h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
 <p>Typically, a markdown (<code class="docutils literal notranslate"><span class="pre">myst</span></code> format) file is used for text that is not going to be executed as a notebook.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="Example1.html"><span class="doc std std-doc">Example1</span></a></p></li>
 <li><p><a class="reference internal" href="Example2.html"><span class="doc std std-doc">Example2</span></a></p></li>
 </ul>
-<div class="section" id="python-packages">
-<h2>Python packages<a class="headerlink" href="#python-packages" title="Permalink to this headline">¶</a></h2>
-<p>Any packages that you need to have installed by <code class="docutils literal notranslate"><span class="pre">conda</span></code> or <code class="docutils literal notranslate"><span class="pre">pip</span></code> should be included in the <code class="docutils literal notranslate"><span class="pre">conda_packages.yml</span></code> file in the root directory of the repository. You can also specify packages for the <code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">get</span></code> system if they cannot be installed by <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p>
+</div>
+<div class="section" id="jupyterhub">
+<h2>Jupyterhub<a class="headerlink" href="#jupyterhub" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="github">
+<h2>Github<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

@@ -52,7 +52,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lecture - Introduction to the Solid Planets of Our Solar System" href="Lectures/Lecture_Planets.html" />
+    <link rel="next" title="Slides" href="Lectures/Index.html" />
     <link rel="prev" title="Introduction" href="Introductory_Remarks.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -86,7 +86,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="FrontPage.html">
-   Physics of the Earth 2021
+   Physics of the Earth 2021 (part 2)
   </a>
  </li>
 </ul>
@@ -113,35 +113,47 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="Lectures/Lecture_Planets.html">
-   Introduction - Earth among Planets
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Lectures/Index.html">
+   Index
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Lectures/Lecture_HistoryOfData.html">
-   The Data That Led to Plate Tectonics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Lectures/Lecture_Continuum_Mechanics_bg.html">
-   Mantle Convection Theory
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Lectures/Lecture_Convection_HeatFlow.html">
-   Mantle Convection Observations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Lectures/Lecture_Lithosphere.html">
-   The Deforming Lithosphere
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Lectures/Lecture_PlateKinematics.html">
-   Plate Kinematics
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lectures/Lecture_Planets.html">
+     Earth Among Planets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lectures/Lecture_HistoryOfData.html">
+     The Data &amp; Plate Tectonics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lectures/Lecture_Continuum_Mechanics_bg.html">
+     Mantle Convection Theory
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lectures/Lecture_Convection_HeatFlow.html">
+     Mantle Convection Observations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lectures/Lecture_Lithosphere.html">
+     The Deforming Lithosphere
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Lectures/Lecture_PlateKinematics.html">
+     Plate Kinematics
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p class="caption">
@@ -152,10 +164,10 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="Practical_Exercises.html">
-   Practicals and Exercises
+   Index
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -186,6 +198,18 @@
     </a>
    </li>
   </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Bibliography.html">
+   Bibliography
+  </a>
  </li>
 </ul>
 
@@ -266,6 +290,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference-texts">
+   Reference Texts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lecture-notes">
+   Lecture notes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#papers">
+   Papers
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -276,7 +323,45 @@
                 
   <div class="section" id="background-reading">
 <h1>Background Reading<a class="headerlink" href="#background-reading" title="Permalink to this headline">¶</a></h1>
-<p>Papers etc …</p>
+<!--
+Module i:
+
+ - Bolt, B. (2004) Earthquakes, Freeman & Co. (QE534.3 .B65 2004)
+ - Shearer, P.M. (1999) Introduction to Seismology, Cambridge University Press (QE534.2 .S455 1999) - available online as a pdf
+ - Tkalcic, H. (2017) The Earth's inner core: revealed by observational seismology, Cambridge University Press, eBook access via Internet. ANU/ANV, ISBN 9781139583954
+
+Module ii:
+-->
+<div class="section" id="reference-texts">
+<h2>Reference Texts<a class="headerlink" href="#reference-texts" title="Permalink to this headline">¶</a></h2>
+<p>These may be helpful to clarify exercises or for background. Note that these are all textbooks except for the paper by Ricard which is a <em><strong>comprehensive</strong></em> review of mantle convection theory.</p>
+<ul class="simple">
+<li><p>Davies, G. F. (1999) Dynamic Earth, Cambridge University Press (QE509.4 .D38 1999)</p></li>
+<li><p>Fowler, C.M.R. (2005) The solid earth : an introduction to global geophysics, Cambridge University Press (QC806 .F625 2005)</p></li>
+<li><p>Gubbins, D. (1990) Seismology and plate tectonics, Cambridge University Press (QE534.2.G83 1990)</p></li>
+<li><p>Poirier, J.P. (1991) Introduction to the Physics of the Earth’s Interior, Cambridge University Press (QE509.P64 1991)</p></li>
+<li><p>Ricard, Y. (2015). Physics of Mantle Convection. In Treatise on Geophysics (pp. 23–71). Elsevier. <a class="reference external" href="https://doi.org/10.1016/B978-0-444-53802-4.00127-5">https://doi.org/10.1016/B978-0-444-53802-4.00127-5</a></p></li>
+<li><p>Stacey, F.D. (1992) Physics of the Earth, 3rd Edn., Brookfield Press (QC806.S65 1992)</p></li>
+<li><p>Turcotte, D.L. &amp; Schubert, G. (2002) Geodynamics 2nd Edn, Cambridge University Press, (QE501.T83 2002)</p></li>
+</ul>
+</div>
+<div class="section" id="lecture-notes">
+<h2>Lecture notes<a class="headerlink" href="#lecture-notes" title="Permalink to this headline">¶</a></h2>
+<p>Some random derivations that may be helpful: <a class="reference external" href="https://anu-rses-education.github.io/ComputationalGeodynamics/Part1-GeophysicalFluidDynamics/0-StartHere.html">https://anu-rses-education.github.io/ComputationalGeodynamics/Part1-GeophysicalFluidDynamics/0-StartHere.html</a></p>
+</div>
+<div class="section" id="papers">
+<h2>Papers<a class="headerlink" href="#papers" title="Permalink to this headline">¶</a></h2>
+<p>These are some of the classic (i.e. early but ultimately prescient) papers that can be very helpful to read because they are very insightful and intuitive examinations of quite sparse observations.</p>
+<ul class="simple">
+<li><p>Wilson, J. T. (1963). CONTINENTAL DRIFT. Scientific American, 208(4), 86–103. <a class="reference external" href="https://doi.org/10.1038/scientificamerican0463-86">https://doi.org/10.1038/scientificamerican0463-86</a>. <em>This paper came very early in the evolution of the plate tectonic paradigm but outlines a version of the theory that has changed very little despite the vastly increased observational data that subsequently became available</em></p></li>
+<li><p>Heezen, B. C., &amp; Tharp, M. (1965). Tectonic fabric of the Atlantic and Indian oceans and continental drift. Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, 258, 90–106. <a class="reference external" href="https://doi-org.virtual.anu.edu.au/10.1098/rsta.1965.0024">https://doi-org.virtual.anu.edu.au/10.1098/rsta.1965.0024</a>. <em>Marie Tharp was a driving force behind the mapping of the sea-floor and the rendering of the bathymetry into a now-ubiquitous relief map</em></p></li>
+<li><p>Wilson, J. T. (1965). A New Class of Faults and their Bearing on Continental Drift. Nature, 207(4995), 343–347. <a class="reference external" href="https://doi.org/10/b4vzck">https://doi.org/10/b4vzck</a>. <em>Transform faults in the ocean-floor were first explained as such by Tuzo Wilson an observation of incredible significance for the plate tectonic framework</em></p></li>
+<li><p>Vine, F. (1968). Magnetic anomalies associated with mid-ocean ridges. In The history of the earth’s crust (pp. 73–89). Princeton University Press Princeton, NJ. <em>The observation of the magnetic reversals stamped into the oceanic crust by spreading set the scene for plate kinematic reconstruction. This paper is a mature synthesis of earlier contributions but still one of the foundation works of plate tectonics</em></p></li>
+<li><p>McKENZIE, D. P., &amp; Morgan, W. J. (1969). Evolution of Triple Junctions. Nature, 224, 125–133. <em>In plate kinematics, the behaviour of triple junctions is predictable and their evolution through time can be used for reconstruction. This paper is a complete analysis of what happens if we assume the kinematic rules of plate boundary evolution are precisely satisfied in the ocean</em></p></li>
+<li><p>Dewey, J. F. (1972). PLATE TECTONICS. Scientific American, 226(5), 56–72. <a class="reference external" href="https://doi.org/10.1038/scientificamerican0572-56">https://doi.org/10.1038/scientificamerican0572-56</a>. <em>Dewey makes the connection between oceanic plate motion and continental tectonics in a way that does not over-complicate the continental side of the picture</em></p></li>
+<li><p>Tapponnier, P., Peltzer, G., Dain, A. Y. L., Armijo, R., &amp; Cobbold, P. (1982). Propagating extrusion tectonics in Asia: New insights from simple experiments with plasticine. Geology, 10, 611–616. <a class="reference external" href="https://doi.org/10/bmzcmt">https://doi.org/10/bmzcmt</a>. <em>A paper that proposes the concept of “escape tectonics” which recognises that continental deformation is not just driven by boundary forces but also by the balance between crustal thickening and gravitational potential energy</em>.</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -318,10 +403,10 @@
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="Lectures/Lecture_Planets.html" title="next page">
+        <a class="right-next" href="Lectures/Index.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Lecture - Introduction to the Solid Planets of Our Solar System</p>
+                <p class="prevnext-title">Slides</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
