@@ -5,6 +5,11 @@
 <a href="../Figures/PDFs/StylizedEastPacificBasemap.pdf"> PDF version</a>
 ```
 
+```{margin} Basemap (Unlabelled)
+![PNG Version](Figures/kinematics/StylizedEastPacificBasemap_blank_thumbnail.png)
+<a href="../Figures/PDFs/StylizedEastPacificBasemap_blank.pdf"> PDF version</a>
+```
+
 Note, you are strongly advised to complete [part I](PlateKinematics1) of this exercise before trying part II. It is also quite difficult to work out the triple junction evolution without an opportunity to discuss this with the rest of the class.
 
 You will find an exercise quite like this in Gubbins’ book “Seismology & Plate Tectonics” and in Fowler’s “The Solid Earth” — there may be some hints for you there, but not actual answers !!  
@@ -38,6 +43,12 @@ Now, given the scale of the diagram, plot where each of the points identified in
 ---
 
 ::::{admonition} Q5 Triple Junction Updated Positions (5/20)
-On a copy of the 40Myr configuration, draw the sea-floor stripes back to the original time (0 Myr). You can choose the reversals but at least 5 stripes, please !  Be careful to show any scales that you use to generate the stripes. Mark the fracture zones and show carefully the pattern of stripes around the RRR triple junction. Now sketch the 50Myr configuration and explain what differences there are in the stripes from the 40Myr configuration. 
+On a copy of the 40Myr configuration, draw the sea-floor stripes back to the original time (0 Myr). 
+
+- You can choose the reversals but at least 5 stripes, please !  
+- Be careful to show any scales that you use to generate the stripes. 
+- Mark the fracture zones and show carefully the pattern of stripes around the RRR triple junction. 
+
+Now *sketch* the 50Myr configuration and explain what differences there are in the stripes from the 40Myr configuration.  *Sketch* means that you don't need to draw the whole thing, just the salient parts that support what you want to say.
 ::::
 
