@@ -1,4 +1,4 @@
-# Physics of the Earth 2021 (part 2)
+# Physics of the Earth 2021
 
 ```{figure} Figures/blt2.png
 ---
