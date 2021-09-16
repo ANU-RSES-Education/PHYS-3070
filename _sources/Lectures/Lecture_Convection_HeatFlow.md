@@ -1,5 +1,7 @@
 # Lecture - Convection and the Connection to Heat Flow
 
+Once we establish that the Earth's mantle has vigorous convective activity, we can start to make a connection to the observables at the Earth's surface such as the heat flow and the plate velocity. We revisit some classic results to show that an understanding of thermal boundary layers is the key to determining plate evolution. 
+
 <iframe src="../Figures/PDFs/PHYS3070_2.convection+rheology+heatflow.pdf" width="100%" height="500px", allowfullscreen>
 </iframe>
 
