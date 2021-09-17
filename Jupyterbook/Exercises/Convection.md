@@ -1,121 +1,113 @@
 # Convection
 
-TBA
+This exercise tests your understanding of "simple" Rayleigh-Bénard convection in a layer
 
 
+## Multiple choice
 
+::::{admonition} 1 / 15
 
+Assume the relationship between convective and conductive heat transfer given in the lectures:				
 
+$$ Q = Q_c \left( \frac{g \rho \alpha \Delta T d^3}{\kappa \eta} \right)^{1/3} $$
 
+Which of the following statements about the efficiency of heat transfer in a convecting layer is / are true ? 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-::::{admonition} 2.1 RRR triple junction velocities
-
-<div style="width:50%;float:left;" >
-
-![](Figures/kinematics/TripleJunctionExerciseFigure1.svg)
-
-*A ridge-ridge-ridge triple junction with half-spreading rates labelled.*
-</div>
-
-What is the magnitude in cm/yr of the half-spreading rate between plates A & B in the three-plate system in the diagram ?  
-
-Draw a selection of magnetic stripes on this diagram (in the reference frame of the triple junction to make things simple).
+ 1. Convection occurs even if the fluid is stationary 	  
+ 2. Convection cannot occur in zero gravity 	  
+ 3. The more viscous the fluid, the more efficient convection is at transferring heat	  
+ 4. The heat transfer when a fluid is convecting is higher than if the fluid was stationary	  
+ 5. 1 & 3 are both correct 	  
+ 6. 2 & 4 are both correct 	  
 ::::
 
 ---
 
-::::{admonition} 2.2 RRR triple junction evolution
+::::{admonition} 1 / 15
 
-![](Figures/kinematics/TripleJunctionExerciseFigure2.svg)
-
-*A ridge-ridge-ridge triple junction with spreading directions / magnitudes shown in scaled arrows.*
-
-If we assume that plate A is fixed, which of the 3 configurations below represents the correct movement of the triple junction and three ridges from their original location (shown in black) to their new location a year later (shown in red). 
-
-   1. Configuration 1	
-   2. Configuration 2	 
-   3. Configuration 3	
- ::::
-
- ---
-
-::::{admonition} 2.3 RRR triple junction vectors
-
-Which combination of relative velocity vectors for the diagram of the ridge-ridge-ridge triple junction below is a possible solution . 
-
-
-![](Figures/kinematics/TripleJunctionExerciseFigure3.svg)
-
-Notes: (1) the diagram is drawn to scale, although you don’t need this information to answer the question !      (2) you should read $_X V _Y$ as the relative velocity of plate Y with respect to plate X. The units are not important to answer the question but let's say they are all cm/yr.
-
-  1. $_A V _B$ = ( 5, 6 ); $_B V _C$ =  ( 2, 4 ); $_C V _A$ = ( 3, 2 ) 	  
-  2. $_A V _B$ = ( 5, 0 ); $_B V _C$ =  ( 1, 2 ); $_C V _A$ = ( 4,-2 ) 	  
-  3. $_A V _B$ = (-5, 0 ); $_B V _C$ =  (-1, 2 ); $_C V _A$ = ( 6,-1 ) 	  
-  4. $_A V _B$ =  (5, 0 ); $_B V _C$ = ( -1,-2 ); $_C V _A$ = ( -4, 2) 	  
+Viscous deformation in the mantle occurs through:
+ 1. molecular reorganization of liquid mantle rocks	  
+ 2. defects migrating through solid rock 	  
+ 3. fluid infiltration of grain boundaries	  
+ 4. propagation of brittle fractures	  
+ 5. competition between diffusion of heat and stress 	  
 
 ::::
 
 ---
 
-::::{admonition} 2.4 Locking plate boundaries
+::::{admonition} 1 / 15
 
 
-<div style="width:50%;float:right;" >
+Which of the following statements about thermal convection is false ?
 
-![](Figures/kinematics/TripleJunctionExerciseFigure4.svg)
+1. thermal boundary layer thickness increases with increasing Rayleigh number	  
+2. all other things being equal, convection is more vigorous when the viscosity is lower	  
+3. in constant viscosity convection, hot &cold thermal boundary layers are the same thickness	  
+4. higher Rayleigh number convection has more time variability	  
+5. 1 & 4 	  
+6. 1 & 3 	  
 
-</div>
+::::
 
-Which of the plate boundary configurations in the diagram is not possible under the standard rules of plate tectonics (i.e. it's locking / cannot evolve forward in time) ?   Explain your reasoning. 
-Note. The velocity vectors are not drawn precisely to scale.
+<!-- -->
+
+:::{sidebar} Goldilocks 
+
+<img src="Figures/convection/Goldilocks.png" width="100%">
+
+“It says in the paper today that Lord Kelvin’s come up with yet another estimate for the age of the Earth, dearest. This time he’s got the Earth cooling conductively from an initial uniform state ...” said Papa Bear thoughtfully. “I think he would be better treating it as a Stefan problem,” Mama Bear replied, ”otherwise there won’t have been sufficient time for us to evolve language, physics and unfashionable smoking jackets.”
+:::
+
+## Planetary Cooling
+
+
+Three physicists lived together in a little house in the woods. They were Papa Bear, Mama Bear, and Baby Bear. One day when their porridge was too hot to eat, they decided to go for a walk while it cooled off. At around this time, Goldilocks wanders past and thinks it is a smart idea to go inside the bears’ house without permission. The first thing Goldilocks saw was the porridge cooling on the table. “Oh my, I’m hungry,” she thought to herself. She tasted the porridge in the biggest bowl but it was too hot. Then she tasted the porridge in the medium-sized bowl, but it was too cold. Last she tasted the porridge in the littlest bowl and it was just right so she ate it all up. 
+
+But wait ! There appears to be something unusual going on in the bears’ house (Figure) ... 
+
+::::{admonition} 7 / 15
+
+Explain why, on the face of things, the cooling of the porridge in this Goldilocks tale is surprising. 
+
+Give a brief overview of the mechanisms by which solid planets typically cool, including the dominant sources of their internal heat and discuss how this relates to the size of the system.
+
+This is the temperature solution for the plate cooling model.
+
+$$	T = T_0 + (T_m - T_0) \left[ \frac{z}{z_{\mbox{plate}}} + 
+	\frac{2}{\pi} \sum_{n=1}^{\infty} \frac{1}{n}
+	 \exp \left( -\frac{\kappa n^2 \pi^2 t}{z^2_{\mbox{plate}}} \right) 
+	\sin\left( \frac{n\pi z}{z_{\mbox{plate}}} \right) \right]
+$$
+
+ - How is surface heat flux related to the temperature profile of the lithosphere ? 
+ - Derive an expression for the surface heat flux in this case 
 
 ::::
 
----
+## Nu - Ra etc
 
-::::{admonition} 2.5 Plate velocity closures and rollback
+Assuming that the heat flow (Nusselt number) and average (root mean square) velocity are related to Rayleigh number in the following way:
 
+$$ Nu = A \cdot \mathrm{Ra}^\alpha \quad\quad V_\mathrm{rms} = B \cdot \mathrm{Ra}^\beta $$
 
-<div style="width:50%;float:right;" >
+::::{admonition} 5 / 15
 
-![](Figures/kinematics/TripleJunctionExerciseFigure5.svg)
-
-</div>
-
-In the diagram on the right ...  
-
-Is the plate boundary between plates A and C (dotted) a transform, spreading centre or subduction zone ?
-
-What is the magnitude of the velocity across this plate boundary ?
-
-Is the sense of the offset along the left-hand transform branch of the ABC triple junction actually left lateral (as marked) or should it have been drawn as a right lateral transform fault ? 
-
-What is the separation / convergence velocity of the line p-p' ?
-
-What is the separation / convergence velocity of the line q-q' ?
-
-What is the separation / convergence velocity of the line r-r' ?
-
-*Hint: figure out the plate velocities relative to, say, plate A first of all, and then you can answer these questions relatively easily. Also, remember the spreading rate marked is the half spreading rate*
-
-Now sketch some magnetic stripes for this system.
+Find the values of $\alpha$ and $\beta$ (e.g. by plotting a graph of log10(Nu) against log10(Ra) using the data from the table below.  Standard sort of thing, I'm sure you know the drill) — are these close to the expected theoretical values ?
 
 ::::
+
+<img src="Figures/convection/Table.png" width="80%">
+
+
+
+
+
+
+
+
+
+
+
+
 
