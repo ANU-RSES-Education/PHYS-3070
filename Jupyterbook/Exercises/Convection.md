@@ -1,8 +1,6 @@
 # Convection
 
-A basic understanding of plate kinematics is helpful in understanding how systems of plates evolve and 
-the boundary conditions they apply to the continental crust. It is also important to appreciate that the "rules" of plate boundary evolution are, in fact, emergent from complicated, non-linear, multiscale systems. 
-
+TBA
 
 
 
