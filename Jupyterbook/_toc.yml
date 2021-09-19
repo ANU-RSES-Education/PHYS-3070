@@ -32,15 +32,16 @@ parts:
     sections:
     - file: Exercises/Calculations
     - file: Exercises/Convection
+    - file: Exercises/Maps+Data
+    - file: Exercises/LavaLamp
     - file: Exercises/PlateKinematics1
     - file: Exercises/PlateKinematics2
-    - file: Exercises/LavaLamp
+
     
 - caption: Bibliography
   chapters:
   - file: Bibliography
 
-  # - caption: Notebooks
   #   chapters:
   #   - file: Notebooks/Index.md
   #     sections:
