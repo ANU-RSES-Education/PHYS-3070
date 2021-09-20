@@ -14,6 +14,7 @@ There will be errors if the github secrets have not been set up
  ## Comments
    
   - 2021.07.23 - initialise repository / droplet / droplet ip
-  - 2021.07.23 - re-initialise droplet
+  - 2021.09.20 - re-initialise droplet
+  - 2021.09.21 - password updated
   
   
