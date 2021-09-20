@@ -1,11 +1,10 @@
 # Line-by-line list of packages for apt-get on the remote machine
 
 # lavavu
-libgl1-mesa-dev 
-libglu1-mesa-dev 
-freeglut3-dev 
-mesa-common-dev 
-libglu1-mesa-dev 
-libx11-dev 
-# xvbfwrapper
+# libgl1-mesa-dev 
+# libglu1-mesa-dev 
+# freeglut3-dev 
+# mesa-common-dev 
+# libx11-dev 
+# xvfbwrapper
 xvfb 
