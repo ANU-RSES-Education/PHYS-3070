@@ -42,6 +42,6 @@ jobs:
 
         sed '/^[[:blank:]]*#/d;s/#.*//' apt_get_packages.txt > apt_get_packages_no_comment.txt
         sudo -E sshpass -e scp apt_get_packages_no_comment.txt root@${{ secrets.DROPLET_IP }}:apt_get_packages.txt
-        $REMOTE_SH 'sudo -E xargs apt-get install < apt_get_packages.txt'
+        $REMOTE_SH 'sudo -E xargs apt-get install -y < apt_get_packages.txt'
  
         $REMOTE_SH "sudo tljh-config reload hub"
