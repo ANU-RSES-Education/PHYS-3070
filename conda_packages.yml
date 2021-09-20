@@ -10,21 +10,18 @@ dependencies:
     - cloudstor
     - stripy
     - litho1pt0
-    - proj=7.*.        # errors with cartopy when 6.2.* is used
-    - cartopy=0.18.*
+    # - proj=7.*.        # errors with cartopy when 6.2.* is used
+    - cartopy=0.19.*
     - gdal
     - libgdal
     - obspy
     - pandas
-    - pip 
-    - libiconv
     - xarray
-    - nodejs
     - jupytext
     - h5netcdf
     - netcdf4
-    - pip:
-      - lavavu<1.7
+    # - pip:
+    #   - lavavu<1.7
 
 
       
