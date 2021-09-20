@@ -16,6 +16,7 @@ dependencies:
     - jupytext
     - h5netcdf
     - netcdf4
+    - compilers
     - pip:
         - stripy
         - litho1pt0
