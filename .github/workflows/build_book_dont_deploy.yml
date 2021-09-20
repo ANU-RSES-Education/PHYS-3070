@@ -46,10 +46,12 @@ jobs:
       run: |
         sed 's/name: base/name: jupyter/' conda_packages.yml > conda_jupyter_env.yml
 
-    - name: Miniconda / Miniforge
+    - name: Miniconda / Miniforge / Mamba 
       uses: conda-incubator/setup-miniconda@v2
       with:
-          miniconda-version: latest
+          mamba-version: "*"
+          channels: conda-forge,geo-down-under,defaults
+          channel-priority: true
           environment-file: conda_jupyter_env.yml
           activate-environment: jupyter
           python-version: 3.7
