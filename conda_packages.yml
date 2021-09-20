@@ -7,9 +7,6 @@ dependencies:
     - nodejs
     - pip 
     - libiconv
-    - cloudstor
-    - stripy=2.0.5b2
-    # - proj=7.*.        # errors with cartopy when 6.2.* is used
     - cartopy
     - gdal
     - libgdal
@@ -19,7 +16,10 @@ dependencies:
     - jupytext
     - h5netcdf
     - netcdf4
-    # - pip:
+    - pip:
+        - stripy
+        - litho1pt0
+        - cloudstor
     #   - lavavu<1.7
 
 
