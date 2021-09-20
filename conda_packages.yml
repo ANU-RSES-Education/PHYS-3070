@@ -8,8 +8,7 @@ dependencies:
     - pip 
     - libiconv
     - cloudstor
-    - stripy
-    - litho1pt0
+    - stripy=2.0.5b2
     # - proj=7.*.        # errors with cartopy when 6.2.* is used
     - cartopy
     - gdal
