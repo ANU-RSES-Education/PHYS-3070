@@ -36,7 +36,8 @@ jobs:
         $REMOTE_SH "hostname"
 
         sudo -E sshpass -e scp conda_packages.yml root@${{ secrets.DROPLET_IP }}:conda_packages.yml
-        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda env update --file conda_packages.yml'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda install mamba -n base -c conda-forge'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/mamba env update --file conda_packages.yml'
 
         # Update/Install apt-get packages
 
@@ -45,3 +46,10 @@ jobs:
         $REMOTE_SH 'sudo -E xargs apt-get install -y < apt_get_packages.txt'
  
         $REMOTE_SH "sudo tljh-config reload hub"
+
+
+## This is the script that you would run as a priviledged user on the machine itself
+
+# sudo -E /opt/tljh/user/bin/conda install mamba -n base -c conda-forge
+# sudo -E /opt/tljh/user/bin/conda env update --file conda_packages.yml
+# sudo -E /opt/tljh/user/bin/mamba env update --file conda_packages.yml

@@ -3,6 +3,7 @@ channels:
     - conda-forge
     - geo-down-under    
 dependencies:
+    - ipython # helpful for debugging in terminal
     - numpy
     - nodejs
     - pip 
