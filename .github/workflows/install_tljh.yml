@@ -33,6 +33,9 @@ jobs:
       
       run: |
         $REMOTE_SH "hostname"
+        $REMOTE_SH "sudo apt update"
+        ## Any apt updates needed to install the hub should go here ... python ?
+
         $REMOTE_SH "curl -L https://tljh.jupyter.org/bootstrap.py | sudo python3 -  --admin $HUBADMIN:$HUBADMIN_PASS" 
          
         # This is optional if you want to use a different authenticator (1st use authenticator is default - add users, then let them choose a password)
