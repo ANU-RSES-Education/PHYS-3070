@@ -3,12 +3,14 @@ channels:
     - conda-forge
     - geo-down-under    
 dependencies:
+    - python=3.8
     - ipython # helpful for debugging in terminal
     - numpy
     - nodejs
     - pip 
     - libiconv
     - cartopy
+    - pillow
     - gdal
     - libgdal
     - obspy

@@ -16,5 +16,6 @@ There will be errors if the github secrets have not been set up
   - 2021.07.23 - initialise repository / droplet / droplet ip
   - 2021.09.20 - re-initialise droplet
   - 2021.09.21 - password updated
+  - 2021.09.21 - bump to ubuntu 21 
   
   
