@@ -37,7 +37,7 @@ jobs:
 
         sudo -E sshpass -e scp conda_packages.yml root@${{ secrets.DROPLET_IP }}:conda_packages.yml
         $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda install mamba -n base -c conda-forge'
-        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/mamba env update --file conda_packages.yml -c conda-forge'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/mamba env update -n base --file conda_packages.yml '
 
         # Update/Install apt-get packages
 
