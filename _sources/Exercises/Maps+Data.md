@@ -17,7 +17,7 @@ Open the notebook: [PHYS3070-LabMD.1.1](../Notebooks/LAB-Maps+Data/PHYS3070-LabM
 
 This code uses Cartopy which provides access to various of the online mapping services that will serve image data on demand in the form of small image tiles at a specified resolution. The tools automatically query the service and assemble the tiles to make the map but there are some tricks that we need to know before we can use them.
 
-Open the notebook: [PHYS3070-LabMD.1.2.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.1.2)
+Open the notebook: [PHYS3070-LabMD.1.2.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.1.2.ipynb)
 
 
 ## Try it out for yourself
@@ -34,10 +34,9 @@ Open the notebook: [PHYS3070-LabMD.1.3.ipynb](../Notebooks/LAB-Maps+Data/PHYS307
 The data are not just images: we can access the original information and perform calculations. 
 In this exercise we make a plot of sea-floor depth against sea-floor age (the most fundamental dataset of the marine plate-tectonics era).
 
-Open the notebook: [PHYS3070-LabMD.2.1.ipynb](../otebooks/LAB-Maps+Data/PHYS3070-LabMD.2.1.ipynb) and follow through to the other notebooks in the series:
+Open the notebook: [PHYS3070-LabMD.2.1.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.1.ipynb) and follow through to the other notebooks in the series:
 
-
- -[../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.2.ipynb](Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.2.ipynb) 
- -[../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.3.ipynb](Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.3.ipynb) 
- -[../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.4.ipynb](Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.4.ipynb) 
- -[../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.5.ipynb](Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.5.ipynb) 
+ -[PHYS3070-LabMD.2.2.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.2.ipynb) 
+ -[PHYS3070-LabMD.2.3.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.3.ipynb) 
+ -[PHYS3070-LabMD.2.4.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.4.ipynb) 
+ -[PHYS3070-LabMD.2.5.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.5.ipynb) 
