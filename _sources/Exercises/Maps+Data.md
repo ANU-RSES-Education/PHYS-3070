@@ -36,7 +36,7 @@ In this exercise we make a plot of sea-floor depth against sea-floor age (the mo
 
 Open the notebook: [PHYS3070-LabMD.2.1.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.1.ipynb) and follow through to the other notebooks in the series:
 
- -[PHYS3070-LabMD.2.2.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.2.ipynb) 
- -[PHYS3070-LabMD.2.3.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.3.ipynb) 
- -[PHYS3070-LabMD.2.4.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.4.ipynb) 
- -[PHYS3070-LabMD.2.5.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.5.ipynb) 
+ - [PHYS3070-LabMD.2.2.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.2.ipynb) 
+ - [PHYS3070-LabMD.2.3.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.3.ipynb) 
+ - [PHYS3070-LabMD.2.4.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.4.ipynb) 
+ - [PHYS3070-LabMD.2.5.ipynb](../Notebooks/LAB-Maps+Data/PHYS3070-LabMD.2.5.ipynb) 
