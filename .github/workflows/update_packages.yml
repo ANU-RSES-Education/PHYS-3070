@@ -36,6 +36,7 @@ jobs:
         $REMOTE_SH "hostname"
         $REMOTE_SH "sudo apt update"
         $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda update conda'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda config --add channels conda-forge'
         $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda install mamba -n base -c conda-forge'
         $REMOTE_SH "python3 --version"
 
