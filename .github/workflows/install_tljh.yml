@@ -33,10 +33,7 @@ jobs:
       
       run: |
         $REMOTE_SH "hostname"
-        $REMOTE_SH "sudo apt update"
-        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda update conda'
-        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda config --add channels conda-forge'
-        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda install mamba -n base -c conda-forge'
+        $REMOTE_SH "sudo apt update -y"
         $REMOTE_SH "python3 --version"
 
         ## Any apt updates needed to install the hub should go here ... python ?
@@ -65,6 +62,9 @@ jobs:
         # Update/Install python packages 
         sudo -E sshpass -e scp conda_packages.yml root@${{ secrets.DROPLET_IP }}:conda_packages.yml
         # $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda env update --file conda_packages.yml'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda update conda'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda config --add channels conda-forge'
+        $REMOTE_SH 'sudo -E /opt/tljh/user/bin/conda install mamba -n base -c conda-forge'
         $REMOTE_SH 'sudo -E /opt/tljh/user/bin/mamba env update -n base --file conda_packages.yml'
 
         # This is the lavavu install (note, lavavu introduces the list of apt-get dependencies)
