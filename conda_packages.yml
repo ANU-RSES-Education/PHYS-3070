@@ -3,6 +3,7 @@ channels:
     - conda-forge
     - geo-down-under    
 dependencies:
+    - pip 
     - cartopy
     - pillow
     - gdal
@@ -15,12 +16,10 @@ dependencies:
     - jupytext
     - compilers
     - obspy
-    # - libiconv
     - pip:
         - stripy
         - litho1pt0
         - cloudstor
-    #   - lavavu<1.7
 
 
       
