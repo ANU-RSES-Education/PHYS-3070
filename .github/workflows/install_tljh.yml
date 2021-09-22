@@ -29,6 +29,7 @@ jobs:
         # SSHPASS:       ${{ secrets.DROPLET_PASS }} 
         HUBADMIN:      ${{ secrets.HUBADMIN_USER }} 
         HUBADMIN_PASS: ${{ secrets.HUBADMIN_PASS }}
+        SSHPASS:       ${{ secrets.DROPLET_PASS }} 
         REMOTE_SH:     "sudo -E sshpass -e ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }}"
       
       run: |
@@ -43,9 +44,9 @@ jobs:
 
     - name: Configure tljh (note this could be done via installer options / plugins) 
       env:  
-        # SSHPASS:       ${{ secrets.DROPLET_PASS }} 
         # HUBADMIN:      ${{ secrets.HUBADMIN_USER }} 
         # HUBADMIN_PASS: ${{ secrets.HUBADMIN_PASS }}
+        SSHPASS:       ${{ secrets.DROPLET_PASS }} 
         REMOTE_SH:     "sudo -E sshpass -e ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }}"
   
       run: |
@@ -76,6 +77,7 @@ jobs:
 
     - name: Update packages with apt-get and conda / mamba
       env:  
+        SSHPASS:       ${{ secrets.DROPLET_PASS }} 
         REMOTE_SH:     "sudo -E sshpass -e ssh -o StrictHostKeyChecking=no root@${{ secrets.DROPLET_IP }}"
   
       run: |
