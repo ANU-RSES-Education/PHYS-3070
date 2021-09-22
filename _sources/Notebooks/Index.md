@@ -6,12 +6,14 @@ These online practicals are in the form of Jupyter notebooks that you can access
 
 Typically, a markdown (`myst` format) file is used for text that is not going to be executed as a notebook. 
 
- - [Example1](Example1)
- - [Example2](Example2)
+ - [Maps 1.1](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.1.1.ipynb)
+ - [Maps 1.2](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.1.2.ipynb)
+ - [Maps 1.3](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.1.3.ipynb)
+
+ - [Maps 2.1](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.2.1.ipynb)
+ - [Maps 2.2](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.2.2.ipynb)
+ - [Maps 2.3](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.2.3.ipynb)
+ - [Maps 2.4](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.2.4.ipynb)
+ - [Maps 2.5](Notebooks/LAB-Maps-Data/PHYS3070-LabMD.2.5.ipynb)
+
  
-
-## Jupyterhub
-
-
-## Github
-

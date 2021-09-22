@@ -330,6 +330,11 @@
    Resources you will use.
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#navigation">
+   Navigation
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -349,13 +354,24 @@
 <div class="section" id="resources-you-will-use">
 <h2>Resources you will use.<a class="headerlink" href="#resources-you-will-use" title="Permalink to this headline">¶</a></h2>
 <p>This notebook makes use of a couple of packages that might come in handy another time. The maps are made by <code class="docutils literal notranslate"><span class="pre">cartopy</span></code> which is a mapping tool written by the Meteorological Office in the UK (and which happens to be really good a plotting satellite data). The <code class="docutils literal notranslate"><span class="pre">pandas</span></code> package is a database tool that is really very good at manipulating tables of different types of data, selecting, sorting, refining and so on.</p>
+</div>
+<div class="section" id="navigation">
+<h2>Navigation<a class="headerlink" href="#navigation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#"><span class="doc std std-doc">Maps 1.1</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.1.2.html"><span class="doc std std-doc">Maps 1.2</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.1.3.html"><span class="doc std std-doc">Maps 1.3</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.2.1.html"><span class="doc std std-doc">Maps 2.1</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.2.2.html"><span class="doc std std-doc">Maps 2.2</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.2.3.html"><span class="doc std std-doc">Maps 2.3</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.2.4.html"><span class="doc std std-doc">Maps 2.4</span></a></p></li>
+<li><p><a class="reference internal" href="PHYS3070-LabMD.2.5.html"><span class="doc std std-doc">Maps 2.5</span></a></p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="kn">import</span> <span class="nn">json</span>
-
-<span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">html</span>
 
 <span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
 
@@ -364,6 +380,14 @@
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">chartinfo</span> <span class="o">=</span> <span class="s1">&#39;Author: Meghan Miller | Data: Volcano World - volcano.oregonstate.edu&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cartopy</span>
+<span class="n">cartopy</span><span class="o">.</span><span class="n">__version__</span>
 </pre></div>
 </div>
 </div>
@@ -384,22 +408,12 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>There is/are 1 table/s on this web page
-</pre></div>
-</div>
-</div>
 </div>
 <p>In this case, it is not necessary to parse the various tables to find the one we want, but you would need to check (for example, the page header or footer might be in the form of a table to lay out the information but we don’t want to use that for our map !)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_volc</span> <span class="o">=</span> <span class="n">tables</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">df_volc</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 </pre></div>
 </div>
 </div>
@@ -425,27 +439,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stratovolcano         126
-Caldera                20
-Shield                 13
-Complex                 8
-Volcanic field          6
-Submarine               5
-Lava dome               3
-Fissure vent            3
-Caldera, Shield         2
-Cinder Cone             2
-Pyroclastic cone        2
-Fissure vent, Maar      2
-Flood Basalt            2
-Plug                    1
-Somma                   1
-Maar                    1
-Name: Type, dtype: int64
-</pre></div>
-</div>
-</div>
 </div>
 <p>Clean up the data to make sure the typos and missing information are not propogated into your database. This doesn’t seem to be needed in this particular case, but, in other instances, you could use this technique to replace definitions / map to a new terminology etc.</p>
 <div class="cell docutils container">
@@ -465,38 +458,12 @@ Name: Type, dtype: int64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stratovolcano         126
-Caldera                20
-Shield                 13
-Complex                 8
-Volcanic Field          6
-Submarine               5
-Lava Dome               3
-Fissure Vent            3
-Caldera, Shield         2
-Cinder Cone             2
-Pyroclastic Cone        2
-Fissure Vent, Maar      2
-Flood Basalt            2
-Plug                    1
-Somma                   1
-Maar                    1
-Name: Type, dtype: int64
-</pre></div>
-</div>
-</div>
 </div>
 <p>Now determine the number of volcanoes in the database.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_volc</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">df_volc</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>195
 </pre></div>
 </div>
 </div>
@@ -509,11 +476,6 @@ Name: Type, dtype: int64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>189
-</pre></div>
-</div>
-</div>
 </div>
 <p>Make a nice table of the first 10 volcanoes from the information that you grabbed out of the Oregon State University website on volcanoes</p>
 <div class="cell docutils container">
@@ -523,130 +485,6 @@ Name: Type, dtype: int64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>189
-</pre></div>
-</div>
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Volcano Name</th>
-      <th>Country</th>
-      <th>Type</th>
-      <th>Latitude (dd)</th>
-      <th>Longitude (dd)</th>
-      <th>Elevation (m)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Abu</td>
-      <td>Japan</td>
-      <td>Shield</td>
-      <td>34.50</td>
-      <td>131.60</td>
-      <td>641</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Acamarachi</td>
-      <td>Chile</td>
-      <td>Stratovolcano</td>
-      <td>-23.30</td>
-      <td>-67.62</td>
-      <td>6046</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Acatenango</td>
-      <td>Guatemala</td>
-      <td>Stratovolcano</td>
-      <td>14.50</td>
-      <td>-90.88</td>
-      <td>3976</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Acigöl-Nevsehir</td>
-      <td>Turkey</td>
-      <td>Caldera</td>
-      <td>38.57</td>
-      <td>34.52</td>
-      <td>1689</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Adams</td>
-      <td>United States</td>
-      <td>Stratovolcano</td>
-      <td>46.21</td>
-      <td>-121.49</td>
-      <td>3742</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Adatara</td>
-      <td>Japan</td>
-      <td>Stratovolcano</td>
-      <td>37.64</td>
-      <td>140.29</td>
-      <td>1718</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Adwa</td>
-      <td>Ethiopia</td>
-      <td>Stratovolcano</td>
-      <td>10.07</td>
-      <td>40.84</td>
-      <td>1733</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Afderà</td>
-      <td>Ethiopia</td>
-      <td>Stratovolcano</td>
-      <td>13.08</td>
-      <td>40.85</td>
-      <td>1295</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Agrigan</td>
-      <td>Mariana Islands</td>
-      <td>Stratovolcano</td>
-      <td>18.77</td>
-      <td>145.67</td>
-      <td>965</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Agua</td>
-      <td>Guatemala</td>
-      <td>Stratovolcano</td>
-      <td>14.47</td>
-      <td>-90.74</td>
-      <td>3760</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <p>Determine the number of each type of volcanoes from this list and output this information to the screen.</p>
 <div class="cell docutils container">
@@ -655,42 +493,11 @@ Name: Type, dtype: int64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Stratovolcano         126
-Caldera                19
-Shield                 13
-Complex                 8
-Volcanic Field          6
-Lava Dome               3
-Fissure Vent            3
-Caldera, Shield         2
-Cinder Cone             2
-Pyroclastic Cone        2
-Fissure Vent, Maar      2
-Plug                    1
-Somma                   1
-Maar                    1
-Name: Type, dtype: int64
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_volc</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">df_volc</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/lmoresi/mambaforge/envs/cartopy/lib/python3.9/site-packages/pandas/util/_decorators.py:311: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  return func(*args, **kwargs)
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>189
 </pre></div>
 </div>
 </div>
