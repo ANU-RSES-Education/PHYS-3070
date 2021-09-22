@@ -3,22 +3,19 @@ channels:
     - conda-forge
     - geo-down-under    
 dependencies:
-    - ipython # helpful for debugging in terminal
-    - numpy
-    - nodejs
-    - pip 
-    - libiconv
     - cartopy
     - pillow
     - gdal
     - libgdal
-    - obspy
+    - matplotlib
     - pandas
     - xarray
-    - jupytext
     - h5netcdf
     - netcdf4
+    - jupytext
     - compilers
+    - obspy
+    # - libiconv
     - pip:
         - stripy
         - litho1pt0

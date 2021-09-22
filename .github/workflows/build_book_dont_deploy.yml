@@ -66,6 +66,7 @@ jobs:
         # sudo xargs apt-get -y install < apt_get_packages_no_comment.txt
 
         # Conda cache will not catch the pip installations (need to do this separately)
+        conda install nodejs
         pip install jupyter-book
         npm install -g reveal-md
 
