@@ -24,9 +24,6 @@ These may be helpful to clarify exercises or for background. Note that these are
 
 ## Lecture notes
 
-Some random derivations that may be helpful: https://anu-rses-education.github.io/ComputationalGeodynamics/Part1-GeophysicalFluidDynamics/0-StartHere.html
+[These lecture notes](https://anu-rses-education.github.io/ComputationalGeodynamics/Part1-GeophysicalFluidDynamics/0-StartHere.html) are a selective compilation of many of the results in the reference texts as well as a short introduction to computational fluid dynamics.
 
 
-## Papers 
-
-z
