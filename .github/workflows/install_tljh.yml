@@ -37,8 +37,6 @@ jobs:
         $REMOTE_SH "sudo apt update -y"
         $REMOTE_SH "python3 --version"
 
-        ## Any apt updates needed to install the hub should go here ... python ?
-
         $REMOTE_SH "curl -L https://tljh.jupyter.org/bootstrap.py | sudo python3 -  --admin $HUBADMIN:$HUBADMIN_PASS" 
          
 
