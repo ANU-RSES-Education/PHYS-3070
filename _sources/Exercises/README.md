@@ -1,9 +1,9 @@
 ## Exercises
 
-Add questions to include in the JB ... answers only if the repo is private !
+Add questions to include in the JB ... don't add answers because a private repo
+cannot be clones to jupyterhub with nbgitpuller. 
 
 The use of general "admonitions" is quite a good format for individual questions and it is useful to separate them out into a separate markdown file if you want to create a printable pdf.
-
 
 ::::{admonition} Q1 - How to create a question
 
