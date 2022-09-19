@@ -9,10 +9,12 @@ then
     npm install -g reveal-md 
 fi
 
-mkdir -p static_slides
 
+mkdir -p static_slides
 reveal-md  --static static_slides/slideshows \
-           --theme css/anu.css --glob '**/*.reveal.md' \
+           --theme https://anu-rses-education.github.io/PHYS-3070/slideshows/css/anu.css \
+           --highlight-theme github  \
+           --glob '**/*.reveal.md' \
            --separator '<--o-->' \
            --vertical-separator '<--v-->' \
-           --static-dirs movies,images  
+           --static-dirs css,movies,images 
