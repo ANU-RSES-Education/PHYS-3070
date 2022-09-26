@@ -62,7 +62,7 @@ Earthquakes, volcanic activity, mountain-building, and oceanic trench formation 
 
 <div style="width:30%; float:right"> 
 
-![EarthXsection](images/GlobalTectonics/EarthXsection.svg) 
+![EarthXsection](images/GlobalTectonics/EarthXsection.png) 
 
 </div>
 
@@ -86,7 +86,7 @@ This image is drawn approximately to scale
 
 <div style="width:30%; float:right"> 
 
-![EarthXsection](images/GlobalTectonics/EarthXsection.svg) 
+![EarthXsection](images/GlobalTectonics/EarthXsection.png) 
 
 </div>
 
@@ -133,7 +133,8 @@ This map shows the relative thickness of the crust and the lithosphere (thick cr
 
 ## Global Stress 
 
-![](https://www.researchgate.net/profile/Oliver-Heidbach/publication/327061751/figure/fig2/AS:675475772940291@1538057382465/The-World-Stress-Map-WSM-2016-displays-the-contemporary-crustal-stress-orientation-in_W640.jpg) <!-- .element style="float:right; margin-top:50px;margin-bottom:50px; width:50%; margin-left:50px" -->
+
+![](https://www.gfz-potsdam.de/fileadmin/_processed_/f/f/csm_WSM_2016_small_e689a9a5ee.png) <!-- .element style="float:right; margin-top:50px;margin-bottom:50px; width:50%; margin-left:50px" -->
 
 The World Stress Map (WSM) 2016 displays the contemporary crustal stress orientation in the upper 40 km based on the WSM database release 2016. Lines show the orientation of maximum horizontal stress. The colours indicate whether stresses are:
 
