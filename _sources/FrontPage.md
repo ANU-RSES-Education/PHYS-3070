@@ -1,4 +1,4 @@
-# Physics of the Earth 2021
+# Physics of the Earth - ANU PHYS 3070
 
 ```{figure} Figures/blt2.png
 ---
@@ -10,12 +10,11 @@ Thermal boundary layers play an important role in geodynamics because the "plate
 
 ## Welcome
 
-Your instructors for 2021 are:
+Your instructors for 2022 (part 2) are:
 
   - *Hrvoje Tkalcic (convenor, lecturer module i)*
-  - *Sheng Wang (Demonstrator, module i)*
   - Louis Moresi (lecturer, module ii)
-  - Thuany Costa de Lima (Demonstrator, module ii)
+  - Neng Lu (Demonstrator, module ii)
 
 ## Acknowledgements
 
