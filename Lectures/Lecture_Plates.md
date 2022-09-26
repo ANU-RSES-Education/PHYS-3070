@@ -3,10 +3,7 @@
 In this lecture, we take a tour around the solar system to reset our perspective on the Earth so that we can visit our own planet with fresh eyes.
 
 
-<iframe src="../Figures/PDFs/PHYS3070_2.1_Introduction_SolidPlanets.pdf" width="100%" height="500px", allowfullscreen>
-</iframe>
-
-(This is a placeholder pdf presentation) 
+<iframe src="../slideshows/Lecture_Plates_Slides.reveal.html" title="Slideshow" width=100%, height=500, allowfullscreen></iframe>
 
 
 <!-- 
