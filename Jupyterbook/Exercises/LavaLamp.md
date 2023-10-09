@@ -97,8 +97,22 @@ The experiment can be quite revealing and challenging:
 
 ```{tip} 
 Some lava lamp examples and some frequently asked questions that might help you with some of the practical details of lava lamp construction are in [this blog post](https://www.geo-down-under.org.au/lava-lamps-thermochemical-convection/)
-
 ```
+
+## References
+
+These are useful papers that can be read chronologically. They show simple ideas around thermochemical convection. 
+
+Beall, A. P., Moresi, L., & Cooper, C. M. (2018). Formation of cratonic lithosphere during the initiation of plate tectonics. Geology, 46(6), 487–490. https://doi.org/10/gf9rmc
+
+Houseman, G. A., & Molnar, P. (1997). Gravitational (Rayleigh-Taylor) instability of a layer with non-linear viscosity and convective thinning of continental lithosphere. Geophysical Journal International, 128(1), 125–150. https://doi.org/10.1111/j.1365-246X.1997.tb04075.x
+
+van Keken, P. E., King, S. D., Schmeling, H., Christensen, U. R., Neumeister, D., & Doin, M.-P. (1997). A comparison of methods for the modeling of thermochemical convection. Journal of Geophysical Research: Solid Earth, 102(B10), 22477–22495. https://doi.org/10/cpbp8c
+
+Lenardic, A., & Kaula, W. M. (1995). Mantle dynamics and the heat flow into the Earth’s continents. Nature (London), 378(6558), 709–711. https://doi.org/10/fgtd6t
+
+Moresi, L.-N., & Lenardic, A. (1997). Three-dimensional numerical simulations of crustal deformation and subcontinental mantle convection. Earth and Planetary Science Letters, 150(3–4), 233–243. https://doi.org/10.1016/S0012-821X(97)00093-9
+
 
 ## History
 
