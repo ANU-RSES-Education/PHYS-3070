@@ -16,10 +16,10 @@ dependencies:
     - jupytext
     - compilers
     - obspy
-    - pip:
-        - stripy
-        - litho1pt0
-        - cloudstor
+    # - pip:
+    #     - stripy
+    #     - litho1pt0
+    #     - cloudstor
 
 
       
