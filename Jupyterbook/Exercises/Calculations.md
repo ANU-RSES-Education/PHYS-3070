@@ -59,7 +59,8 @@ As pointed out in Turcotte and Schubert, 2002, we need four independent solution
 
 Validate that $\psi_1$ is an eigenfunction of the biharmonic operator. 
 
-How about $\psi_0 + psi_1$ ?
+How about $\psi_0 + \psi_1$ ? 
+(That is to say, can you comment on whether this is a linear equation)
 
 ::::
 
@@ -138,7 +139,7 @@ The general differential equation for the vertical deflection (w) of a flat-lyin
 $$D\frac{d^4w}{dx^4} + P \frac{d^2w}{dx^2} + \Delta \rho g w(x) = q(x)$$
 	
 :::{admonition} 3 / 25
-If $P=0$  and $q(x)=0$, show that $w = w_0 e^{-x/\alpha} \left[ \cos(x/\alpha) +  \sin(x/\alpha)  \right]$ is a potential solution. This will give a relationship between $D$  and $\alpha$. 
+If $P=0$  and $q(x)=0$, show that $w = w_0 e^{-x/\alpha} \left[ \cos(x/\alpha) +  \sin(x/\alpha)  \right]$ is a potential solution. This will give a relationship between $D$ and $\alpha$. 
 ::::
 
 You can now plot the shape of  for three different values of .
