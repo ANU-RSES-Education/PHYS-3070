@@ -41,6 +41,7 @@ can be considered universal and which are unique to Earth.*
 :::
 
 ::::
+
 # General Principles of Geology
 
 Geologists don't get to choose the experiments they would like to see the Earth perform for them.  They compare events from different places (and times) and assume they can generalize processes.
@@ -111,6 +112,21 @@ There are lots of useful things to view:
 
 Link to Nasa [Venus Explorer](https://solarsystem.nasa.gov/gltf_embed/2342/?height=450&amp;rotate=true&amp;cc=true&amp;fs=true&amp;target=&amp;orbit=") Tool
 
+## Venus Topography
+
+<center>
+<video autoplay controls width="33%">
+    <source src="movies/Venus_Topography.mov"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+:::{style="font-size:75%;"}
+*Venus topography (from altimeter) superimposed upon the radar image. Cool colours represent low regions, warmer colours are high. Note that the altimeter resolution is much poorer than the imaging.*
+:::
+
 ## Venus Facts
 
 Key Discoveries from the Past Decade (NAS -2023)
@@ -121,7 +137,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 
  - Exoplanet discoveries motivate renewed Venus exploration. The ongoing detection of large, rocky exoplanets close to their host stars, especially those that are amenable to having their atmospheres characterized, increasingly requires that we better understand the atmospheric properties and climate history of Venus.
 
-[Venus Factsheet}(https://science.nasa.gov/venus/venus-facts)
+[Venus Factsheet](https://science.nasa.gov/venus/venus-facts)
 
 ## Venus Landforms - Tesserae
 
@@ -129,7 +145,14 @@ Key Discoveries from the Past Decade (NAS -2023)
 ![](Images/VenusTessera.jpg){height="400px"}
 </center>
 
-*This is an area of Venus located southeast of Fortuna Tessera. The bright, rough terrain is "tessera"; the dark material between it is smoother lava plains. The plains are cut by polygonal cracks and folded by wrinkle ridges. Plains lavas have flowed into linear cracks in the tessera, indicating that the plains lavas came after the tessera.Image: NASA / JPL / mapaplanet.org / Emily Lakdawalla*
+:::{style="font-size:75%;"}
+*This is an area of Venus located southeast of Fortuna Tessera.
+The bright, rough terrain is "tessera"; the dark material
+between it is smoother lava plains. The plains are cut by polygonal
+cracks and folded by wrinkle ridges. Plains lavas have flowed into
+linear cracks in the tessera, indicating that the plains lavas came
+after the tessera.Image: NASA / JPL / mapaplanet.org / Emily Lakdawalla*
+:::
 
 ## Venus Landforms - Volcanoes
 
@@ -137,7 +160,13 @@ Key Discoveries from the Past Decade (NAS -2023)
 ![](Images/VenusVolcano.jpg){height="400px"}
 </center>
 
-*Maat Mons: computer generated 3D perspective of the surface of Venus. The viewpoint is located ~640 km north of Maat Mons at an elevation of ~3 km above the terrain. Lava flows extend for hundreds of kilometers across the fractured plains shown in the foreground, to the base of Maat Mons.  (Image credit: NASA/JPL-Caltech)*
+:::{style="font-size:75%;"}
+*Maat Mons: computer generated 3D perspective of the surface of Venus.
+The viewpoint is located ~640 km north of Maat Mons at an elevation of ~3 km
+above the terrain. Lava flows extend for hundreds of kilometers across the
+fractured plains shown in the foreground, to the base of Maat Mons.
+(Image credit: NASA/JPL-Caltech)*
+:::
 
 ## Venus Landforms - Active Volcanoes
 
@@ -145,9 +174,25 @@ Key Discoveries from the Past Decade (NAS -2023)
 ![](Images/VenusActiveVolcano.jpg){height="400px"}
 </center>
 
+:::{style="font-size:75%;"}
 *Radar images of a vent that has changed shape. (A) East-looking cycle 1 image and (B) west-looking cycle 2 image of the changed vent
 and its surroundings. In the cycle 1 image, the vent appears nearly circular and deep with steep walls. In the cycle 2 image, the vent appears larger, irregular in outline, shallower, and nearly filled. The dashed yellow line outlines radar-bright lava flows visible in the cycle 2 image that were not
 apparent in the cycle 1 image.*
+:::
+
+## Venus Landforms - Coronae
+
+<center>
+![](Images/VenusArtemisCorona.jpg){height="400px"}
+</center>
+
+:::{style="font-size:75%;"}
+*This  Magellan image is centered on 30 degrees south latitude,
+135 degrees east longitude, spans 3500 kilometers from east to west (left to right),
+and shows the near-circular trough of Artemis Chasma.
+Its circular shape and size (2100 km in diameter) make Artemis the largest corona
+identified to date on the surface of Venus.*
+:::
 
 # Mars
 
@@ -156,6 +201,21 @@ apparent in the cycle 1 image.*
 </center>
 
 Link to Nasa [Mars Explorer](https://solarsystem.nasa.gov/gltf_embed/2372/?height=450&amp;rotate=true&amp;cc=true&amp;fs=true&amp;target=&amp;orbit=) Tool
+
+## Mars Topography
+
+<center>
+<video autoplay controls width="33%">
+    <source src="movies/MarsTopoCompressed.m4v"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+:::{style="font-size:75%;"}
+*Mars topography (from MOLA altimetry). Cool colours represent low regions, warmer colours are high. Note that the altimeter resolution is always significantly poorer than the surface imaging.*
+:::
 
 ## Mars Facts
 
@@ -173,17 +233,114 @@ Key Discoveries from the Past Decade (NAS -2023)
 
  Key Discoveries from the Past Decade (NAS - 2023) pt 2
 
-  - Kilometer-thick layers of H2O ice and CO2 ice in the martian polar caps formed less than 10 million years ago. Radar analyses of polar deposits, coupled with climate models, indicate that much of the ice thickness of Mars’s poles is not billions of years old but rather a product of recent climate change.
+  - Kilometer-thick layers of H2O ice and CO2 ice in the martian polar caps formed less than 10 million years ago. Radar analyses of polar deposits, coupled with climate models, indicate that much of the ice thickness of Mars’s poles is a product of *recent* climate change.
 
-  - Loss of H~2~O and CO~2~ to space and sequestration in crustal minerals were major factors in the evolution of the atmosphere and climate. Spacecraft measurements coupled with modeling show that Mars’s climate became drier and colder because of both escape of volatiles to space and their sequestration in minerals in its crust. When compared with volatile evolution on Earth and Venus, this points to the important role of volcanic and tectonic processes in replenishing volatiles and regulating planetary climate and long-term habitability.
+  - Loss of H~2~O and CO~2~ to space and sequestration in crustal minerals were major factors in the evolution of the atmosphere and climate. Spacecraft measurements coupled with modeling show that Mars’s climate became drier and colder because of both escape of volatiles to space and their sequestration in minerals in its crust.
 
-  - Detection of marsquakes and their use to probe the interior structure of Mars. Data from the InSight lander recorded frequent marsquakes up to magnitude 4 that allowed probing the martian interior: a thick, fractured crust, mantle structure, with a liquid core that includes a sizeable fraction of light elements.
+  - Data from the InSight lander recorded frequent marsquakes up to magnitude 4 that allowed probing the martian interior: a thick, fractured crust, mantle structure, with a liquid core that includes a sizeable fraction of light elements.
 
   - Ancient alkali-silica-rich igneous rocks. Data from orbiters and Gale crater have discovered more than just basaltic rocks on Mars. High alkali and silica rocks indicate more differentiated magmas.
 
-  - Mars is active today. More dynamic activity occurs on Mars today than was previously known, including migrating sand dunes, recurring slope lineae formation, changing ice landforms, methane release, and many marsquakes.
+  - Mars is active. Dynamic activity includes: migrating sand dunes, recurring slope lineae formation, changing ice landforms, methane release, and marsquakes.
 
-https://science.nasa.gov/mars/facts/
+  [Mars Factsheet](https://science.nasa.gov/mars/facts)
+
+## Mars Landforms - Volcanoes
+
+<center>
+![](Images/Mars_OlympusMons_Getty.jpg){height="300px"}
+![](Images/Mars_Tharsis_Valles_Marineris_MOLA.jpg){height="300px"}
+</center>
+
+:::{style="font-size:75%;"}
+  *Olympus Mons (left), the largest volcano in the Tharsis region (right) and, we believe, the largest volcano in the solar system*
+:::
+
+## Mars Landforms - Tectonic Rifting
+
+<center>
+![](Images/Mars_Valles_Marineris_ESA_Annotated.png){height="400px"}
+</center>
+
+:::{style="font-size:75%;"}
+  *ESA’s Mars Express High Resolution Stereo Camera (HRSC) global colour mosaic of Mars. Image shows the canyon system **Valles Marineris** with annotated surface details: sulphate deposits, haze and fog, and cloud cover. This tectonic feature stretches more than 4000 km east-west and up to 700 km north-south, and is the biggest and most dramatic canyon system in the Solar System.*
+:::
+
+## Mars Landforms - Landslides
+
+<center>
+![](Images/Mars_SlopeSlump.jpg){height="400px"}
+![](Images/Mars_Avalanche.jpg){height="400px"}
+
+</center>
+
+:::{style="font-size:75%;"}
+  *(Left) Lobate flows / landslides from a Martian scarp.
+  (Right)A Mars Avalanche, taken by NASAs HiRISE instrument on the Mars Reconnaisance Orbiter (Credit: NASA/HiRISE)*
+:::
+
+## Mars Landforms - Sand Dunes
+
+<center>
+![](Images/Mars_CorduroySandDunes.jpg){height="400px"}
+</center>
+
+:::{style="font-size:75%;"}
+  *This image from NASA's Mars Reconnaissance Orbiter (MRO) shows the permanent polar cap of Mars, encircled by sand dunes and looking like pulled threads, these dunes march across a fabric of patterned ground.*
+:::
+
+## Mars Landforms - Ancient Rivers
+
+  <center>
+  ![](Images/Mars_jezero-crater-delta-paleochannel.jpg){height="400px"}
+  </center>
+
+  :::{style="font-size:75%;"}
+  *The grooved channels of an ancient river delta thread through Jezero crater on Mars. Credit: NASA/JPL-Caltech/MSSS/JHUAPL*
+  ::
+
+Less that 1 Gyr ago, there was liquid water flowing across Mars. This has significant implications for atmospheric pressure and temperature at that time.
+
+Duncombe, J. (2019), What ancient rivers on Mars reveal about its “great drying”, Eos, 100, https://doi.org/10.1029/2019EO119487. Published on 27 March 2019.
+
+## Mars Landforms - Ancient Rivers (2)
+
+  <center>
+  ![](Images/Mars_TopographyDriedOutRivers.jpg){height="400px"}
+  </center>
+
+  :::{style="font-size:75%;"}
+  *This colour-coded topographic view shows the relative heights of the terrain in and around a network of dried-up valleys on Mars.
+
+  Lower parts of the surface are shown in blues and purples, while higher altitude regions show up in whites, yellows, and reds, as indicated on the scale to the top right. This view is based on a digital terrain model of the region, from which the topography of the landscape can be derived. It comprises data obtained by the High Resolution Stereo Camera on Mars Express on 19 November 2018 during Mars Express orbit 18831. Credit:ESA/DLR/FU Berlin*
+  ::
+
+
+## Mars Landforms - Evidence of Groundwater
+
+  <center>
+  ![](Images/Mars_EarthBeach_MarsCraterFlows.jpg){height="400px"}
+  </center>
+
+:::{style="font-size:75%;"}
+
+  A) Beach drainage pattern on the order of 1 meter (Source: https://epod.usra.edu/blog/2017/01/beach-drainage.html), B) Martian “alcoves” suggesting groundwater seepage.
+:::
+
+## Mars Landforms - Evidence of Groundwater (2)
+
+<center>
+![](Images/Mars_Warm_Season_Flows_on_Slope_in_Horowitz_Crater.gif){height="400px"}
+</center>
+
+:::{style="font-size:75%;"}
+*This animationshows warm-season features that might be evidence of salty liquid water active on Mars today. Evidence for that possible interpretation is presented in a report by McEwen et al. in the Aug. 5, 2011, edition of Science.*
+:::
+
+
+# Stop !
+
+Construction work ahead
 
 # Mercury
 
@@ -210,7 +367,14 @@ Key Discoveries from the Past Decade (NAS -2023)
 ![](Images/MercuryContractionFeature.png){height="400px"}
 </center>
 
-*Giant tectonic landforms like Carnegie Rupes, which is more than 2 km high in places, provide evidence that Mercury shrunk as it cooled, creating a lobate scarp (arrowed). The image has been color-coded to indicate differences in topography: regions in red are higher standing terrain, regions in blue lower. SOURCE: Courtesy of NASA/Johns Hopkins University/Carnegie Institution of Washington*
+:::{style="font-size:75%;"}
+*Giant tectonic landforms like Carnegie Rupes, which is more than 2 km
+ high in places, provide evidence that Mercury shrunk as it cooled,
+ creating a lobate scarp (arrowed). The image has been color-coded to indicate
+  differences in topography: regions in red are higher standing terrain, regions
+  in blue lower. SOURCE:
+  Courtesy of NASA/Johns Hopkins University/Carnegie Institution of Washington*
+:::
 
 ## Volatiles Near the Surface
 
