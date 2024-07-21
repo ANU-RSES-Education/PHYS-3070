@@ -1,0 +1,123 @@
+---
+title: PHYS 3070 - S2, 2024
+author: Prof Louis Moresi
+institute: Australian National University
+# date: '2024 Semester 2'
+
+title-slide-attributes:
+  data-background-image: images/custom/anu_general.png
+  data-background-size: contain
+
+format: anu_slides-revealjs
+
+date-format: long
+lang: en
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+
+# Introduction
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="55%"}
+*In which we discuss some basic principles of planetary geology and consider whether the Earth is a planet like any other or **just a little bit special***
+:::
+
+::: {.column width="30%"}
+![](images/AuWorldEQ.png){fig-align="right"}
+:::
+
+::::
+
+# What is this course about ?
+
+Module 1: Our goal is to be able to look at this map (**Note:** it's the Earth) and appreciate how our planet is unique and why.
+
+<center>
+
+![](Images/usgsdynamicplanet.jpg){fig-align="center" height="280px"} &nbsp;
+
+</center>
+
+We will study several interacting dynamic processes so we can answer
+
+ - Why are there continents and oceans ?
+ - Why are the earthquakes where they are ?
+ - Why are oceans shallow in the middle ?
+ - Why are some parts of the continents flat, others mountainous ?
+
+
+# Learning outcomes
+
+- You will have a quantitative knowledge of the way the physical processes in the interior of the Earth play out in the geology at the surface.
+
+- You will be able to explain how the deep Earth behaves as a viscous fluid and why it must flow.
+
+- You will understand how we probe the deep Earth with gravity measurements, seismology, geochemical signals and models and how each method works.
+
+- You will be able to compute the forward kinematics of plate motions and undestand how geologists reconstruct the paths of continents from plate rotation poles.
+
+- You will understand the relationship between Earth’s interior structure and its rotation, orbit, polar orientation and, therefore, paleoclimate
+
+- You will have seen, solved and explored the equations which govern all this behaviour
+
+# Resources
+
+We use wattle (of course) for grades, announcements, Q & A. We also provide slides, notes and reading material which you can find on github. If there is a conflict, wattle is *always right* !
+
+<center>
+
+![](Images/Sketches/ResourcesImages.png){fig-align="center" height="280px"} &nbsp;
+
+</center>
+
+- Course Notes [https://anu-rses-education.github.io/PHYS-3070](https://anu-rses-education.github.io/PHYS-3070)
+- Course Notes [Github](https://github.com/ANU-RSES-Education/PHYS-3070) in case you find bugs and want to fix them !
+- Mathematical Background: [https://anu-rses-education.github.io/ComputationalGeodynamics](https://anu-rses-education.github.io/ComputationalGeodynamics)
+
+# Expectations
+
+This course is about the physical processes in the Earth which produce large scale plate tectonics and the imaging tools that we use to probe the deep interior. **It addresses the fact that we can be precise about geology and geological processes.**
+
+<center>
+:::{style="width:85%"}
+ - You are expected to think quantitatively about the Earth as a whole and its long term evolution
+
+ - You will need to plot graphs, calculate numbers from equations given to you, and use the results to describe what happens in particular geological settings. You may need to have some proficiency with python but we will do some labs/tutorials for this.
+
+ - I think it is much more important to understand the underlying meaning of equations than to be able to find over-simple solutions by complicated derivations. Computational solutions are a good way to understand the inherent structure that can emerge in solutions to equations.
+
+:::
+
+</center>
+
+
+## Mathematics
+
+\begin{equation}\label{eq:sympy-strong-form}
+\color{DarkGreen}{\underbrace{ \Bigl[ {D u}/{D t} \Bigr]}_{\dot{\mathbf{f} } } }
+ \color{Blue}{
+- \nabla \cdot \underbrace{\Bigl[ \mathrm{F}(u, \nabla u) \Bigr]}_{\mathbf{F}}}
+- \color {Maroon}{\underbrace{\Bigl[
+   \mathrm{H}(\mathbf{x},t) \Bigr]}_{\mathbf{f}}}
+\color{Black}{= 0}
+\end{equation}
+
+You will not **have to** derive any equations from scratch but you should be able to follow derivations and check them.
+
+You may need to verify solutions that are provided, but it's not a mathematical beauty contest so you can look up solutions / derivations.
+
+You will not have to remember equations but you should be able to interpret the equations you are shown

@@ -1,0 +1,44 @@
+---
+title: "Background Reading"
+bibliography: references.bib
+---
+
+<!--
+Module i:
+
+ - Bolt, B. (2004) Earthquakes, Freeman & Co. (QE534.3 .B65 2004)
+ - Shearer, P.M. (1999) Introduction to Seismology, Cambridge University Press (QE534.2 .S455 1999) - available online as a pdf
+ - Tkalcic, H. (2017) The Earth's inner core: revealed by observational seismology, Cambridge University Press, eBook access via Internet. ANU/ANV, ISBN 9781139583954
+
+Module ii:
+-->
+
+These reading materials may be helpful to clarify exercises or for background. Note that these are all textbooks except for the paper by Ricard which is a comprehensive review of mantle convection theory which covers many derivations and scaling arguments.
+
+ - [@davies.Dynamic.2009] - Dynamic Earth, Cambridge University Press
+ - [@fowler.Solid.2004] - The solid earth : an introduction to global geophysics, Cambridge University Press
+ - [@gubbins.Seismology.1990] - Seismology and plate tectonics, Cambridge University Press (QE534.2.G83 1990)
+ - [@poirier.Introduction.2000] - Introduction to the Physics of the Earth's Interior, Cambridge University Press
+ - [@ricardPhysicsMantleConvection2015] - Physics of Mantle Convection. In Treatise on Geophysics (pp. 23–71). Elsevier.
+
+ - [@stacey.Physics.2008] - Physics of the Earth, 3rd Edn., Brookfield Press
+
+ - [@turcotte.schubert.Geodynamics.2014] - Geodynamics 3rd Edn, Cambridge University Press,
+
+
+
+<!--
+
+Citation keys:
+
+[@beall.etal.Formation.2018; @deguenThermalConvectionEarth2013; @deweyPLATETECTONICS1972; @gubbins.Seismology.1990; @heezenTectonicFabricAtlantic1965; @housemanGravitationalRayleighTaylorInstability1997; @jolivetMantleFlowDeforming2018; @lenardicMantleDynamicsHeat1995; @mckenzieEvolutionTripleJunctions1969; @moresiThreedimensionalNumericalSimulations1997; @nichollsPetrologicalGeochemicalEvidence1965; @poirier.Introduction.2000; @ricardPhysicsMantleConvection2015; @stacey.Physics.2008; @stockHotspotsComeUnstuck2003; @tapponnierPropagatingExtrusionTectonics1982; @turcotte.oxburgh.Mantle.1972; @turcotte.schubert.Geodynamics.2014; @vankekenComparisonMethodsModeling1997; @vineMagneticAnomaliesAssociated1968; @wilsonCONTINENTALDRIFT1963; @wilsonEvidenceOceanIslands1965; @wilsonNewClassFaults1965]
+-->
+
+## Lecture notes
+
+[These lecture notes](https://anu-rses-education.github.io/ComputationalGeodynamics/Part1-GeophysicalFluidDynamics/0-StartHere.html) are a selective compilation of many of the results in the reference texts as well as a short introduction to computational fluid dynamics.
+
+## References
+
+::: {#refs}
+:::

@@ -1,6 +1,10 @@
 # Outputs from the Examples
- 
+
 Notebooks/*.png
+
+# quarto build relics
+
+_build
 
 # Jupyter Book build relics
 
@@ -155,4 +159,3 @@ Lectures/static_slides
 .DS_Store
 
 .DS_Store
-

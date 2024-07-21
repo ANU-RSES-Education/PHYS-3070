@@ -1,0 +1,226 @@
+---
+title: PHYS 3070
+author: Prof Louis Moresi
+institute: Australian National University
+# date: '666-6-6'
+
+title-slide-attributes:
+  data-background-image: images/custom/anu_general.png
+  data-background-size: contain
+
+format: anu_slides-revealjs
+
+date-format: long
+lang: en
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+# The Earth as one of many planets
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="55%"}
+*In which we shall look around the solar system to understand which geological processes
+can be considered universal and which are unique to Earth.*
+:::
+
+::: {.column width="40%"}
+![](images/AuWorldEQ.png){fig-align="right"}
+:::
+
+::::
+# General Principles of Geology
+
+Geologists don't get to choose the experiments they would like to see the Earth perform for them.  They compare events from different places (and times) and assume they can generalize processes.
+
+<center>
+![](images/nz-map-all.jpg){height="320px"} &nbsp;&nbsp;&nbsp;
+![](images/san-andreas-transform-plate-boundary-10x.jpg){height="320px"}
+</center>
+
+:::{style="font-size:75%;"}
+*New Zealand: accreted terranes in colors and cover assemblage in gray. (Graham, Ian J. editor, 2015, A Continent on the Move, New Zealand Geoscience Revealed 2ed., Geoscience Society of New Zealand). W. Coast US: National Parks Service, [Transform Plate Boundaries](https://www.nps.gov/subjects/geology/plate-tectonics-transform-plate-boundaries.htm)*
+:::
+
+Uniformity of processes from place to place and time to time (**the present is the key to the past** *or vice versa*)
+
+# Planetary Scale Comparisons
+
+<center>
+![](Images/orbits-planets-bodies-solar-system.jpg){height="350px"}
+</center>
+
+It's much harder to find analogues when it comes to processes on the scale of the whole planet. We can try to look at other planets in the solar system.
+
+## Planetary Scale Comparisons (2)
+
+<center>
+![](Images/Moons2Scale.png){height="400px"}
+</center>
+
+We can also look at the mini-solar systems of the giant planets. Some of the moons of Jupiter and Saturn are the size of small planets.
+
+## Planetary Scale Comparisons (3)
+
+<center>
+![](Images/MoonsPlusDwarfPlanets.jpg){height="400px"} &nbsp;
+</center>
+
+There are a number of dwarf planets and asteroids that are of significant size and that we can use as analogues for theories of planetary geology.
+
+## Planetary Scale Comparisons (4)
+
+<center>
+![](Images/ExoplanetsGalore.jpg){height="400px"} &nbsp;
+</center>
+
+It would be nice if we could add all the exoplanets into this story but, regardless of the detail shown in these images, we only really know mass, radius and surface temperature.
+
+# Virtual Solar System
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/staging/apps/solar-system/#/earth?embed=true" allowfullscreen></iframe>
+</center>
+
+[https://eyes.nasa.gov/staging/apps/solar-system](https://eyes.nasa.gov/staging/apps/solar-system)
+
+::: {.notes}
+There are lots of useful things to view:
+  - Compare sizes
+  - Check to see what views are available (e.g. radar v. optical)
+:::
+
+
+# Venus
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/staging/apps/solar-system/#/venus" allowfullscreen></iframe>
+</center>
+
+Link to Nasa [Venus Explorer](https://solarsystem.nasa.gov/gltf_embed/2342/?height=450&amp;rotate=true&amp;cc=true&amp;fs=true&amp;target=&amp;orbit=") Tool
+
+## Venus Facts
+
+Key Discoveries from the Past Decade (NAS -2023)
+
+ - Venus is likely a geologically active planet today. Several lines of evidence together suggest that volcanic activity takes place today on Venus, and the planet’s record of tectonic deformation speaks to recent and perhaps even ongoing deformation.
+
+ - Models show that the young surface is consistent with Venus being habitable for billions of years. New climate models indicate that Venus could have had modern-Earth-like conditions until as geologically recently as about a billion years ago, before entering a runaway greenhouse driven by several simultaneous, major volcanic eruptions.
+
+ - Exoplanet discoveries motivate renewed Venus exploration. The ongoing detection of large, rocky exoplanets close to their host stars, especially those that are amenable to having their atmospheres characterized, increasingly requires that we better understand the atmospheric properties and climate history of Venus.
+
+[Venus Factsheet}(https://science.nasa.gov/venus/venus-facts)
+
+## Venus Landforms - Tesserae
+
+<center>
+![](Images/VenusTessera.jpg){height="400px"}
+</center>
+
+*This is an area of Venus located southeast of Fortuna Tessera. The bright, rough terrain is "tessera"; the dark material between it is smoother lava plains. The plains are cut by polygonal cracks and folded by wrinkle ridges. Plains lavas have flowed into linear cracks in the tessera, indicating that the plains lavas came after the tessera.Image: NASA / JPL / mapaplanet.org / Emily Lakdawalla*
+
+## Venus Landforms - Volcanoes
+
+<center>
+![](Images/VenusVolcano.jpg){height="400px"}
+</center>
+
+
+# Mars
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/staging/apps/solar-system/#/mars" allowfullscreen></iframe>
+</center>
+
+Link to Nasa [Mars Explorer](https://solarsystem.nasa.gov/gltf_embed/2372/?height=450&amp;rotate=true&amp;cc=true&amp;fs=true&amp;target=&amp;orbit=) Tool
+
+
+## Mars Facts
+
+https://science.nasa.gov/mars/facts/
+
+# Mercury
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/staging/apps/solar-system/#/mercury" allowfullscreen></iframe>
+</center>
+
+Link to Nasa [Mercury Explorer](https://solarsystem.nasa.gov/gltf_embed/2369/?height=450&amp;rotate=true&amp;cc=true&amp;fs=true&amp;target=&amp;orbit=) Tool
+
+## Mercury Facts
+
+Key Discoveries from the Past Decade (NAS -2023)
+
+ - Mercury is a volatile-rich world. Contrary to earlier predictions, and despite being closer to the Sun, concentrations of elements that evaporate at moderate temperatures are more abundant on Mercury than on Venus or Earth, and are comparable with those on Mars.
+ - Mercury’s offset magnetic field and dynamic magnetosphere were revealed by MESSENGER. Mercury’s large metallic core generates an axially dipolar core dynamo magnetic field that is enigmatic owing to its low intensity relative to Earth’s and the offset of the center of the dipole by approximately 20 percent of the planet’s radius to the north.
+ - Permanently shadowed regions near Mercury’s poles hold abundant water ice. Many regions on Mercury where water ice is predicted to be thermally stable appear to host such ice deposits either at the surface in a relatively pure, thick layer or beneath organic-rich lag deposits. The origin of these deposits is not yet known, but water ice may have been delivered by comets or asteroids or micrometeoroids, from the solar wind, or outgassing from Mercury’s interior.
+ - Volcanism played a critical role in shaping Mercury’s surface. Mercury’s oldest surfaces contain high abundances of carbon that may be remnants of a primary graphite flotation crust from an early magma ocean. Much of the surface, however, was subsequently covered by extensive floods of lava of varying composition indicating geochemically diverse terrains on Mercury’s surface that hint at a heterogeneous interior.
+
+[Mercury Factsheet](https://science.nasa.gov/mercury/facts/)
+
+## Evidence of Cooling and Contraction
+
+<center>
+![](Images/MercuryContractionFeature.png){height="400px"}
+</center>
+
+*Giant tectonic landforms like Carnegie Rupes, which is more than 2 km high in places, provide evidence that Mercury shrunk as it cooled, creating a lobate scarp (arrowed). The image has been color-coded to indicate differences in topography: regions in red are higher standing terrain, regions in blue lower. SOURCE: Courtesy of NASA/Johns Hopkins University/Carnegie Institution of Washington*
+
+## Volatiles Near the Surface
+
+<center>
+![](Images/MercuryCraterVolatiles.png){height="400px"}
+</center>
+
+*Despite their hot surroundings, permanently shadowed regions near Mercury’s poles stay cold enough to host abundant deposits of water ice. SOURCE: Courtesy of N.L. Chabot with MESSENGER data from NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington; and Armytage et al. (2018).*
+
+
+# Earth's Moon
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/staging/apps/solar-system/#/earth/moons/moon" allowfullscreen></iframe>
+</center>
+
+# Jupiter's Moons
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/staging/apps/solar-system/#/jupiter/moons" allowfullscreen></iframe>
+</center>
+
+
+## Jupiter's Moons Facts
+
+https://science.nasa.gov/jupiter/moons/
+
+
+
+# Earth
+
+<center>
+<iframe width="800" height="450" src="https://eyes.nasa.gov/apps/earth/?embed=true#/vital-signs/visible-earth/viirs-infrared-daily" allowfullscreen></iframe>
+</center>
+
+## Earth Facts
+
+https://science.nasa.gov/earth/facts/
+
+
+# Unique Datasets for Planet Earth
+
+
+
+# Stop
+
+Garbage from here onwards

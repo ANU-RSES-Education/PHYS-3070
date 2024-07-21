@@ -1,0 +1,56 @@
+
+## 2024 - Welcome
+
+Your instructors for 2024 are:
+
+  - Louis Moresi (lecturer, module i)
+  - **Hrvoje Tkalcic (convenor, lecturer for module ii)**
+  - Neng Lu (Demonstrator, module i)
+
+## Introduction
+
+The course is an introduction to physics of the solid Earth intended for students with substantial background in physics and mathematics including calculus. The course will provide an overview of the structure and evolution of the Earth as a dynamic planet within our solar system. Physical principles will be applied to the following topics: theory of elasticity and elastic wave propagation; modern global seismology as a probe of the Earth's internal structure; earthquakes and the description of seismic sources; a simple but fundamental theory of thermal convection; the distinctive rheological behaviour of the upper mantle and its top layer, controlled by significant changes in the mechanical properties of the material, will then be explored to arrive at a comprehensive description of what forces drive and resist global plate motions.
+
+### Honours Pathway Option
+
+Students taking the HP / advanced option will undertake an individual project on a topic of interest from the course syllabus. Such project shall develop in consultation with the course lecturers, and may be in the form of a reading project or a laboratory/numerical experiment accompanied by a final report. The assessment of the project will be agreed upon and undertaken in a manner appropriate to the project itself (e.g. a written report or essay, a short talk etc.). Students taking the HP option may elect to substitute their project mark either with up to two (out of four) individual assignments or with one of the experiments and accompanying report normally undertaken during the course (this amounts to a total of 10-20% of the final grade). The assessment weight towards the exam will remain the same.
+
+::: {#fig-blt}
+
+![BLT](Figures/blt2.png){fig-align="center" width=80%}
+
+Thermal boundary layers play an important role in geodynamics because the "plates" that make up the oceanic lithosphere are boundary layers. The oceanic heat flow and depth can be understood from simple boundary layer theory although there are a number of steps we need to take before we can get to that point.
+:::
+
+## Learning Outcomes
+
+Upon successful completion, students will have the knowledge and skills to:
+
+ - Discuss the theoretical basis for modern global seismology and
+ - Employ methods based on such theory to understand earthquake phenomena and the seismological probing of earth structure.
+
+ - Explain the governing dynamics of mantle and lithosphere, and
+ - Apply this understanding to make reliable estimates of the forces controlling plate motions and their temporal changes.
+
+
+## Acknowledgements
+
+*The course materials provided by the authors are open source under a creative commons licence.We acknowledge the contribution of the community in providing other materials and we endeavour to provide the correct attribution and citation. Please contact louis.moresi@anu.edu.au for updates and
+corrections.*
+
+
+<!-- This is from the jupyterbook and needs to be updated
+     for quarto by including the javascript and figuring out
+     where to put the button on each page
+
+
+## Accessibility
+
+<button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+
+The online web page can also be typeset using the [Atkinson Hyperlegible](https://brailleinstitute.org/freefont)
+font everywhere, other than monospaced computer code, as an aid to legibility.
+This button is also located at the bottom of the left navigation bar
+on every page and will toggle between settings.
+
+-->
