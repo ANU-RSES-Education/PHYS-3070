@@ -1,0 +1,112 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PHYS 3070 - Physics of the Earth",
+    "section": "",
+    "text": "2024 - Welcome\nYour instructors for 2024 are:",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>2024 - Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "PHYS 3070 - Physics of the Earth",
+    "section": "",
+    "text": "Louis Moresi (lecturer, module i)\nHrvoje Tkalcic (convenor, lecturer for module ii)\nNeng Lu (Demonstrator, module i)",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>2024 - Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "PHYS 3070 - Physics of the Earth",
+    "section": "Introduction",
+    "text": "Introduction\nThe course is an introduction to physics of the solid Earth intended for students with substantial background in physics and mathematics including calculus. The course will provide an overview of the structure and evolution of the Earth as a dynamic planet within our solar system. Physical principles will be applied to the following topics: theory of elasticity and elastic wave propagation; modern global seismology as a probe of the Earth’s internal structure; earthquakes and the description of seismic sources; a simple but fundamental theory of thermal convection; the distinctive rheological behaviour of the upper mantle and its top layer, controlled by significant changes in the mechanical properties of the material, will then be explored to arrive at a comprehensive description of what forces drive and resist global plate motions.\n\nHonours Pathway Option\nStudents taking the HP / advanced option will undertake an individual project on a topic of interest from the course syllabus. Such project shall develop in consultation with the course lecturers, and may be in the form of a reading project or a laboratory/numerical experiment accompanied by a final report. The assessment of the project will be agreed upon and undertaken in a manner appropriate to the project itself (e.g. a written report or essay, a short talk etc.). Students taking the HP option may elect to substitute their project mark either with up to two (out of four) individual assignments or with one of the experiments and accompanying report normally undertaken during the course (this amounts to a total of 10-20% of the final grade). The assessment weight towards the exam will remain the same.\n\n\n\n\n\n\nBLT\n\n\n\n\nFigure 1: Thermal boundary layers play an important role in geodynamics because the “plates” that make up the oceanic lithosphere are boundary layers. The oceanic heat flow and depth can be understood from simple boundary layer theory although there are a number of steps we need to take before we can get to that point.",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>2024 - Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "PHYS 3070 - Physics of the Earth",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nUpon successful completion, students will have the knowledge and skills to:\n\nDiscuss the theoretical basis for modern global seismology and\nEmploy methods based on such theory to understand earthquake phenomena and the seismological probing of earth structure.\nExplain the governing dynamics of mantle and lithosphere, and\nApply this understanding to make reliable estimates of the forces controlling plate motions and their temporal changes.",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>2024 - Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "PHYS 3070 - Physics of the Earth",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThe course materials provided by the authors are open source under a creative commons licence.We acknowledge the contribution of the community in providing other materials and we endeavour to provide the correct attribution and citation. Please contact louis.moresi@anu.edu.au for updates and corrections.",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>2024 - Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "Background_Reading.html",
+    "href": "Background_Reading.html",
+    "title": "Background Reading",
+    "section": "",
+    "text": "Lecture notes\nThese lecture notes are a selective compilation of many of the results in the reference texts as well as a short introduction to computational fluid dynamics.",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Background Reading</span>"
+    ]
+  },
+  {
+    "objectID": "Background_Reading.html#references",
+    "href": "Background_Reading.html#references",
+    "title": "Background Reading",
+    "section": "References",
+    "text": "References\n\n\nDavies, Geoffrey F. 2009. Dynamic Earth.\nCambridge, GBR: Cambridge University Press.\n\n\nFowler, C. M. R. 2004. The Solid Earth: An\nIntroduction to Global Geophysics. 2nd ed.\nCambridge University Press. https://doi.org/10.1017/CBO9780511819643.\n\n\nGubbins, David. 1990. Seismology and Plate Tectonics. Cambridge\n[England] ; New York: Cambridge University Press.\n\n\nPoirier, Jean-Paul. 2000. Introduction to the Physics of the\nEarth’s Interior. 2nd ed. Cambridge: Cambridge\nUniversity Press.\n\n\nRicard, Y. 2015. “Physics of Mantle\nConvection.” In Treatise on\nGeophysics, 23–71. Elsevier. https://doi.org/10.1016/B978-0-444-53802-4.00127-5.\n\n\nStacey, F. D. 2008. Physics of the Earth. 4th ed. Cambridge ;\nNew York: Cambridge University Press.\n\n\nTurcotte, Donald Lawson, and Gerald Schubert. 2014.\nGeodynamics. Third edition. Cambridge: Cambridge University\nPress.",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Background Reading</span>"
+    ]
+  },
+  {
+    "objectID": "Lecture_Content.html",
+    "href": "Lecture_Content.html",
+    "title": "Course Content",
+    "section": "",
+    "text": "The broad themes of the course and these materials are split into three sections\n\nIntroduction to Geophysics\nModule i - Global Geodynamics (this section)\nModule ii - Seismology\n\n\nIntroduction\nIntroduces the concepts of global-scale tectonics, plate motions, the nature of plate boundaries and the underlying mantle circulation that drives geological deformation.\n\n1. What the Solar System Tells us About the Earth\n2. The Ocean Floors Revealed\n\n\n\nModule i - Global Geodynamics\n\n3. Continuum Mechanics & Convection\n4. Convection and Heat Flow\n5. Lithospheric Dynamics\n\nThis “lecture” is an introduction to the plate kinematics exercise\n\nA. Plate Boundary Kinematics & Reconstruction\n\n\n\nModule ii - Seismology",
+    "crumbs": [
+      "**Introduction**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Course Content</span>"
+    ]
+  },
+  {
+    "objectID": "LectureDescriptions/Lecture_Introduction.html",
+    "href": "LectureDescriptions/Lecture_Introduction.html",
+    "title": "Lecture - Introduction",
+    "section": "",
+    "text": "Link to index of presentations",
+    "crumbs": [
+      "**Lectures**",
+      "Lecture - Introduction"
+    ]
+  },
+  {
+    "objectID": "LectureDescriptions/Lecture_Planets.html",
+    "href": "LectureDescriptions/Lecture_Planets.html",
+    "title": "Lecture - Introduction to the Solid Planets of Our Solar System",
+    "section": "",
+    "text": "In this lecture, we take a tour around the solar system to reset our perspective on the Earth so that we can visit our own planet with fresh eyes.\n\n\n\n\n\n\n../../slides/Lectures-1.2-Planets.reveal.html\n\nLink to index of presentations",
+    "crumbs": [
+      "**Lectures**",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecture - Introduction to the Solid Planets of Our Solar System</span>"
+    ]
+  }
+]
