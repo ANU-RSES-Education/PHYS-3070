@@ -5,7 +5,7 @@ institute: Australian National University
 # date: '666-6-6'
 
 title-slide-attributes:
-  data-background-image: images/custom/anu_general.png
+  data-background-image: Images/custom/anu_general.png
   data-background-size: contain
 
 format: anu_slides-revealjs
@@ -37,7 +37,7 @@ can be considered universal and which are unique to Earth.*
 :::
 
 ::: {.column width="40%"}
-![](images/AuWorldEQ.png){fig-align="right"}
+![](Images/AuWorldEQ.png){fig-align="right"}
 :::
 
 ::::
@@ -46,8 +46,8 @@ can be considered universal and which are unique to Earth.*
 Geologists don't get to choose the experiments they would like to see the Earth perform for them.  They compare events from different places (and times) and assume they can generalize processes.
 
 <center>
-![](images/nz-map-all.jpg){height="320px"} &nbsp;&nbsp;&nbsp;
-![](images/san-andreas-transform-plate-boundary-10x.jpg){height="320px"}
+![](Images/nz-map-all.jpg){height="320px"} &nbsp;&nbsp;&nbsp;
+![](Images/san-andreas-transform-plate-boundary-10x.jpg){height="320px"}
 </center>
 
 :::{style="font-size:75%;"}
