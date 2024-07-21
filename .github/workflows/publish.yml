@@ -3,7 +3,9 @@
 on:
   workflow_dispatch:
   push:
-    branches: main
+    branches:
+      - main
+      - master
 
 name: Quarto Publish
 
@@ -19,11 +21,11 @@ jobs:
       - name: Add micromamba
         uses: mamba-org/setup-micromamba@v1
         with:
-          micromamba-version: '1.5.6-0' # any version from https://github.com/mamba-org/micromamba-releases
+          micromamba-version: "1.5.6-0" # any version from https://github.com/mamba-org/micromamba-releases
           environment-file: .github/workflows/envs/renderer.yml
           init-shell: bash
           cache-environment: true
-          post-cleanup: 'all'
+          post-cleanup: "all"
 
       - name: Render docs with quarto
         shell: bash -l {0}
@@ -38,17 +40,16 @@ jobs:
       ## Always deploy to version directory
       - name: Deploy quarto book
         uses: peaceiris/actions-gh-pages@v3
-        
+
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # destination_dir: book    # The dest dir is identified by branch 
+          # destination_dir: book    # The dest dir is identified by branch
           publish_dir: _build
-  
+
       # - name: Deploy quarto lectures
       #   uses: peaceiris/actions-gh-pages@v3
-        
+
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     destination_dir: lectures    # The dest dir is identified by branch 
+      #     destination_dir: lectures    # The dest dir is identified by branch
       #     publish_dir: WebSlides/_slides
- 
