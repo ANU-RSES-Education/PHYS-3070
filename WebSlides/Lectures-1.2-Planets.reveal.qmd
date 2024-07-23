@@ -556,7 +556,7 @@ Topography is bimodal (true of other planets as well) with many other surface fe
 
 # Unique Datasets for Planet Earth
 
-
+Words here
 
 ## Earth - Thickness of the Lithosphere
 
@@ -604,7 +604,6 @@ The magnitude of the stress is related to the rate of seismic energy release bec
 
 Usually this takes the form of a fault that already exists sliding because the shear stresses are large compared to the confining pressure.
 
-
 ## Earth - Global Strain rate
 
 <center>
@@ -633,7 +632,77 @@ Make your own map from the NOAA natural hazards interactive web page: [https://m
 
 ## Earth - Global Heat-flow
 
-
 <center>
 ![](Images/GlobalHeatFlowPoints.png){height="350px"}
 </center>
+
+Raw data compiled by Davies & Davies 2013. *There are really not very many reliable measurements*.
+
+
+## Earth - Surface Motions
+
+<center>
+![](ImagesPlateMotionsMollweide.png){height="350px"}&nbsp;&nbsp;
+</center>
+
+Directly observed plate motions (GPS, satellite ranging, very-long-baseline interferometry)
+
+## Earth - Magnetic Field
+
+<center>
+![](Images/Earth_MagfieldradialCMB-potsdam.png){height="250px"}&nbsp;&nbsp;
+![](Images/Earth_Magfieldradial_Surface_potsdam.png){height="250px"}
+</center>
+
+The Earth has a strong, dominantly dipolar, magnetic field which reverses chaotically but relatively regularly. These two features together allow
+
+ - paleo-latitudes to be determined
+ - ocean floor ages to be determined.
+
+## Earth - Sea Floor Magnetisation
+
+<center>
+![](Images/VineMatthews_JDFstripes.png){height="400px"} &nbsp; &nbsp;
+![](Images/diagram-magnetic-reversals-ocean-ridge-800x600.png){height="400px"}
+</center>
+
+The morphology and bathymetry information comes to life when combined with
+the magnetic intensity maps of the mid-ocean ridge system. Chaotic magnetic reversal patterns combined with "steady" spreading produces a symmetric stripe-pattern that reflects the aging of the sea floor.
+
+## Earth - Sea Floor Age
+
+<center>
+![](Images/AgeGrid_plate_carree.png){height="400px"}
+</center>
+
+Age distribution in the ocean floor  is systematic and regular. It ranges from 0 (forming now) to ~200Myr. (credit: Earthbyte.org / Dietmar Müller)
+
+## Earth - Seismic Imaging / Tomography
+
+<center>
+![](Images/Ramanowicz2008Nature_TomographyComparisons.jpg){height="400px"}
+</center>
+
+Each column of images represents a different model of mantle shear-velocity structure (using various data sources) shown at three representative depths (140 km, 925 km and 2,770 km). From Ramanowicz, 2008, Nature.
+
+## Earth - Sedimentary Records
+
+<center>
+![](Images/Source-to-sink-block-diag.jpg){height="360px"}
+</center>
+
+The linkages among the components of sediment routing systems: the source area (erosion), the transfer zone (rivers etc), and sinks (basins, deltas). In each zone, sediment may be stored temporarily, or accumulate in sinks if there is sufficient long-term accommodation.
+
+See: [Geological Digressions: Source to Sink]( https://www.geological-digressions.com/source-to-sink-sediment-routing-systems/)
+
+## Earth - Summary
+
+We have huge advantages in understanding the Earth because we have nearly unlimited access to the surface, limited access to the subsurface by drilling, digging, sampling.
+
+<center>
+![](https://eospso.nasa.gov/sites/default/files/u15/fleet-swoosh-082922_Sept27.png){height="300px"}
+</center>
+
+We can set up imaging experiments that have long timescales and global reach.  On other planets, we have shorter experiments and everything is significantly limited in terms of duration and access.
+
+We have huge fleets of observing satellites and remote telemetry of discrete sensors.
