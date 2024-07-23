@@ -84,7 +84,7 @@ We use wattle (of course) for grades, announcements, Q & A. We also provide slid
 
 </center>
 
-- Course Notes [https://anu-rses-education.github.io/PHYS-3070](https://anu-rses-education.github.io/PHYS-3070)
+- Course Notes [https://anu-rses-education.github.io/PHYS-3070/book](https://anu-rses-education.github.io/PHYS-3070/book)
 - Course Notes [Github](https://github.com/ANU-RSES-Education/PHYS-3070) in case you find bugs and want to fix them !
 - Mathematical Background: [https://anu-rses-education.github.io/ComputationalGeodynamics](https://anu-rses-education.github.io/ComputationalGeodynamics)
 
