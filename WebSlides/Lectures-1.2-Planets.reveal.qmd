@@ -511,16 +511,6 @@ At Saturn, we see a suite of smaller, ice-rich moons of uncertain age that likel
 -->
 
 
-
-
-
-
-# Stop !
-
-Construction work ahead
-
-
-
 # Earth
 
 <center>
@@ -556,7 +546,10 @@ Topography is bimodal (true of other planets as well) with many other surface fe
 
 # Unique Datasets for Planet Earth
 
-Words here
+<center>
+![](https://assets.weforum.org/editor/bMinbkYdRsEqYe-Xq1_qPULVYWF-Ac5m0eR523VtJQM.jpeg){height="425px"}
+</center>
+
 
 ## Earth - Thickness of the Lithosphere
 
@@ -642,10 +635,10 @@ Raw data compiled by Davies & Davies 2013. *There are really not very many relia
 ## Earth - Surface Motions
 
 <center>
-![](ImagesPlateMotionsMollweide.png){height="350px"}&nbsp;&nbsp;
+![](Images/PlateMotionsMollweide.png){height="350px"}&nbsp;&nbsp;
 </center>
 
-Directly observed plate motions (GPS, satellite ranging, very-long-baseline interferometry)
+Directly observed plate motions (GPS, satellite ranging, very-long-baseline interferometry). Also shown, the strain-rate field, contoured to show highlight regions of high deformation rate.
 
 ## Earth - Magnetic Field
 
@@ -697,7 +690,7 @@ See: [Geological Digressions: Source to Sink]( https://www.geological-digression
 
 ## Earth - Summary
 
-We have huge advantages in understanding the Earth because we have nearly unlimited access to the surface, limited access to the subsurface by drilling, digging, sampling.
+We have huge advantages in understanding the Earth because we have nearly unlimited access to the surface, limited access to the subsurface by drilling, digging, sampling. We can go "wherever we want" to take measurements or
 
 <center>
 ![](https://eospso.nasa.gov/sites/default/files/u15/fleet-swoosh-082922_Sept27.png){height="300px"}
