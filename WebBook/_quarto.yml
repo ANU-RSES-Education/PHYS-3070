@@ -21,6 +21,10 @@ book:
         - LectureDescriptions/Lecture_Introduction.qmd
         - LectureDescriptions/Lecture_Planets.qmd
 
+    - part: "**Exercises**"
+      chapters:
+        - Exercises/ComparativePlanetology.qmd
+
     # - part: "**Version Control**"
     #   chapters:
     #     - Introduction2VersionControl/1-GettingStartedWithGit.qmd
