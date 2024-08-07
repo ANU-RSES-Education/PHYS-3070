@@ -103,7 +103,7 @@
     "href": "LectureDescriptions/Lecture_Planets.html",
     "title": "Lecture - Introduction to the Solid Planets of Our Solar System",
     "section": "",
-    "text": "In this lecture, we take a tour around the solar system to reset our perspective on the Earth so that we can visit our own planet with fresh eyes.\n\n\n\n\n\n\n../../slides/Lectures-1.2-Planets.reveal.html\n\nLink to index of presentations",
+    "text": "In this lecture, we take a tour around the solar system to reset our perspective on the Earth so that we can visit our own planet with fresh eyes.\n\n\n\n\n\n Lectures Slides / Planets \nLink to index of presentations",
     "crumbs": [
       "**Lectures**",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecture - Introduction to the Solid Planets of Our Solar System</span>"
@@ -121,6 +121,17 @@
     ]
   },
   {
+    "objectID": "LectureDescriptions/Lecture_ContinuumMechanics.html",
+    "href": "LectureDescriptions/Lecture_ContinuumMechanics.html",
+    "title": "Lecture - Continuum Mechanics Background",
+    "section": "",
+    "text": "In this lecture …\n\n\n\n\n\n Lectures Slides / Continuum Mechanics \nLink to index of presentations",
+    "crumbs": [
+      "**Lectures**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Lecture - Continuum Mechanics Background</span>"
+    ]
+  },
+  {
     "objectID": "Exercises/ComparativePlanetology.html",
     "href": "Exercises/ComparativePlanetology.html",
     "title": "Exercise: Comparative Planetology",
@@ -128,7 +139,7 @@
     "text": "Title slide: Earth — is it just like any other planet ?\nMake sure you include your name and an “interesting” image of the Earth, an equivalent image of one of the other planets, and include a caption",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -139,7 +150,7 @@
     "text": "Slide 1: Topography\nThe Earth’s topography is “bimodal” and so is the topography of Mars. Explain what that means (in a technical sense) and show what this looks like each case.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -150,7 +161,7 @@
     "text": "Slide 2: Volcanoes\nThere are volcanoes in many places in the solar system. Not all of them erupt molten rock - can you find an example of one of those ? Find some images of volcanoes from Earth and from one or two other places in the solar system for your slide. Which is the largest volcano we know about, is it on Earth ?",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -161,7 +172,7 @@
     "text": "Slide 3: Surface Erosion/ Weather / Rivers etc\nThe Earth’s surface is heavily influenced by surface erosion and sedimentation due to rain, landslides and so on. Can you find an image that highlights this on Earth and are there similar processes somewhere else in the solar system. Similar here could just be “looks the same” (hint - Mars and Titan!)",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -172,7 +183,7 @@
     "text": "Slide 4: Surface Age\nThe Earth has a very distinctive pattern of surface age (continents different from oceans, oceans have an age pattern). Make a slide that contrasts this with planet that also has a bimodal age distribution (e.g. Mars, the Moon) and point out the differences / how we know the information we do.\nYou should be sure to define what a craton is and why this is interesting in telling the story of surface age for the Earth",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -183,7 +194,7 @@
     "text": "Slide 5: Faults\nFind a few images of faults from the Earth and at least one from another world. Faults are very important in geophysics / geology and are the places most earthquakes are generated.\nInclude a definition of a fault for your slide.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -194,7 +205,7 @@
     "text": "Slide 6: Habitability / Life\nWhat do we look for in suggesting a planet could be habitable ? In the solar system, where are there habitable zones now and where might there have been habitable zones in the past ? Why might that change over the age of the solar system ?",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -205,7 +216,7 @@
     "text": "Conclusion Slide:\nGeology / geophysics has many common processes across different planets. How special is the Earth ? Give your opinion on how likely we are to find Earth-like exoplanets!",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -216,7 +227,7 @@
     "text": "References Slide:\nAdd a final slide with full citations of your references from the slides",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   }
 ]
