@@ -1,0 +1,1537 @@
+---
+title: PHYS 3070
+author: Prof Louis Moresi
+institute: Australian National University
+# date: '666-6-6'
+
+title-slide-attributes:
+  data-background-image: images/custom/anu_general.png
+  data-background-size: contain
+
+format: anu_slides-revealjs
+
+date-format: long
+lang: en
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.16.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+
+# Continuum Mechanics and Mantle Dynamics
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="55%"}
+*In which we derive the continuum equations for mantle / lithospheric flow, look at various
+questions of scaling, and develop some intuition for the dominant physics of mantle flow*
+:::
+
+::: {.column width="40%"}
+![](Images/AuWorldEQ.png){fig-align="right"}
+:::
+
+::::
+
+<!--
+# Mantle convection and plate motions
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="55%"}
+*In which we shall examine the nature of convection as a phenomenon that transfers heat and generates motion. We will see how we can extract a single number that tells us almost everything about how / whether convection takes place … and we will calculate this for the Earth’s mantle.*
+:::
+
+::: {.column width="40%"}
+![](images/AuWorldEQ.png){fig-align="right"}
+:::
+
+::::
+-->
+
+# Mantle Convection
+
+Convection in Earth’s interior is (a little bit) like a boiling pot (as we saw in a previous lecture)
+
+<center>
+
+![](images/USGS-ConvectionCartoon.png){fig-align="center" height="300px"} &nbsp;
+![](Images/AWatchedPot.png){fig-align="center" height="300px"}
+
+</center>
+
+The hot soup rises to the surface, spreads and begins to cool, and then sinks back to the bottom of the pot where it is reheated and rises again. **Why does hot soup rise and cold soup sink** ?
+
+
+
+# General Observations on Convection
+
+:::: {.columns}
+
+::: {.column width="66%"}
+Without being particularly quantitative:
+
+  - Hot liquid is more buoyant than cold material **and it tends to rise**
+  - Cooler liquid is less buoyant and **therefore tends to sink**
+  - This can only happen if the two can **move past each other**
+  - Convection produces a self-stirring
+
+:::
+
+::: {.column width="34%"}
+![](images/AWatchedPot.png){fig-align="right" height="200px"}
+:::
+
+::::
+
+Buoyancy forces are at work and viscous forces counteract these forces once the fluid is moving
+
+$$
+\textrm{buoyancy} \propto g \rho_0 \alpha(1-\Delta T)
+$$
+
+Convection like this will only work when the soup is heated from below or, in the case of the Earth, if it is heated from within by radioactivity. **(Can you see why) ?**
+
+
+## General Observations on Convection
+
+**Definition**:  Convection is the transfer of heat by the self-organised movement of a fluid. Free convection is when the fluid is stirred entirely by rising buoyant material and sinking negatively-buoyant material. (Forced convection is produced when the fluid is stirred mechanically).
+
+<center>
+<video autoplay controls width="33%">
+    <source src="movies/LavaLampNormalSpeed.m4v"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Convection is one of the ways we transfer heat from hot regions deep in the Earth to cooler, shallow regions.
+
+# Heat Transfer
+
+Other ways that heat can be transferred include *radiation*, *advection*, and *conduction*.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+**Advection** of heat is where some object carries an excess (or defecit of) heat energy from place to place.
+
+**Conduction** is the transfer of heat (or electric current) from one substance to another by direct contact (lattice vibrations / electrons).
+
+**Radiation** is the transfer of heat energy by photons that pass between two materials. It does not require any physical contact or indermediary material (e.g. it is not a problem to transfer heat across a vacuum this way).
+:::
+
+::: {.column width="40%"}
+!["Kmecfiunit, cmglee, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons"](https://upload.wikimedia.org/wikipedia/commons/f/f4/Heat-transmittance-means2.jpg)
+:::
+
+::::
+
+
+# Conduction & Fourier's Law - i
+
+:::: {.columns}
+
+::: {.column width="60%"}
+**Fourier's Law** tells us how much heat, $Q$ is conducted through a sample in a unit time
+
+$$
+  Q=-\frac{k A \Delta T}{L}
+$$
+
+$A$ is the cross sectional area of the sample, $L$ is its length, $k$ is a thermal conductivity “constant” dependent on the nature of the material and often also on the temperature, and $\Delta T$ is the temperature difference across the sample. (Note the minus sign because heat will always flow from a higher temperature to a lower temperature.)
+:::
+
+::: {.column width="40%"}
+![](images/FourierCylinder.png)
+:::
+
+::::
+
+
+# Conduction & Fourier's Law - ii
+
+**Fourier's Law** is explained using a simple thought experiment such as this one but it actually refers to the fact that heat
+flows *down a temperature gradient*.
+
+![](images/HeatFlux.png){height="300px" fig-align="center"}
+
+::::{.columns style='display: flex; align-items: center;'}
+
+
+:::{.column style='width:20%; display: flex; align-items: center;'}
+$$ q = - k \frac{dT}{dx} $$
+:::
+
+:::{.column style='width:80%; display: flex; align-items: center;'}
+$q, (W/m^2)$ is called the heat flux and measures the flow of heat per unit area perpendicular to the temperature gradient
+:::
+
+::::
+
+# Thermal diffusion & Fourier's Law
+
+If the heat flux into a region is not balanced by the heat flux out, the region must change temperature. For example, if more heat flow into a region than is flowing out, it will become warmer.
+
+<!-- :::{style="width:80%; text-align: left; margin: 0 auto;"}
+![The heat flow in the diagram is away in both directions from the high temperature to the cooler areas. The loss of heat from this region is balanced by a reduced temperature.
+](images/HeatFlux2.png){height="300px"}
+::: -->
+
+::::{.columns style='display: flex; align-items: center;'}
+
+:::{.column  style='width:35%; display: flex; align-items: center;'}
+*The heat flow in the diagram is away (in both directions) from the high temperature to the cooler areas. The loss of heat from this region is balanced by a reduced temperature.*
+:::
+
+:::{.column width="5%"}
+&nbsp;
+:::
+
+:::{.column width="60%"}
+![](images/HeatFlux2.png){.r-stretch}
+:::
+
+::::
+
+This process reduces the amplitude of temperature variations over time and makes the temperature smoother. **Temperature extremes become smaller, gradients become lower, the heat flux everywhere becomes smaller: the temperature differences *decay* through time.**
+
+## Newton's Law of Cooling
+
+Another example of "thermal decay" occurs when we have a
+hot body in a cool environment loosing heat through its surface
+according to the Fourier Law.
+
+::::{.columns style='display: flex; align-items: center;'}
+
+:::{.column  style='width:55%;'}
+
+The heat flux is proportional to the difference in temperature between the hot object and the surroundings, so
+
+$$
+  \frac{dT}{dt} \propto T - T_0  \quad \rightarrow \quad T = T_1 e^{-\lambda t}
+$$
+
+This is exactly the same equation for the anomalous temperature as for the quantity
+of a radioactive isotope remaining after a certain time
+and has the same solution with $\lambda$ a constant for a particular experiment.
+:::
+
+:::{.column width="40%"}
+![](images/NewtonsLawOfCooling.png){.r-stretch}
+:::
+
+::::
+
+
+## Thermal diffusion
+
+If a region has a different heat flux in v. out, then there must be a gradient in the heat flux. A change in temperature is driven by gradients in the heat flux like this:
+
+$$
+   \frac{\partial T}{\partial t} =  -\frac{1}{\rho C_p} \frac{\partial q}{\partial x} + H
+$$
+
+$H$ is internal heat generation which is often important in the Earth because of the decay of radioactive isotopes.  Now we substitute for $q$ from Fourier's Law and have this expression:
+
+$$
+   \frac{\partial T}{\partial t} =  \frac{k}{\rho C_p} \frac{\partial^2 T}{\partial x^2} + H
+$$
+
+Fourier was one of the first to solve this mathematically and developed
+his method of summing harmonics (series solutions) as part of this study.
+
+# Thermal Diffusion and Planetary Heat flow
+
+The rate of heat loss is a primary controller of how a planet evolves.
+
+  - The heat loss controls the internal temperature of the planet and
+   its mechanical properties are expected to be dependent on temperature
+
+  - The rate of heat loss from the interior is related to the energy
+    available to supply mechanical work to deform the planet
+
+  - The rate of heat loss governs the amount of time the planet can remain
+    "geologically" active before the interior stops exchanging with the surface / atmosphere.
+
+
+# Surface temperature and Heat loss
+
+The Stefan-Boltzmann law tells us the rate at which a hot object loses heat to its surroundings.
+
+$$
+P = \varepsilon \sigma A \left( T^4_\textrm{hot} - T^4_\textrm{ambient} \right)
+$$
+
+The average surface temperature of the Earth is about 15°C or 288K.
+This implies a loss of heat at a rate of 2 x 10^17^ W globally (to the chill of space)
+We can make some assumptions about the energy content of the Earth to
+see how long this can be sustained.
+
+$$
+  \require{cancel}
+  \require{color}
+  \frac{dE}{dt} = \frac{dE}{dT} { \color{blue} \frac{dT}{dt} } =
+  \varepsilon \sigma A \left( T^4_\textrm{hot} - \bcancel{T^4 _\textrm{ambient}} \right)
+$$
+
+$$
+  \require{cancel}
+  t_\textrm{cooling} =
+      \frac{\rho C_p V_\oplus}{\varepsilon \sigma A_\oplus}
+      \int^{T_\mathrm{final}}_{T_{initial}} \frac{1}{T^4}dT =
+      \frac{\rho C_p R_\oplus}{3 \varepsilon \sigma}
+      \left( \frac{1}{T^3_\mathrm{final}} -
+             \bcancel{\frac{1}{T^3_\mathrm{initial}}}
+      \right)
+$$
+
+[Online Calculator Tool](http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/cootime.html#c2) (interactive version)
+
+## Surface temperature and Heat loss (2)
+
+Assuming an initial temperature of 1500K (molten rock observed at the Earth’s surface)
+gives a cooling time of **250,000 years**.
+
+That’s quite young !
+
+What is missing / incorrect in this analysis ?
+
+ - The incoming radiation from the sun (estimated 1.75 x 10^17^ W) implies
+   the Earth’s surface is near equilibrium with the solar radiation
+   and therefore we should not assume cooling to the cold depths of outer space
+   (how long has this near-equilibrium been established ?)
+
+ - The assumption that the Earth’s interior is isothermal
+ - The assumption that heat loss from the interior to the surface is perfectly efficient
+
+This analysis might be quite useful for a molten planet (magma ocean)
+where the heat transport in a vigorously convecting interior is very efficient.
+Once the planet begins to crystallise, conductive cooling through the
+chilled surface layers becomes the rate-controlling process.
+
+# Solution for the uniform conduction of heat out of a sphere
+
+:::: {.columns}
+
+::: {.column width="65%"}
+What is the **equilibrium** heat flow across a thin spherical shell ?
+
+ - Heat flux in balances heat flux out
+ - Account for heat generation within the shell
+
+$$ Q_r = 4\pi r^2 \cdot q_r(r) $$
+
+$$ Q_{r+\delta r} = 4\pi (r+\delta_r)^2 \cdot q_r(r+\delta_r) $$
+
+:::
+
+::: {.column width="30%"}
+![](Images/AnnulusSphere_dR.png){fig-align="right"}
+:::
+
+::::
+
+The steady solution has this form
+
+$$
+  T = -\frac{\rho H}{6 k} r^2 + \frac{C_1}{r} + C_2
+$$
+
+Which is only interesting if there is internal heating ($H$)
+and otherwise implies constant temperature / no additional heat at depth.
+Steady-state, of course, tells us nothing about the age of the Earth.
+$C_1$ has to be zero, for the solution to be meaningful at $r=0$.
+
+# Transient solution for a sphere cooling from a uniform T
+
+The transient (i.e. interesting) equivalent to this problem is qualitatively
+different from the steady one. There are now variations with time and these
+trade-off with variations in the radial direction.
+
+
+Fourier’s approach was to find solutions in the form of a series of terms,
+each of which individually satisfies the equations, but none of which, in isolation,
+looks much like the actual solution.
+
+The equation we want to solve looks like this:
+
+$$
+  \frac{\partial T}{\partial t} = \frac{1}{r^2} \frac{\partial}{\partial r}
+                                  \left( \frac{1}{r^2}\frac{\partial T}{\partial r}\right)
+$$
+
+It says that the temperature changes due to radial temperature gradients and,
+equally, that radial temperature gradients are established by the changes in temperature.
+
+**NOTE:** I have left out the material “constants” like thermal conductivity, radius of the sphere, density which means I am assuming these are all 1 (and constant)
+
+## Transient solution for a sphere cooling from a uniform T (2)
+
+$$
+  \frac{\partial T}{\partial t} = \frac{1}{r^2} \frac{\partial}{\partial r}
+                                  \left( \frac{1}{r^2}\frac{\partial T}{\partial r}\right)
+$$
+
+We can look for solutions that take the form ...
+
+$$
+  T(r,t) = \frac{2}{r} \sum_{n=1}^{\infty}
+                          \exp\left( n^2\pi^2 t \right) \sin(n\pi r) \cdot
+                        \int_0^1 {\color{red}{f_T(r^*)}} \cdot r^* \sin(n\pi r^*) dr^*
+$$
+
+The term in red is the initial temperature distribution.
+If we assume that this is uniform everywhere, then this is simplified
+to the point where we can easily evaluate the solution:
+
+$$
+  T(r,t) = \frac{2}{r} \sum_{n=1}^{\infty}
+                          \exp\left( n^2\pi^2 t \right) \sin(n\pi r) \cdot
+                        \left( \frac{\sin(n\pi) - n \pi \cos(n\pi)}{n^2 \pi^2}  \right)
+$$
+
+## Transient solution for a sphere cooling from a uniform T (3)
+
+$$
+  T(r,t) = \frac{2}{r} \sum_{n=1}^{\infty}
+                          \exp\left( n^2\pi^2 t \right) \sin(n\pi r) \cdot
+                        \left( \frac{\sin(n\pi) - n \pi \cos(n\pi)}{n^2 \pi^2}  \right)
+$$
+
+Ignoring how we come by this (complicated-looking) solution for the time being,
+what do these terms actually look like ?
+
+![](images/CoolingSphere_Harmonics.png){height="300px" fig-align="center"}
+
+A fundamental objection to Fourier's original approach to solving equations by
+series solution is that the harmonics can violate the boundary conditions and other
+physical constraints.
+
+## Transient solution for a sphere cooling from a uniform T (4)
+
+$$
+  T(r,t) = \frac{2}{r} \sum_{n=1}^{\infty}
+                          \exp\left( n^2\pi^2 t \right) \sin(n\pi r) \cdot
+                        \left( \frac{\sin(n\pi) - n \pi \cos(n\pi)}{n^2 \pi^2}  \right)
+$$
+
+How do the harmonics look when added together to give an approximation to the
+solution ?
+
+![](images/CoolingSphere_Summation.png){height="300px" fig-align="center"}
+
+The solution *does* satisfy the boundary conditions and the
+physical constraints. **Note** that the smaller time solution has
+much sharper gradients and many more terms are required to accurately
+approximate the solution.
+
+## Transient solution for a sphere cooling from a uniform T (4)
+
+$$
+  T(r,t) = \frac{2}{r} \sum_{n=1}^{\infty}
+                          \exp\left( n^2\pi^2 t \right) \sin(n\pi r) \cdot
+                        \left( \frac{\sin(n\pi) - n \pi \cos(n\pi)}{n^2 \pi^2}  \right)
+$$
+
+
+<center>
+![](images/CoolingSphere_EvolutionAndCentralT.png){width="90%" }
+</center>
+
+## Transient solution for a sphere cooling from a uniform T (5)
+
+$$
+  T(r,t) = \frac{2}{r} \sum_{n=1}^{\infty}
+                          \exp\left( n^2\pi^2 t \right) \sin(n\pi r) \cdot
+                        \left( \frac{\sin(n\pi) - n \pi \cos(n\pi)}{n^2 \pi^2}  \right)
+$$
+
+The temperature gradient at the surface is found by differentiating this
+expression w.r.t. $r$ and evaluating at $r=1$
+
+$$
+  \frac{\partial T}{\partial r}(1,t) = -\sum_{n=1}^{\infty}
+                        \frac{2 e^{-n^2\pi^2 t}
+                             \left( n\pi \cos(n\pi) -\sin(n\pi) \right)^2}{n^2 \pi^2}
+$$
+
+The surface heat flux is then given by
+
+$$
+  q_0 = -k\frac{\partial T}{\partial r}(1,t)
+$$
+
+## Transient solution for a sphere cooling from a uniform T (5)
+
+$$
+  \frac{\partial T}{\partial r}(1,t) = -\sum_{n=1}^{\infty}
+                        \frac{2 e^{-n^2\pi^2 t}
+                             \left( n\pi \cos(n\pi) -\sin(n\pi) \right)^2}{n^2 \pi^2}
+$$
+
+<center>
+![](images/CoolingSphere_AgeCalculation.png){width="75%" }
+</center>
+
+This is, essentially, the simplest version of the Kelvin estimate for the age of the Earth
+based on a uniform internal temperature.
+
+# The cooling of a semi-infinite domain
+
+::::{.columns}
+
+:::{.column style='width:75%;'}
+
+This is a problem not unlike the cooling sphere,
+but with no inherent length scale that comes from the boundary
+conditions. The equations are similar but we are working
+in a Cartesian geometry (and also ignoring all the constants !)
+
+$$
+  \frac{\partial T}{\partial t} = \frac{\partial^2 T}{\partial z^2}
+$$
+
+This equation simplifies to an ODE if we make the following substitution,
+
+$$
+  T^* = 1-T; \quad \eta = \frac{z}{2\sqrt{t}} \quad \rightarrow
+      -\eta\frac{d T^*}{d \eta} = \frac{1}{2}\frac{d^2 T^*}{d \eta^2}
+$$
+
+Which has the following solution
+
+$$
+\newcommand{\erf}{\mathop{\rm erf}\nolimits}
+\newcommand{\erfc}{\mathop{\rm erfc}\nolimits}
+  T^* = 1-\frac{2}{\sqrt{\pi}} \int_0^\eta e^{-\xi^2} d\xi
+      = 1 - \erf(\eta)
+      = \erfc\left(\frac{z}{2\sqrt{t}}\right)
+$$
+:::
+
+:::{.column style='width:25%;'}
+<center>
+![](images/CoolingHalfSpace_T.png){width="60%" }
+</center>
+:::
+
+::::
+
+## The cooling of a semi-infinite domain (2)
+
+::::{.columns}
+
+:::{.column style='width:40%;'}
+
+$$
+\newcommand{\erfc}{\mathop{\rm erfc}\nolimits}
+T = \erfc\left(\frac{z}{2\sqrt{t}}\right)
+$$
+
+This is a very different solution strategy to the cooling sphere
+(and yet they should, in a mathematical sense,
+approach each other as the radius becomes large).
+
+The solution looks **very similar** in character: a cooling
+front which propagates in from the surface.
+The curves are self-similar, they just differ by a scaling factor.
+:::
+
+:::{.column style='width:60%;'}
+<center>
+![](images/CoolingHalfSpace_EvolutionT.png){width="100%" }
+</center>
+:::
+
+::::
+
+# Continuum mechanics - A general approach
+
+::::{.columns}
+:::{.column style='width:50%;'}
+
+$$
+\frac{d}{dt} \int_{\Omega} \rho \phi d\Omega =
+            - \int_{\Gamma} \mathbf{F} \cdot \mathbf{d}\boldsymbol{\Gamma}
+            + \int_{\Omega} \rho H d\Omega
+            - \int _{\Gamma} \rho \phi \mathbf{u} \cdot \mathbf{d}\boldsymbol{\Gamma}
+$$
+
+Rate of change of a quantity, $\phi$￼, is the balance between fluid transport across the boundary,
+$\Gamma$, of an arbitrary volume, $\Omega$, the diffusive flux, and sources within the volume.
+
+The volume is arbitrary, so the equation must be valid for any choice of $\Omega$
+only guaranteed if the integrand is zero.
+
+$$
+\color{Gray}{\int_{\Omega} \Biggl[}
+\color{Black}{\frac{d \rho \phi}{dt} + \nabla \cdot \rho \phi \mathbf{u} +
+            \nabla \cdot \mathbf{F}  -\rho H}
+\color{Gray}{\Biggr] d\Omega} \color{Black}{= 0}
+$$
+:::
+
+:::{.column style='width:50%;'}
+&nbsp; </br></br>
+<center>
+![](images/ElementaryVolume.png){width="100%" }
+</center>
+:::
+::::
+
+# How it works
+
+The general equation is
+
+$$
+{\color{Black} \frac{d \rho \phi}{dt} } +
+{\color{OliveGreen} \nabla \cdot \rho \phi \mathbf{u} } -
+{\color{Blue} \nabla \cdot \mathbf{F}} -
+{\color{Maroon} \rho H }
+= 0
+$$
+
+The colours here are:
+
+  - [Black]{style="color:Black;"}: Rate of change of $\phi$ with time
+  - [Green]{style="color:DarkGreen;"}: Transport due to fluid movement
+  - [Blue]{style="color:DarkBlue;"}:  Fluxes occuring in the absence of fluid motion
+  - [Red]{style="color:DarkRed;"}:   Sources of $\phi$
+
+or, equivalently (a matter of notation)
+
+  $$
+  {\color{DarkGreen} \frac{D \rho \phi}{Dt}} -
+  {\color{DarkBlue} \nabla \cdot \mathbf{F}} -
+  {\color{DarkRed} \rho H }
+  = 0
+  $$
+
+  - [Green]{style="color:DarkGreen;"}: Rate of change of $\phi$ viewed in the fluid reference frame
+
+
+## Examples - 1. Mass
+
+::::{.columns}
+:::{.column style='width:66%;'}
+$$
+{\color{Black} \frac{d \rho \phi}{dt} } +
+{\color{OliveGreen} \nabla \cdot \rho \phi \mathbf{u} } -
+{\color{Blue} \nabla \cdot \mathbf{F}} -
+{\color{Maroon} \rho H }
+= 0
+$$
+:::
+:::{.column style='width:33%;'}
+<center>
+![](images/ElementaryVolume.png){height="150px" }
+</center>
+:::
+::::
+
+Let $\phi \leftarrow 1$
+
+ - There are no source terms for mass in classical mechanics, $H=0$
+ - There is no flux into / out of the elementary volume if the fluid is stationary, $\mathbf{F}=0$
+
+Hence
+
+$$
+{\frac{\partial \rho}{\partial t} +
+                \nabla \cdot \rho \mathbf{v} = 0}
+$$
+
+## Examples - 2. Heat
+
+::::{.columns}
+:::{.column style='width:66%;'}
+$$
+{\color{Black} \frac{d \rho \phi}{dt} } +
+{\color{OliveGreen} \nabla \cdot \rho \phi \mathbf{u} } -
+{\color{Blue} \nabla \cdot \mathbf{F}} -
+{\color{Maroon} \rho H }
+= 0
+$$
+:::
+:::{.column style='width:33%;'}
+<center>
+![](images/ElementaryVolume.png){height="150px" }
+</center>
+:::
+::::
+
+Let $\phi \leftarrow C_p T$
+
+ - Source terms possible, including “pure source” such as internal radioactive decay.
+ - Flux across the boundary is heat-diffusion given by Fourier’s Law
+
+$$
+{\frac{\partial \rho C_p T}{\partial t} +
+                \nabla \cdot \left( -k\nabla T + \rho  C_p T \cdot \mathbf{v} \right) - \rho H = 0}
+$$
+
+Now, using mass conservation, we can simplify this to
+
+$$
+\left( \frac{\partial T}{\partial t} + \mathbf{v} \cdot \nabla T \right)=
+                        \kappa \nabla^2 T + \frac{H}{C_p}
+$$
+
+Note the appearance of the _**directional derivative**_ operator, $\mathbf{v} \cdot \nabla$.
+
+## Examples - 3. Momentum
+
+This is a vector equation so the conservation equation starts like this
+
+::::{.columns}
+:::{.column style='width:66%;'}
+Let $\phi \leftarrow \mathbf{v}$
+
+$$
+\frac{d}{dt}\int_{\Omega} \rho \mathbf{v} d\Omega =
+            -   \int_{\Omega} \rho g \hat{\mathbf{z}} d\Omega
+            +   \int_{\Gamma} \boldsymbol{\sigma} \cdot \mathbf{d}\boldsymbol{\Gamma}-
+                \int_{\Gamma} \rho \mathbf{v} (\mathbf{v} \cdot \mathbf{d}\boldsymbol{\Gamma})
+$$
+:::
+:::{.column style='width:33%;'}
+<center>
+![](images/ElementaryVolume.png){height="150px" }
+</center>
+:::
+::::
+
+ - Source terms are body forces (here gravitational, buoyancy forces)
+ - Flux across the boundary is due to tractions applies on the boundary from stresses in the fluid:
+ ￼ $t_i = \sigma_{ij} n_j$ where $\hat{\mathbf{n}} = \left\{ n_j \right\}$￼ is the normal vector
+   at a point on the surface
+
+$$
+\frac{\partial}{\partial t}(\rho \mathbf{v})
+            +\rho g \hat{\mathbf{z}} - \nabla \cdot \sigma + \nabla \cdot (\rho \mathbf{v} \mathbf{v}) = 0
+\quad \textrm{or} \quad
+\frac{\partial \rho v_i}{\partial t} + \rho g \delta_{i3} -
+            \frac{\partial \sigma_{ij}}{\partial x_j} +
+            \frac{\partial(\rho v_i v_j)}{\partial x_j} = 0
+$$
+
+Now, using mass conservation, we can simplify this to
+
+$$
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \nabla \cdot \boldsymbol{\sigma} - g\rho\hat{\mathbf{z}}
+$$
+
+Note the appearance of the _**directional derivative**_ acting on velocity, $\left( \mathbf{v} \cdot \nabla\right) \mathbf{v}$ which is quite
+complicated in the vector version.
+
+## Examples - 3. Momentum (2)
+
+The operator in the momentum equation $\left( \mathbf{v} \cdot \nabla\right) \mathbf{v}$ stretches the
+vector notation quite hard, and demands explanation.
+
+Let us look at a similar operator, the directional derivative of a vector, $\mathbf{u}$:
+
+$$
+\begin{split}
+                    (\mathbf{v} \cdot \nabla) \mathbf{u} =
+                            & \mathbf{i} \left( v_1 \frac{\partial u_1}{\partial x_1} +
+                        v_2 \frac{\partial u_1}{\partial x_2} + v_3 \frac{\partial u_1}{\partial x_3} \right) \\
+                            & \mathbf{j} \left( v_1 \frac{\partial u_2}{\partial x_1} +
+                        v_2 \frac{\partial u_2}{\partial x_2} + v_3 \frac{\partial u_2}{\partial x_3} \right) \\
+                            & \mathbf{k} \left( v_1 \frac{\partial u_3}{\partial x_1} +
+                        v_2 \frac{\partial u_3}{\partial x_2} + v_3 \frac{\partial u_3}{\partial x_3} \right) \\
+\end{split}
+$$
+
+
+# Stop !!
+
+Construction work ahead
+
+
+
+
+# Continuum Mechanics: Summary
+
+$$
+{\color{OliveGreen}{\frac{d \rho \phi}{dt} + \nabla \cdot \rho \phi \mathbf{u}}} -
+{\color{Blue} \nabla \cdot \mathbf{F}(\phi, \nabla \phi)}
+{\color{Maroon} -\rho H(\phi, \nabla \phi) }
+= 0
+$$
+
+$$
+\color{OliveGreen}{\underbrace{ \Bigl[ \frac{\partial T}{\partial t} + \left( \mathbf{v} \cdot \nabla \right) T \Bigr]}_{\dot{\mathbf{f}}}} -
+ \color{Blue}{
+\nabla \cdot
+       \underbrace{\Bigl[ \boldsymbol\kappa \nabla T \Bigr]}_{\mathbf{F}}} -
+\color{Maroon}{\underbrace{\Bigl[ H \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0}
+$$
+
+$$
+\color{OliveGreen}{
+       \underbrace{ \Bigl[ S_s  \frac{\partial h}{\partial t} \Bigr] }_{\dot{\mathbf{f}}}} -
+
+\color{Blue}{
+\nabla \cdot
+\underbrace{\Bigl[ \boldsymbol\kappa \nabla h  - \boldsymbol{s}\Bigr]}_{\mathbf{F}}} -
+        \color{Maroon}{\underbrace{\Bigl[ W \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0}
+$$
+
+$$
+\color{Blue}{
+-\nabla \cdot
+    \underbrace{\Bigl[
+              \frac{\eta}{2}\left( \nabla\mathbf{u} + \nabla\mathbf{u}^T \right)-  p \mathbf{I} \Bigr]}_{\mathbf{F}}} -
+      \color{Maroon}{\underbrace{\Bigl[ \rho \mathbf{g} \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0}
+$$
+
+
+
+
+# Convection and the Mantle
+
+![Convection cartoon](images/ConvectionCartoon.png) <!-- .element style="height:300px; float:right" -->
+
+The soup analogy is quite helpful because it demonstrateshow heat escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).
+
+This heat engine is the driving force behind tectonic motion and the constructive side of of the geological cycle.
+
+**Key differences**
+
+  - The Earth’s mantle is solid, the soup is liquid / a slurry.
+  - The soup does not show any evidence of plate tectonics.
+  - Hot and cold rocks have quite different physical properties (e.g. viscosity, elastic strength) even if they don’t melt.
+
+# Lava Lakes
+
+There are some hints at plate-like surface motions in caldera lava lakes like this one from the USGS
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ybMekPyvq9Y?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+*April 17, 2021: The lava lake in Halema‘uma‘u Crater, at the summit of Kīlauea Volcano, remains active. This video is shown at 20x speed and shows the lava supplying the lake from the western fissure.*
+
+## Lava Lakes (ii)
+
+This shows the foundering of the cooler crust of the lake into the interior. New solid crust forms where the molten lava meets the atmosphere.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/moWrOrPvaV0?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+
+*This video shows crustal foundering and resurfacing at the lava lake in Halema‘uma‘u, at the summit of Kīlauea on January 8, 2021. Recently this foundering process has been common in the eastern portion of the lake. The video is shown at 20x speed.*
+
+# Discussion points
+
+**What have we learned so far ?**
+
+
+::::{.columns}
+
+:::{.column style='width:50%;'}
+
+If the Earth really follows this cartoon, we need to understand how solid rock can deform as though it was a viscous liquid.
+
+  - How do we know that the mantle is solid ( * ) ?
+  - When/how does a solid act like a viscous fluid ( † )  ?
+  - What is the typical speed of viscous flow in the mantle ?
+  - How much energy is the Earth using up for plate tectonics ?
+
+**( * )**:  How do we know that the outer core is not solid ?
+
+**( † )**: If you are interested, read about crystal defects and deformation
+
+:::
+
+:::{.column style='width:50%;'}
+
+![](images/ConvectionCartoon.png){.r-stretch style="width:80%"}
+
+:::
+
+::::
+
+
+
+# A Toy Model
+
+<center>
+<video autoplay controls height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+
+Imagine a tank of **thick, viscous fluid** (like syrup, for example). This turns out to be a reasonable model for the interior of a solid (rocky / icy) planet if we consider the evolution on a geological timescale. A cold / dense blob of material sinks and stirs a tank of fluid just like this computer model shows.
+
+# What is viscosity ?
+
+<center>
+
+![Honey](images/honey.png){style="height:250px;"} &nbsp; &nbsp;
+![Tar](images/UQ_PitchDropExperiment.png){style="height:250px;"}
+
+</center>
+
+**Viscosity** is a measure of the resistance of a fluid to deform under shear stress. It is commonly perceived as "thickness", or resistance to flow. Viscosity describes a fluid's internal resistance to flow and may be thought of as a measure of fluid friction. Water is runny, having a lower viscosity, while honey is "thick" having a higher viscosity.
+
+*The right image is from the University of Queensland [Pitch Drop Experiment](https://smp.uq.edu.au/pitch-drop-experiment)*
+
+
+## What is viscosity (ii)?
+
+
+::::{.columns}
+
+:::{.column style='width:50%;'}
+
+Viscous deformation is an irreversible *flow* that occurs in response to an applied shear stress.
+The stress is found to depend on the strength of the shearing *velocity gradient*.
+
+
+$$
+  \tau = \eta \frac{d v_1}{d x_2}
+$$
+
+
+Think of this as the stress that resists the shear deformation, i.e. how hard it is to stir the fluid. This is much harder if the fluid is **more viscous**.
+Or think of it as how fast the fluid responds to a given force (e.g. gravity) so a viscous gravity current will spread **more slowly** if the viscosity is high.
+
+Viscosity only opposes the formation of velocity gradients; not a driving force, only a resistance.
+:::
+
+:::{.column style='width:50%;'}
+![](images/ShearFlow.png){style="width:90%"}
+
+![](images/GravityCurrentAnim.gif){style="width:90%"}
+:::
+::::
+
+
+
+## A Toy Model
+
+<center>
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceFloater.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+</center>
+
+In this toy model, do hot blobs and cold blobs behave in the same way
+(other than moving up v. moving down ?)
+
+
+
+## A Toy Model
+
+<center>
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Now let us think about how the physical properties of the fluid and the boundary conditions change how this blob behaves.
+
+$$ \textrm{Activity} = \frac{\textrm{Whatever tends to enhance the flow}}{\textrm{Whatever tends to retard the flow}} $$
+
+We will consider how the behaviour changes with various parameters. When we change a parameter does it tend to enhance flow or retard it ?
+
+
+
+## Buoyancy forces
+
+$$ \mathrm{buoyancy} \propto g\rho_0\alpha\left(1-\Delta T\right) $$
+
+<center>
+<video autoplay controls loop height="315">
+    <source src="movies/LessBuoyantSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/MoreBuoyantSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Lower strength of buoyancy forces on the left, increasing towards the right.
+
+Does *buoyancy* drive the flow harder when it is a stronger effect ?
+
+
+
+## Viscous drag
+
+<center>
+<video autoplay controls loop height="315">
+    <source src="movies/LessViscousSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/MoreViscousSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Lower viscous drag stresses on the left, increasing towards the right.
+
+Does *viscous drag* drive the flow harder when it is a stronger effect ?
+
+
+
+## Thermal conductivity (or diffusivity)
+
+$$
+   \frac{\partial T}{\partial t} =  \color{blue}{\frac{k}{\rho C_p}} \frac{\partial^2 T}{\partial x^2} + H
+                                 =  \color{blue}{\kappa}  \frac{\partial^2 T}{\partial x^2} + H
+$$
+
+
+<center>
+<video autoplay controls loop height="315">
+    <source src="movies/LowerThermalDiff.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/HigherThermalDiff.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Slower diffusion rates (lower diffusivity) on the left, faster towards the right.
+
+Does *thermal diffusivity* drive the flow harder when it is a stronger effect ?
+
+
+
+## The Size of the Box
+
+<center>
+<video autoplay controls loop height="80">
+    <source src="movies/TinyLittleBox.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="160">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="320">
+    <source src="movies/GreatBigBox.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Is the flow moving faster when the box is larger ?
+
+
+
+## The Size of the Box (Scaled to fit)
+
+<center>
+<video autoplay controls loop height="315">
+    <source src="movies/TinyLittleBox.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/ReferenceSinker.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<video autoplay controls loop height="315">
+    <source src="movies/GreatBigBox.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+Is the flow moving faster when the box is larger ?
+
+
+
+# Convective Activity
+
+**Intuition** from these simple toy models suggests that the vigour of convection may depend upon the various system parameters according to the following equation:
+
+$$
+\mathrm{Activity} \propto \frac{\textrm{buoyancy} \times d}{\kappa \eta}
+$$
+
+This turns out to be roughly correct, but there is an actual relationship that looks like this (with buoyancy highlighted in <span style="color:blue;">blue</span>)
+
+$$
+\mathrm{Activity} \propto \frac{\color{blue}{g\rho_0\alpha\Delta T} d^3}{\kappa \eta}
+$$
+
+One reason we know the latter to be the valid relationship is that this quantity **has no units** and these simple ratios often end up being important *universal* descriptions of convecting systems at all scales.
+
+
+
+# Dimensionless Numbers
+
+Ratios where the units cancel are called **dimensionless numbers**.
+For fluid dynamics, the following numbers appear again and again
+
+
+::::{.columns style='display: flex; align-items: center;'}
+
+:::{.column style='width:60%;}
+
+
+**Rayleigh number** measures the intensity of buoyancy forces
+
+$$ \mathrm{Ra} = \frac{g\rho_0\alpha\Delta T d^3}{\kappa \eta} $$
+
+**Reynolds number** measures the relative importance of inertial to viscous forces
+
+$$ \mathrm{Re}=\frac{\rho V_0 d}{\eta} = \frac{V_0 d}{\nu}   $$
+
+**Prandtl number** measures stress diffusion compared to thermal diffusion
+
+$$ \mathrm{Pr} = \frac{\eta}{\rho \kappa} = \frac{\nu}{\kappa} $$
+:::
+
+:::{.column style='width:40%;'}
+
+![](images/AdvectionVDiffusion.png)
+
+:::
+
+::::
+
+# Thermal Convection
+
+In very-viscous convection, only the Rayleigh number plays a role
+($\mathrm{Re}\rightarrow 0$ and $\mathrm{Pr} \rightarrow \infty$)
+
+The structure of the flow and the pattern of the temperature field is predictable once we know the Rayleigh number but it is helpful first to develop some feeling for the patterns by seeing them.
+
+![](images/blt.png){fig-align="center"}
+
+</br>
+
+*Blue  is cool, red is warm. The bottom of the box is kept hot, the top cold and the difference in temperature is $\Delta T$, the depth of the box is $d$ and so on. These numbers are set up so that the Rayleigh number is the required value. In a lab experiment, the simplest parameter to change is $\Delta T$ assuming that the material has a constant viscosity with $T$ and does not freeze, melt, burn or boil.*
+
+## Thermal Convection (ii)
+
+<center>
+
+Rayleigh number: $Ra=100$
+
+<video autoplay controls loop height="500">
+    <source src="movies/Ra1e2.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+
+## Thermal Convection (iii)
+
+<center>
+
+Rayleigh number: $Ra=1,000$
+
+<video autoplay controls loop height="500">
+    <source src="movies/Ra1e3.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+## Thermal Convection (iv)
+
+<center>
+
+Rayleigh number: $Ra=10,000$
+
+<video autoplay controls loop height="500">
+    <source src="movies/Ra1e4.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+## Thermal Convection (v)
+
+<center>
+
+Rayleigh number: $Ra=100,000$
+
+<video autoplay controls loop height="500">
+    <source src="movies/Ra1e5.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+## Thermal Convection (vi)
+
+<center>
+
+Rayleigh number: $Ra=1,000,000$
+
+<video autoplay controls loop height="500">
+    <source src="movies/Ra1e6.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+## Thermal Convection (vii)
+
+<center>
+
+Rayleigh number: $Ra=10,000,000$
+
+<video autoplay controls loop height="500">
+    <source src="movies/Ra1e7.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+
+# Flat Earth, Round Earth
+
+<center>
+
+Rayleigh number: $Ra=1,000,000$
+
+<video autoplay controls loop height="250">
+    <source src="movies/Ra1e6-4x1.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+</center>
+
+The pattern is not changed much when we make the box a little wider
+
+## Flat Earth, Round Earth (ii)
+
+<center>
+
+Rayleigh number: $Ra=1,000,000$
+
+<video autoplay controls loop height="300">
+    <source src="movies/Ra1e6-annu.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+</center>
+
+Nor does it make a qualitative difference if we account for the Earth's curvature
+
+## Flat Earth, Round Earth, 3D
+
+<center>
+
+![](images/FlowInSphericalShell.png){fig-align="center" height="400px"}
+
+</center>
+
+In the sphere, the patterns are harder to see by eye, but it turns out that we can draw general conclusions from the 2D cases and they still hold in 3D.
+
+
+# Steady State Convection
+
+![Convection](images/AdvectionVDiffusion.png) <!-- .element style="width:33%; float:right" -->
+
+In many of the examples, we reach a *steady state* in which the system stops changing and the movies appear to be frozen.
+
+<div style="width:60%">
+
+However, this steady state actually represents a dynamic balance between:
+  - heat conduction into and out of the model at the bottom and top respectively
+  - heat advection by continual rotation in the fluid that drags hot material between the two boundaries
+
+</div>
+
+Again, the best thing is to watch the system evolve and get a feel for what happens.
+
+
+
+## Steady State Convection (ii)
+
+<center>
+
+Rayleigh number: $Ra=100,000$
+
+<video autoplay controls loop height="450">
+    <source src="movies/Ra1e5tr.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+
+## Steady State Convection (iii)
+
+
+<center>
+
+Rayleigh number: $Ra=1,000,000$
+
+<video autoplay controls loop height="450">
+    <source src="movies/Ra1e6tr.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+
+
+## Steady State Convection
+
+
+<center>
+
+Rayleigh number: $Ra=10,000,000$
+
+<video autoplay controls loop height="450">
+    <source src="movies/Ra1e7tr.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</center>
+
+
+
+# Understanding Thermal Convection
+
+<center>
+
+![](images/blt.png){style="height:200px;"}
+
+</center>
+
+A relatively simple pattern emerges from the competition between advection of heat by fluid flow and diffusion:
+
+  - Convection cells that become independent
+  - Boundary layers where horizontal advection balances vertical diffusion
+  - Rotation in the middle of the box without much deformation
+
+## Understanding Thermal Convection (ii)
+
+<center>
+
+![](images/blt.png){style="height:200px;"}
+
+</center>
+
+Convection length and timescales are determined by the Rayleigh number.
+
+  - High $\mathrm{Ra}$ narrower boundary layers, higher temperature gradients
+  - High $\mathrm{Ra}$ more likely to be time-dependent, unsteady
+  - Low $\mathrm{Ra}$, convection suddenly shuts off
+
+
+We will see this picture again when we consider the patterns of heat flow in the Earth's ocean floor.
+
+# Average temperature
+
+<center>
+
+![Taverage](images/ConvectionTgrads.png) <!-- .element style="height:450px;" -->
+
+</center>
+
+The temperature (velocity, stress etc) profiles vary systematically with $\mathrm{Ra}$.
+
+<div style="width:30%; float:right;">
+
+![Taverage](images/ConvectionTgrads.png) <!-- .element style="width:100%; " -->
+![Nusselt](images/NuExperiment.png) <!-- .element style="width:100%;" -->
+
+</div>
+
+# Nusselt number
+
+<div style="width:65%">
+Another, independent, dimensionless quantity can be derived for the convecting system and it is called the *Nusslet number*.
+
+$$ \mathrm{Nu} = \frac{Q d}{k \Delta T} $$
+
+Which is the ratio of the heat transported in the convection model ($Q$) compared to what would be transported if
+only conduction were at work. It turns out that
+
+$$ \mathrm{Nu} \propto \mathrm{Ra}^{1/3} $$
+
+</div>
+
+*The results (right) are from an experiment using liquid He which could not be much more different that solid rock but the principals still hold and the agreement with theory is excellent*
+
+
+
+# Critical Rayleigh number
+
+It can be a little difficult to see from a small set of movies, but if we reduce the Rayleigh number enough, conduction completely wins over advection and no motion takes place at all.
+
+![Critical Ra](images/crit_ra.png) <!-- .element style="width:35%; float:right " -->
+
+<div style="width:65%">
+
+This can be approached theoretically, and we find that there is a critical value of the Rayleigh number and a critical wavelength where this transition occurs.
+
+$$\mathrm{Ra}_c = \frac{27}{4} \pi^4 = 657.51 $$
+
+and
+
+$$ k = \frac{\pi}{\sqrt{2}} = 2.22 $$
+
+</div>
+
+If $\mathrm{Ra} \gg \mathrm{Ra}_c$ then convective motion is inevitable
+
+# Discussion: Ra for the Earth's Mantle
+
+<div style="float:right; width:35%">
+</video>
+<video autoplay controls loop height="320">
+    <source src="movies/etopoimageH.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
+</div>
+
+<div style="width:60%">
+
+Use the following values:
+  - Gravity, $g \approx 10 \mathrm{m/s}^2$ through the mantle
+  - Density, $\rho_0 \approx 3000 \mathrm{kg/m}^3$
+  - Thermal Expansivity, $\alpha \approx 10^{-5} \mathrm{K}^{-1}$
+  - Temperature drop, $\Delta T \approx 2000 \mathrm{K}$
+  - Thickness of the mantle, $d \approx 3000 \mathrm{km}$
+  - Thermal diffusivity, $\kappa \approx 10^{-7} \mathrm{m}^2 / \mathrm{s}$
+  - Viscosity, $\eta \approx 10^{22} \mathrm{Pa.s}$
+
+</br>
+
+$$  \mathrm{Ra}_{\textrm{Earth}} = ? $$
+
+</div>
+
+**Is it above the critical value ?**
+
+**What does that tell us ?**
+
+
+
+# Summary
+
+Convection is a heat engine (i.e. it converts heat energy into mechanical work)
+
+Convection is a balance between heat transported by fluid motion and diffusion.
+The fluid self-organises to create large scale patterns *“out of nowhere”*
+
+In tanks of viscous fluids like syrup or honey, convection depends on just the one free parameter which is a combination of fluid properties, geometry and boundary conditions — this is called the Rayleigh number (Ra).
+
+If we know Ra, we can predict the heat flow and typical velocity of the system
+
+If Ra is below a critical value, convection dies away but if it is more than (about) ten times this value then convection cannot be suppressed. The Earth’s mantle is very much super-critical and so it must be convecting.
+
+None of these simple models actually produce plate tectonics but they do still tell us about the heat flow in the Earth.
+
+
+
+<center>
+
+# End
+
+</center>
+
+
+# Resources
+
+ ![](images/EMSC3002-JB-QRcode.png) <!-- .element style="float: right" width="25%" -->
+
+<div style="width: 60%">
+
+  [Online book](https://anu-rses-education.github.io/EMSC-3002/FrontPage.html)
+with lecture materials, practicals and live computational examples.
+
+  Wattle (when available), Programs and Courses
+
+  [Source code](https://github.com/underworld-geodynamics-cloud/self-managing-jupyterhub)
+</div>
