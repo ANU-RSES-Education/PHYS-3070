@@ -15,7 +15,7 @@ Introduces the concepts of global-scale tectonics, plate motions, the nature of 
 
 ### Module i - Global Geodynamics
 
- - [3. Continuum Mechanics & Convection](LectureDescriptions/Lecture_Continuum_Mechanics_bg)
+ - [3. Continuum Mechanics & Convection](LectureDescriptions/Lecture_ContinuumMechanics)
  - [4. Convection and Heat Flow](LectureDescriptions/Lecture_Convection_HeatFlow)
  - [5. Lithospheric Dynamics](LectureDescriptions/Lecture_Lithosphere)
 

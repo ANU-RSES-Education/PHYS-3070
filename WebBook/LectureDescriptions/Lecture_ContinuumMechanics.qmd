@@ -1,6 +1,5 @@
 # Lecture - Continuum Mechanics Background
 
-In this lecture ...
 
 ```{=html}
 <!-- Embed a presentation from this site -->
