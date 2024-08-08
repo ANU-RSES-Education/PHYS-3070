@@ -896,18 +896,13 @@ T = \erfc\left(\frac{z}{2\sqrt{t}}\right)
 \end{split}
 \]</span></p>
 </section></section>
-<section id="stop" class="title-slide slide level1 center">
-<h1>Stop !!</h1>
-<p>Construction work ahead</p>
-</section>
-
 <section id="continuum-mechanics-summary" class="title-slide slide level1 center">
 <h1>Continuum Mechanics: Summary</h1>
 <p><span class="math display">\[
 {\color{OliveGreen}{\frac{d \rho \phi}{dt} + \nabla \cdot \rho \phi \mathbf{u}}} -
 {\color{Blue} \nabla \cdot \mathbf{F}(\phi, \nabla \phi)}
 {\color{Maroon} -\rho H(\phi, \nabla \phi) }
-= 0
+= 0 \quad \textrm{[ General Template ]}
 \]</span></p>
 <p><span class="math display">\[
 \color{OliveGreen}{\underbrace{ \Bigl[ \frac{\partial T}{\partial t} + \left( \mathbf{v} \cdot \nabla \right) T \Bigr]}_{\dot{\mathbf{f}}}} -
@@ -915,24 +910,258 @@ T = \erfc\left(\frac{z}{2\sqrt{t}}\right)
 \nabla \cdot
        \underbrace{\Bigl[ \boldsymbol\kappa \nabla T \Bigr]}_{\mathbf{F}}} -
 \color{Maroon}{\underbrace{\Bigl[ H \Bigl] }_{\mathbf{f}}}
-{\color{Black} = 0}
+{\color{Black} = 0} \quad \textrm{[ Thermal Advection / Diffusion ]}
 \]</span></p>
-<p>$$ -</p>
-<p> - { = 0} $$</p>
+<p><span class="math display">\[
+\color{OliveGreen}{
+       \underbrace{ \Bigl[ S_s  \frac{\partial h}{\partial t} \Bigr] }_{\dot{\mathbf{f}}}} -
+\color{Blue}{
+\nabla \cdot
+\underbrace{\Bigl[ \boldsymbol\kappa \nabla h  - \boldsymbol{s}\Bigr]}_{\mathbf{F}}} -
+        \color{Maroon}{\underbrace{\Bigl[ W \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0} \quad \textrm{[ Darcy Flow (Groundwater) ]}
+\]</span></p>
 <p><span class="math display">\[
 \color{Blue}{
 -\nabla \cdot
     \underbrace{\Bigl[
               \frac{\eta}{2}\left( \nabla\mathbf{u} + \nabla\mathbf{u}^T \right)-  p \mathbf{I} \Bigr]}_{\mathbf{F}}} -
       \color{Maroon}{\underbrace{\Bigl[ \rho \mathbf{g} \Bigl] }_{\mathbf{f}}}
-{\color{Black} = 0}
+{\color{Black} = 0} \quad \textrm{[ Stokes Equation ]}
 \]</span></p>
+<p><span class="math display">\[
+{
+\color{OliveGreen}{
+  \underbrace{ \Bigl[
+     \frac{\partial \mathbf{u}}{\partial t} + \left(\mathbf{u}\cdot\nabla\right) \mathbf{u}
+               \Bigr] }_{\dot{\mathbf{f}}}}}
+- \color{Blue}{
+\nabla \cdot
+\underbrace{\Bigl[
+                \frac{\eta}{2}\left( \nabla\mathbf{u} + \nabla\mathbf{u}^T \right)-  p \mathbf{I} \Bigr]}_{\mathbf{F}}} -
+        \color{Maroon}{\underbrace{\Bigl[ \rho \mathbf{g} \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0} \quad \textrm{[ Navier-Stokes Equation ]}
+\]</span></p>
+<p><span class="math display">\[
+\color{OliveGreen}{
+       \underbrace{ \Bigl[  \frac{\partial h}{\partial t} \Bigr] }_{\dot{\mathbf{f}}}} -
+\color{Blue}{
+\nabla \cdot
+\underbrace{\Bigl[ \boldsymbol\kappa(|\nabla h|) \nabla h \Bigr]}_{\mathbf{F}}} -
+\color{Maroon}{\underbrace{\Bigl[ k A^m |\nabla h|^n + \dot{h}_{b} \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0} \quad \textrm{[ Landscape evolution ]}
+\]</span></p>
+</section>
+
+<section id="navier-stokes-equation-constitutive-law" class="title-slide slide level1 center">
+<h1>Navier-Stokes Equation: Constitutive Law</h1>
+<p><span class="math display">\[
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \nabla \cdot \boldsymbol{\sigma} - g\rho\hat{\mathbf{z}}
+\]</span></p>
+<p>but to close this system of equations, we need to know how <span class="math inline">\(\boldsymbol{\sigma}\)</span> relates to the momentum or velocity. In a Newtonian, viscous fluid:</p>
+<p><span class="math display">\[ \tau_{ij} = \eta \left[ \frac{\partial v_i}{\partial x_j} +  \frac{\partial v_j}{\partial x_i}\right]
+   \quad \textrm{and} \quad
+   \sigma_{ij} = \eta \left[ \frac{\partial v_i}{\partial x_j} +  \frac{\partial v_j}{\partial x_i}\right] - \frac{\partial p}{\partial x_i}
+\]</span></p>
+<p>are the <em>deviatoric</em> and <em>total</em> stress tensors, respectively. This definition of the stress in terms of a material property (<span class="math inline">\(\eta\)</span>, the dynamic viscosity), allows us to write:</p>
+<p><span class="math display">\[
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \nabla \cdot \left[ \eta \left( \nabla \mathbf{v} +
+                        \nabla \mathbf{v}^T \right)\right ] - \nabla p
+- g\rho {\mathbf{z}}
+\]</span></p>
+<p><span class="math display">\[
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \eta \nabla^2 \mathbf{v} - \nabla p
+- g \rho {\mathbf{z}}
+\]</span> The second form assumes that the viscosity is a constant and produces the familiar form of the Navier-Stokes equation. The first form is required if the viscosity varies.</p>
+</section>
+
+<section>
+<section id="navier-stokes-equation-convection" class="title-slide slide level1 center">
+<h1>Navier-Stokes Equation / Convection</h1>
+<p><span class="math display">\[
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                           \eta \nabla^2 \mathbf{v} - \nabla p
+                           - g \rho_0 \alpha \left( T - T_0 \right)  {\mathbf{z}}
+\]</span></p>
+<p><span class="math display">\[
+\left( \frac{\partial T}{\partial t} + \mathbf{v} \cdot \nabla T \right)=
+                        \kappa \nabla^2 T + \frac{H}{C_p}
+\]</span></p>
+<p>We combine Navier-Stokes equation driven by thermal buoyancy, and the expression for the time-evolution of the temperature field. The two equations are coupled through <span class="math inline">\(T\)</span>. The various physical properties and their units are listed below.</p>
+<p><span class="math display">\[
+\begin{array} {l|l|l}
+  \hline \textrm{Viscosity}           &amp; \eta             &amp; Pa \cdot s \\
+  \hline \textrm{Temperature scale}   &amp; \Delta T = T-T_0 &amp; K \\
+  \hline \textrm{Lengths}             &amp; x                &amp; m \\
+  \hline \textrm{Thermal expansivity} &amp; \alpha           &amp; K \\
+  \hline \textrm{Gravity}             &amp; g                &amp; m.s^{-2} \\
+  \hline \textrm{Density}             &amp; \rho             &amp; kg.m^{-3} \\
+  \hline \textrm{Thermal diffusivity} &amp; \kappa           &amp; m^2.s^{-1} \\
+  \hline
+\end{array}
+\]</span></p>
+</section>
+<section id="non-dimensional-navier-stokes" class="slide level2 center">
+<h2>Non-dimensional Navier-Stokes</h2>
+<p>It should not matter if we work in SI units cgs units or Imperial units — the physics does not change and the system does not care about our choice. That means there should be a way to express the equations without having to define specific units at all (or some sort of natural units for the problem that make everything close to 1).<sup>[*]</sup></p>
+<p>We can rescale all our numbers by typical values of length, time, temperature etc. We have to be consistent (remember dimensional analysis) so these choices work, for example:</p>
+<p><span class="math display">\[
+\begin{array} {lll}
+  x \leftarrow d . x' &amp; \partial / \partial x \leftarrow  (1/d) . \partial / \partial x' &amp; \nabla \leftarrow (1/d) \nabla' \\
+  t \leftarrow d^2 / \kappa . t'   &amp; \partial / \partial x \leftarrow  (\kappa/d^2) . \partial / \partial x' &amp; \mbox{} \\
+  T \leftarrow \Delta T . T'   &amp; \mbox{} &amp; \mbox{} \\
+  \mathbf{v} \leftarrow (\kappa / d)  \mathbf{v}' &amp; \mbox{} &amp; \mbox{} \\
+  p \leftarrow p_0 - (\eta \kappa / d^2 ) p'   &amp; \textrm{Note:} \; \nabla p_0 = - g \rho_0 &amp; \mbox{} \\
+\end{array}
+\]</span></p>
+<p><br></p>
+<p>[*] this is what people used to do — feet / inches for carpenters, furlongs for farmers / horses.</p>
+</section>
+<section id="non-dimensional-navier-stokes-2" class="slide level2 center">
+<h2>Non-dimensional Navier-Stokes (2)</h2>
+<p><span class="math display">\[
+\frac{\rho_0 \kappa}{d^2} \frac{D}{Dt'} \left( \frac{\kappa}{d} \mathbf{v}' \right) =
+                \frac{\eta}{d^2} \acute{\nabla}^2 \left( \frac{\kappa}{d} \mathbf{v}' \right)
+                - \frac{\eta \kappa}{d^3}  \acute{\nabla} p' + g \rho_0 \alpha \Delta T T' {\mathbf{z}}
+\]</span></p>
+<p>Tidying up as much as we can:</p>
+<p><span class="math display">\[
+\frac{\rho_0 \kappa^2}{d^3} \frac{D\mathbf{v}'}{Dt'}  =
+                \frac{\eta \kappa}{d^3} \acute{\nabla}^2  \mathbf{v}'
+                - \frac{\eta \kappa}{d^3}  \acute{\nabla} p' + g \rho_0 \alpha \Delta T T' {\mathbf{z}}
+\]</span></p>
+<p>Divide throughout by <span class="math inline">\(\eta \kappa / d^3\)</span> gives</p>
+<p><span class="math display">\[
+\begin{aligned}
+    \frac{\rho \kappa}{\eta} \frac{D\mathbf{v}'}{Dt'}  &amp; =
+                     \acute{\nabla}^2  \mathbf{v}'  -  \acute{\nabla} p' +
+                     \frac{g \rho_0 \alpha \Delta T d^3}{\kappa \eta} T' {\mathbf{z}} \nonumber \\
+           &amp; \textrm{or} \\
+    {\color{DarkRed}\frac{1}{{\rm Pr}}} \frac{D\mathbf{v}'}{Dt'} &amp; =
+    \acute{\nabla}^2  \mathbf{v}'  -
+    \acute{\nabla} p' + {\color{DarkRed} {\rm Ra}} T' {\mathbf{z}}
+\end{aligned}
+\]</span></p>
+<p>We have separated out the form of the equation from its scaling by going through this process. The primed variables can be re-inflated to their normal size using the scalings from the previous slide. The new parameters in the equation are dimensionless ratios (they have to be since all the primed variables are ratios).</p>
+</section>
+<section id="non-dimensional-navier-stokes-3" class="slide level2 center">
+<h2>Non-dimensional Navier-Stokes (3)</h2>
+<p><strong>Rayleigh number</strong> - measures the intensity of the buoyancy forces and their ability to counter the effects of thermal diffusion and viscosity in damping motion driven by buoyancy</p>
+<p><span class="math display">\[
+\mathrm{Ra} = \frac{g \rho \alpha \Delta T d^3}{\eta \kappa}
+\]</span></p>
+<p><strong>Prandtl number</strong> - measures the relative importance of stress diffusion and thermal diffusion and is purely a material property (no reference to the geometry, length- or time-scales).</p>
+<p><span class="math display">\[
+\mathrm{Pr} = \frac{\eta}{\rho \kappa} = \frac{\nu}{\kappa}
+\]</span></p>
+<p><strong>Reynolds number</strong> - measures the relative importance of inertial to viscous forces. The Reynolds number is commonly used in fluid dynamics where it is an indicator of the transition from steady flow, unsteady laminar flow, through to turbulent flow.</p>
+<p><span class="math display">\[
+\mathrm{Re}=\frac{\rho V_0 d}{\eta} = \frac{V_0 d}{\nu}
+\]</span></p>
+<p>The Reynolds number does not contain any reference to the thermal state but this means that there is no natural length/time scaling and so the definition can be subjective.</p>
+</section>
+<section id="non-dimensional-navier-stokes-4" class="slide level2 center">
+<h2>Non-dimensional Navier-Stokes (4)</h2>
+<p>Questions</p>
+<ul>
+<li>What is the Prandtl number for (1) Water, (2) A planet ?</li>
+<li>What is the Reynolds number for plate-tectonic motions ?</li>
+<li>Estimate the Rayleigh number for the Earth.</li>
+</ul>
+<p>Discussion points:</p>
+<ul>
+<li><p>If the Prandtl number is very large, how long does it take for the Navier-Stokes equation to adjust to changes in buoyancy forces or boundary conditions ?</p></li>
+<li><p>What is the Reynolds number for mantle flow / plate tectonics ? How about for flow in the Earth’s outer core ?</p></li>
+<li><p>A similar scaling question: what (roughly) is the kinetic energy of the Pacific plate ?</p></li>
+</ul>
+</section></section>
+<section>
+<section id="incompressible-flow-and-the-stream-function" class="title-slide slide level1 center">
+<h1>Incompressible flow and the stream function</h1>
+<p>In all the derivations so far we assume two incompatible things:</p>
+<ul>
+<li><span class="math inline">\(\rho\)</span>￼is constant (i.e.&nbsp;<span class="math inline">\(\nabla\cdot \rho \mathbf v \equiv \rho_0 \nabla \cdot \mathbf{v}\)</span>￼)</li>
+<li>Flow is driven by buoyancy forces that result from changes in density</li>
+</ul>
+<p>It is not unusual to make the approximation that fluids are incompressible (even for air if the Mach number is “small”) and we do not lose a lot of detail if we do this. We assume that the density variations are small so they are only important when they appear in a term that does not depend on the actual density but only the density gradient (e.g.&nbsp;buoyancy)</p>
+<ul>
+<li>This is called the Boussinesq approximation.</li>
+</ul>
+<p>Pressure becomes a constraint parameter rather than a physical pressure (cf a Lagrange multiplier) and the constraint equation is: <span class="math display">\[
+\nabla \cdot \mathbf{v} = 0
+\]</span> ￼ Constrained PDEs can be very hard to solve, but there are some tricks that allow us to directly incorporate the pressure constraint.</p>
+</section>
+<section id="incompressible-flow-and-the-stream-function-2" class="slide level2 center">
+<h2>Incompressible flow and the stream function (2)</h2>
+<p>The stream-function is a scalar quantity which defines a 2D incompressible flow everywhere. It satisfies: <span class="math display">\[
+v_1 = -\frac{\partial \psi}{\partial x_2}; \quad
+v_2 = \frac{\partial \psi}{\partial x_1} \quad
+{\color{DarkOrange} \textrm{compare this to }
+\mathbf{v} = \nabla \times (\psi {\mathbf{k}})
+\textrm{: the curl of an out-of-plane vector}
+}
+\]</span></p>
+<p>and this automatically implies <span class="math display">\[
+\frac{\partial v_1}{\partial x_1} + \frac{\partial v_2}{\partial x_2} = 0 \quad
+\textrm{(i.e. incompressibility)}
+\]</span> and <span class="math display">\[
+(\mathbf{v} \cdot \nabla) \psi =
+                        v_1 \frac{\partial \psi}{\partial x_1} +
+                        v_2 \frac{\partial \psi}{\partial x_2} =
+                        \frac{\partial \psi}{\partial x_2} \frac{\partial \psi}{\partial x_1} -
+                        \frac{\partial \psi}{\partial x_1} \frac{\partial \psi}{\partial x_2} = 0
+\]</span> i.e <span class="math inline">\(\psi\)</span> does not change as a result of advection</p>
+<p>Note: a more general, 3D version of this derivation is the Helmholtz decomposition of a vector field into <span style="color:DarkGreen;">irrotational</span> and a <span style="color:DarkRed">solenoidal</span> (divergence free) parts:</p>
+<p><span class="math display">\[
+  \mathbf{u} = {\color{DarkGreen} \nabla \phi} +
+               {\color{DarkRed} \nabla \times \mathbf{A}}
+\]</span>￼</p>
+</section>
+<section id="incompressible-flow-and-the-stream-function-3" class="slide level2 center">
+<h2>Incompressible flow and the stream function (3)</h2>
+<p>Vorticity is defined as <span class="math inline">\(\boldsymbol{\omega} = \nabla \times \mathbf{v}\)</span>￼ but in 2D, there is just one component of this equation and we treat it as a scalar (<span class="math inline">\(\omega \leftarrow \omega_3\)</span>￼)</p>
+<p><span class="math display">\[
+\omega = \frac{\partial v_2}{\partial x_1} -
+         \frac{\partial v_1}{\partial x_2}
+\]</span></p>
+<p>If we take the curl of the Navier-Stokes equation we find we can eliminate the pressure gradients as <span class="math inline">\(\nabla \times \nabla P \equiv 0\)</span>￼. For infinite Prandtl number, the L.H.S vanishes.</p>
+<p><span id="eq-stokes-vorticity"><span class="math display">\[
+\frac{1}{\rm Pr} \left( \frac{D \boldsymbol{\omega}}{D t} -
+                (\boldsymbol{\omega} \cdot \nabla) \mathbf{v} \right) =
+                    \eta \nabla ^2 \boldsymbol{\omega} + {\rm Ra} \frac{\partial T}{\partial x_1}
+\qquad(1)\]</span></span></p>
+<p>Now, <span class="math inline">\(\mathbf{v} = (-\partial \psi / \partial x_2, \partial \psi / \partial x_1, 0)\)</span>￼ implies that <span class="math inline">\(\nabla \times \mathbf{v} = \nabla ^2 \psi = \omega\)</span> ￼ and, if we substitute this into <span class="math display">\[
+  \color{DarkRed} \nabla^4 \psi = -{\rm Ra} \frac{\partial T}{\partial x_1} \textrm{(the biharmonic equation)}
+\]</span></p>
+<p>where <span class="math inline">\(\nabla^4\)</span>￼is known as the biharmonic operator and is defined to be</p>
+<p><span class="math display">\[
+\nabla^4 \equiv \nabla^2 ( \nabla ^2) \equiv
+                    \left( \frac{\partial ^4}{\partial x_1^4} +
+                    \frac{\partial ^2}{\partial x_1^2} \frac{\partial ^2}{\partial x_2^2} +
+                    \frac{\partial ^4}{\partial x_2^4} \right)
+\]</span></p>
+</section></section>
+<section id="stop" class="title-slide slide level1 center">
+<h1>Stop !!</h1>
+<p>Construction work ahead</p>
+</section>
+
+<section id="does-the-rotation-of-the-earth-matter" class="title-slide slide level1 center">
+<h1>Does the rotation of the Earth matter ?</h1>
+<p>Yes and No !</p>
 </section>
 
 <section id="convection-and-the-mantle" class="title-slide slide level1 center">
 <h1>Convection and the Mantle</h1>
 <p><img data-src="images/ConvectionCartoon.png" alt="Convection cartoon"> <!-- .element style="height:300px; float:right" --></p>
-<p>The soup analogy is quite helpful because it demonstrateshow heat escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).</p>
+<p>The soup analogy is quite helpful because it demonstrates how heat escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).</p>
 <p>This heat engine is the driving force behind tectonic motion and the constructive side of of the geological cycle.</p>
 <p><strong>Key differences</strong></p>
 <ul>
@@ -1398,19 +1627,9 @@ Sorry, your browser doesn’t support embedded videos. </video>
 <section id="end" class="title-slide slide level1 center">
 <h1>End</h1>
 
-</section>
-
-<section id="resources" class="title-slide slide level1 center">
-<h1>Resources</h1>
-<p><img data-src="images/EMSC3002-JB-QRcode.png"> <!-- .element style="float: right" width="25%" --></p>
-<div style="width: 60%">
-<p><a href="https://anu-rses-education.github.io/EMSC-3002/FrontPage.html">Online book</a> with lecture materials, practicals and live computational examples.</p>
-<p>Wattle (when available), Programs and Courses</p>
-<p><a href="https://github.com/underworld-geodynamics-cloud/self-managing-jupyterhub">Source code</a></p>
-</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>ANU Course : EMSC 2022</p>
+<p>ANU Course : PHYS 3070</p>
 </div>
 </div>
 </section>
