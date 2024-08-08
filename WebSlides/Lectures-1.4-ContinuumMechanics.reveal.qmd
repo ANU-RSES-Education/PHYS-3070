@@ -38,7 +38,7 @@ questions of scaling, and develop some intuition for the dominant physics of man
 :::
 
 ::: {.column width="40%"}
-![](Images/AuWorldEQ.png){fig-align="right"}
+![](images/AuWorldEQ.png){fig-align="right"}
 :::
 
 ::::
@@ -68,7 +68,7 @@ Convection in Earth’s interior is (a little bit) like a boiling pot (as we saw
 <center>
 
 ![](images/USGS-ConvectionCartoon.png){fig-align="center" height="300px"} &nbsp;
-![](Images/AWatchedPot.png){fig-align="center" height="300px"}
+![](images/AWatchedPot.png){fig-align="center" height="300px"}
 
 </center>
 
@@ -341,7 +341,7 @@ $$ Q_{r+\delta r} = 4\pi (r+\delta_r)^2 \cdot q_r(r+\delta_r) $$
 :::
 
 ::: {.column width="30%"}
-![](Images/AnnulusSphere_dR.png){fig-align="right"}
+![](images/AnnulusSphere_dR.png){fig-align="right"}
 :::
 
 ::::
