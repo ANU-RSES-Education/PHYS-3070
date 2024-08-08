@@ -7,14 +7,12 @@ format:
     # logo: Images/ANU-logo.jpg
     # self-contained: true
     footer: |
-      ANU Course : EMSC 2022     
-    code-links:
-      - text: Open in Binder
-        icon: rocket-takeoff
-        href: https://mybinder.org/v2/gh/ANU-RSES-Education/EMSC-QuartoBook/HEAD?labpath=WebBook/Notebooks%2FBinderLandingPage.qmd
-    other-links:
-      - text: Github Repository
-        icon: github
-        href: https://github.com/ANU-RSES-Education/EMSC-QuartoBook
-  
- 
+      ANU Course : PHYS 3070
+    # code-links:
+    #   - text: Open in Binder
+    #     icon: rocket-takeoff
+    #     href: https://mybinder.org/v2/gh/ANU-RSES-Education/EMSC-QuartoBook/HEAD?labpath=WebBook/Notebooks%2FBinderLandingPage.qmd
+    # other-links:
+    #   - text: Github Repository
+    #     icon: github
+    #     href: https://github.com/ANU-RSES-Education/EMSC-QuartoBook

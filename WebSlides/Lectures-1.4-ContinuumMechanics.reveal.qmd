@@ -760,21 +760,13 @@ $$
 \end{split}
 $$
 
-
-# Stop !!
-
-Construction work ahead
-
-
-
-
 # Continuum Mechanics: Summary
 
 $$
 {\color{OliveGreen}{\frac{d \rho \phi}{dt} + \nabla \cdot \rho \phi \mathbf{u}}} -
 {\color{Blue} \nabla \cdot \mathbf{F}(\phi, \nabla \phi)}
 {\color{Maroon} -\rho H(\phi, \nabla \phi) }
-= 0
+= 0 \quad \textrm{[ General Template ]}
 $$
 
 $$
@@ -783,18 +775,17 @@ $$
 \nabla \cdot
        \underbrace{\Bigl[ \boldsymbol\kappa \nabla T \Bigr]}_{\mathbf{F}}} -
 \color{Maroon}{\underbrace{\Bigl[ H \Bigl] }_{\mathbf{f}}}
-{\color{Black} = 0}
+{\color{Black} = 0} \quad \textrm{[ Thermal Advection / Diffusion ]}
 $$
 
 $$
 \color{OliveGreen}{
        \underbrace{ \Bigl[ S_s  \frac{\partial h}{\partial t} \Bigr] }_{\dot{\mathbf{f}}}} -
-
 \color{Blue}{
 \nabla \cdot
 \underbrace{\Bigl[ \boldsymbol\kappa \nabla h  - \boldsymbol{s}\Bigr]}_{\mathbf{F}}} -
         \color{Maroon}{\underbrace{\Bigl[ W \Bigl] }_{\mathbf{f}}}
-{\color{Black} = 0}
+{\color{Black} = 0} \quad \textrm{[ Darcy Flow (Groundwater) ]}
 $$
 
 $$
@@ -803,25 +794,332 @@ $$
     \underbrace{\Bigl[
               \frac{\eta}{2}\left( \nabla\mathbf{u} + \nabla\mathbf{u}^T \right)-  p \mathbf{I} \Bigr]}_{\mathbf{F}}} -
       \color{Maroon}{\underbrace{\Bigl[ \rho \mathbf{g} \Bigl] }_{\mathbf{f}}}
-{\color{Black} = 0}
+{\color{Black} = 0} \quad \textrm{[ Stokes Equation ]}
+$$
+
+$$
+{
+\color{OliveGreen}{
+  \underbrace{ \Bigl[
+     \frac{\partial \mathbf{u}}{\partial t} + \left(\mathbf{u}\cdot\nabla\right) \mathbf{u}
+               \Bigr] }_{\dot{\mathbf{f}}}}}
+- \color{Blue}{
+\nabla \cdot
+\underbrace{\Bigl[
+                \frac{\eta}{2}\left( \nabla\mathbf{u} + \nabla\mathbf{u}^T \right)-  p \mathbf{I} \Bigr]}_{\mathbf{F}}} -
+        \color{Maroon}{\underbrace{\Bigl[ \rho \mathbf{g} \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0} \quad \textrm{[ Navier-Stokes Equation ]}
+$$
+
+$$
+\color{OliveGreen}{
+       \underbrace{ \Bigl[  \frac{\partial h}{\partial t} \Bigr] }_{\dot{\mathbf{f}}}} -
+\color{Blue}{
+\nabla \cdot
+\underbrace{\Bigl[ \boldsymbol\kappa(|\nabla h|) \nabla h \Bigr]}_{\mathbf{F}}} -
+\color{Maroon}{\underbrace{\Bigl[ k A^m |\nabla h|^n + \dot{h}_{b} \Bigl] }_{\mathbf{f}}}
+{\color{Black} = 0} \quad \textrm{[ Landscape evolution ]}
+$$
+
+# Navier-Stokes Equation: Constitutive Law
+
+$$
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \nabla \cdot \boldsymbol{\sigma} - g\rho\hat{\mathbf{z}}
+$$
+
+but to close this system of equations, we need to know how $\boldsymbol{\sigma}$
+relates to the momentum or velocity. In a Newtonian, viscous fluid:
+
+$$ \tau_{ij} = \eta \left[ \frac{\partial v_i}{\partial x_j} +  \frac{\partial v_j}{\partial x_i}\right]
+   \quad \textrm{and} \quad
+   \sigma_{ij} = \eta \left[ \frac{\partial v_i}{\partial x_j} +  \frac{\partial v_j}{\partial x_i}\right] - \frac{\partial p}{\partial x_i}
+$$
+
+are the *deviatoric* and *total* stress tensors, respectively. This definition
+of the stress in terms of a material property ($\eta$, the dynamic viscosity), allows
+us to write:
+
+$$
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \nabla \cdot \left[ \eta \left( \nabla \mathbf{v} +
+                        \nabla \mathbf{v}^T \right)\right ] - \nabla p
+- g\rho {\mathbf{z}}
+$$
+
+$$
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                        \eta \nabla^2 \mathbf{v} - \nabla p
+- g \rho {\mathbf{z}}
+$$
+The second form assumes that the viscosity is a constant and produces the familiar form of the
+Navier-Stokes equation. The first form is required if the viscosity varies.
+
+# Navier-Stokes Equation / Convection
+
+
+$$
+\rho \left( \frac{\partial \mathbf{v}}{\partial t}
+                           + (\mathbf{v} \cdot \nabla) \mathbf{v} \right) =
+                           \eta \nabla^2 \mathbf{v} - \nabla p
+                           - g \rho_0 \alpha \left( T - T_0 \right)  {\mathbf{z}}
+$$
+
+$$
+\left( \frac{\partial T}{\partial t} + \mathbf{v} \cdot \nabla T \right)=
+                        \kappa \nabla^2 T + \frac{H}{C_p}
+$$
+
+We combine Navier-Stokes equation driven by thermal buoyancy, and the expression for
+the time-evolution of the temperature field. The two equations are coupled through $T$.
+The various physical properties and their units are listed below.
+
+$$
+\begin{array} {l|l|l}
+  \hline \textrm{Viscosity}           & \eta             & Pa \cdot s \\
+  \hline \textrm{Temperature scale}   & \Delta T = T-T_0 & K \\
+  \hline \textrm{Lengths}             & x                & m \\
+  \hline \textrm{Thermal expansivity} & \alpha           & K \\
+  \hline \textrm{Gravity}             & g                & m.s^{-2} \\
+  \hline \textrm{Density}             & \rho             & kg.m^{-3} \\
+  \hline \textrm{Thermal diffusivity} & \kappa           & m^2.s^{-1} \\
+  \hline
+\end{array}
 $$
 
 
+## Non-dimensional Navier-Stokes
+
+It should not matter if we work in SI units cgs units or Imperial units —
+the physics does not change and the system does not care about our choice.
+That means there should be a way to express the equations without having to
+define specific units at all (or some sort of natural units for the problem
+that make everything close to 1).^[*]^
+
+We can rescale all our numbers by typical values of length, time,
+temperature etc. We have to be consistent (remember dimensional analysis)
+so these choices work, for example:
+
+$$
+\begin{array} {lll}
+  x \leftarrow d . x' & \partial / \partial x \leftarrow  (1/d) . \partial / \partial x' & \nabla \leftarrow (1/d) \nabla' \\
+  t \leftarrow d^2 / \kappa . t'   & \partial / \partial x \leftarrow  (\kappa/d^2) . \partial / \partial x' & \mbox{} \\
+  T \leftarrow \Delta T . T'   & \mbox{} & \mbox{} \\
+  \mathbf{v} \leftarrow (\kappa / d)  \mathbf{v}' & \mbox{} & \mbox{} \\
+  p \leftarrow p_0 - (\eta \kappa / d^2 ) p'   & \textrm{Note:} \; \nabla p_0 = - g \rho_0 & \mbox{} \\
+\end{array}
+$$
+
+</br>
+
+[*] this is what people used to do — feet / inches for carpenters, furlongs for farmers / horses.
+
+## Non-dimensional Navier-Stokes (2)
+
+$$
+\frac{\rho_0 \kappa}{d^2} \frac{D}{Dt'} \left( \frac{\kappa}{d} \mathbf{v}' \right) =
+                \frac{\eta}{d^2} \acute{\nabla}^2 \left( \frac{\kappa}{d} \mathbf{v}' \right)
+                - \frac{\eta \kappa}{d^3}  \acute{\nabla} p' + g \rho_0 \alpha \Delta T T' {\mathbf{z}}
+$$
+
+Tidying up as much as we can:
+
+$$
+\frac{\rho_0 \kappa^2}{d^3} \frac{D\mathbf{v}'}{Dt'}  =
+                \frac{\eta \kappa}{d^3} \acute{\nabla}^2  \mathbf{v}'
+                - \frac{\eta \kappa}{d^3}  \acute{\nabla} p' + g \rho_0 \alpha \Delta T T' {\mathbf{z}}
+$$
+
+Divide throughout by $\eta \kappa / d^3$ gives
+
+$$
+\begin{aligned}
+    \frac{\rho \kappa}{\eta} \frac{D\mathbf{v}'}{Dt'}  & =
+                     \acute{\nabla}^2  \mathbf{v}'  -  \acute{\nabla} p' +
+                     \frac{g \rho_0 \alpha \Delta T d^3}{\kappa \eta} T' {\mathbf{z}} \nonumber \\
+           & \textrm{or} \\
+    {\color{DarkRed}\frac{1}{{\rm Pr}}} \frac{D\mathbf{v}'}{Dt'} & =
+    \acute{\nabla}^2  \mathbf{v}'  -
+    \acute{\nabla} p' + {\color{DarkRed} {\rm Ra}} T' {\mathbf{z}}
+\end{aligned}
+$$
+
+We have separated out the form of the equation from its scaling by going through this process.
+The primed variables can be re-inflated to their normal size using the scalings from the previous slide.
+The new parameters in the equation are dimensionless ratios (they have to be since all the primed variables
+are ratios).
+
+## Non-dimensional Navier-Stokes (3)
+
+**Rayleigh number** - measures the intensity of the buoyancy forces and their ability to counter the effects
+of thermal diffusion and viscosity in damping motion driven by buoyancy
+
+$$
+\mathrm{Ra} = \frac{g \rho \alpha \Delta T d^3}{\eta \kappa}
+$$
+
+**Prandtl number** - measures the relative importance of stress diffusion and thermal diffusion and is purely a
+material property (no reference to the geometry, length- or time-scales).
+
+$$
+\mathrm{Pr} = \frac{\eta}{\rho \kappa} = \frac{\nu}{\kappa}
+$$
+
+**Reynolds number** - measures the relative importance of inertial to viscous forces. The Reynolds number is commonly
+used in fluid dynamics where it is an indicator of the transition from steady flow, unsteady laminar flow, through to
+turbulent flow.
+
+$$
+\mathrm{Re}=\frac{\rho V_0 d}{\eta} = \frac{V_0 d}{\nu}
+$$
+
+The Reynolds number does not contain any reference to the thermal state but this means that there
+is no natural length/time scaling and so the definition can be subjective.
+
+## Non-dimensional Navier-Stokes (4)
+
+Questions
+
+  - What is the Prandtl number for (1) Water, (2) A planet ?
+  - What is the Reynolds number for plate-tectonic motions ?
+  - Estimate the Rayleigh number for the Earth.
+
+Discussion points:
+
+  - If the Prandtl number is very large, how long does it take for the Navier-Stokes equation
+    to adjust to changes in buoyancy forces or boundary conditions ?
+
+  - What is the Reynolds number for mantle flow / plate tectonics ?
+    How about for flow in the Earth's outer core ?
+
+  - A similar scaling question: what (roughly) is the kinetic energy of the Pacific plate ?
+
+# Incompressible flow and the stream function
+
+In all the derivations so far we assume two incompatible things:
+
+  - $\rho$￼is constant (i.e. $\nabla\cdot \rho \mathbf v \equiv \rho_0 \nabla \cdot \mathbf{v}$￼)
+  - Flow is driven by buoyancy forces that result from changes in density
+
+It is not unusual to make the approximation that fluids are incompressible
+(even for air if the Mach number is “small”) and we do not lose a lot of detail if we do this.
+We assume that the density variations are small so they are only important when they appear in a term that does not depend on the actual density but only the density gradient (e.g. buoyancy)
+
+  - This is called the Boussinesq approximation.
+
+Pressure becomes a constraint parameter rather than a physical pressure (cf a Lagrange multiplier)
+and the constraint equation is:
+$$
+\nabla \cdot \mathbf{v} = 0
+$$
+    ￼
+Constrained PDEs can be very hard to solve, but there are some tricks
+that allow us to directly incorporate the pressure constraint.
+
+## Incompressible flow and the stream function (2)
+
+The stream-function is a scalar quantity which defines a 2D incompressible flow everywhere.
+It satisfies:
+$$
+v_1 = -\frac{\partial \psi}{\partial x_2}; \quad
+v_2 = \frac{\partial \psi}{\partial x_1} \quad
+{\color{DarkOrange} \textrm{compare this to }
+\mathbf{v} = \nabla \times (\psi {\mathbf{k}})
+\textrm{: the curl of an out-of-plane vector}
+ }
+$$
+
+and this automatically implies
+$$
+\frac{\partial v_1}{\partial x_1} + \frac{\partial v_2}{\partial x_2} = 0 \quad
+\textrm{(i.e. incompressibility)}
+$$
+and
+$$
+(\mathbf{v} \cdot \nabla) \psi =
+                        v_1 \frac{\partial \psi}{\partial x_1} +
+                        v_2 \frac{\partial \psi}{\partial x_2} =
+                        \frac{\partial \psi}{\partial x_2} \frac{\partial \psi}{\partial x_1} -
+                        \frac{\partial \psi}{\partial x_1} \frac{\partial \psi}{\partial x_2} = 0
+$$
+i.e $\psi$ does not change as a result of advection
+
+
+Note: a more general, 3D version of this derivation is the Helmholtz decomposition
+of a vector field into [irrotational]{style="color:DarkGreen;"} and a
+[solenoidal]{style="color:DarkRed"} (divergence free) parts:
+
+$$
+  \mathbf{u} = {\color{DarkGreen} \nabla \phi} +
+               {\color{DarkRed} \nabla \times \mathbf{A}}
+$$￼
+
+## Incompressible flow and the stream function (3)
+
+Vorticity is defined as  $\boldsymbol{\omega} = \nabla \times \mathbf{v}$￼ but in 2D,
+there is just one component of this equation and we treat it as a scalar ($\omega \leftarrow \omega_3$￼)
+
+$$
+\omega = \frac{\partial v_2}{\partial x_1} -
+         \frac{\partial v_1}{\partial x_2}
+$$
+
+If we take the curl of the Navier-Stokes equation we find we can eliminate
+the pressure gradients as $\nabla \times \nabla P \equiv 0$￼.
+For infinite Prandtl number, the L.H.S vanishes.
+
+$$
+\frac{1}{\rm Pr} \left( \frac{D \boldsymbol{\omega}}{D t} -
+                (\boldsymbol{\omega} \cdot \nabla) \mathbf{v} \right) =
+                    \eta \nabla ^2 \boldsymbol{\omega} + {\rm Ra} \frac{\partial T}{\partial x_1}
+$$ {#eq-stokes-vorticity}
+
+Now, $\mathbf{v} = (-\partial \psi / \partial x_2, \partial \psi / \partial x_1, 0)$￼
+implies that $\nabla \times \mathbf{v} = \nabla ^2 \psi = \omega$
+￼ and, if we substitute this into
+$$
+  \color{DarkRed} \nabla^4 \psi = -{\rm Ra} \frac{\partial T}{\partial x_1} \textrm{(the biharmonic equation)}
+$$
+
+where $\nabla^4$￼is known as the biharmonic operator and is defined to be
+
+
+$$
+\nabla^4 \equiv \nabla^2 ( \nabla ^2) \equiv
+                    \left( \frac{\partial ^4}{\partial x_1^4} +
+                    \frac{\partial ^2}{\partial x_1^2} \frac{\partial ^2}{\partial x_2^2} +
+                    \frac{\partial ^4}{\partial x_2^4} \right)
+$$
+
+
+# Stop !!
+
+Construction work ahead
+
+# Does the rotation of the Earth matter ?
+
+  Yes and No !
 
 
 # Convection and the Mantle
 
 ![Convection cartoon](images/ConvectionCartoon.png) <!-- .element style="height:300px; float:right" -->
 
-The soup analogy is quite helpful because it demonstrateshow heat escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).
+The soup analogy is quite helpful because it demonstrates how heat
+escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).
 
-This heat engine is the driving force behind tectonic motion and the constructive side of of the geological cycle.
+This heat engine is the driving force behind tectonic motion and the
+constructive side of of the geological cycle.
 
 **Key differences**
 
   - The Earth’s mantle is solid, the soup is liquid / a slurry.
   - The soup does not show any evidence of plate tectonics.
-  - Hot and cold rocks have quite different physical properties (e.g. viscosity, elastic strength) even if they don’t melt.
+  - Hot and cold rocks have quite different physical properties
+      (e.g. viscosity, elastic strength) even if they don’t melt.
 
 # Lava Lakes
 
@@ -1520,18 +1818,3 @@ None of these simple models actually produce plate tectonics but they do still t
 # End
 
 </center>
-
-
-# Resources
-
- ![](images/EMSC3002-JB-QRcode.png) <!-- .element style="float: right" width="25%" -->
-
-<div style="width: 60%">
-
-  [Online book](https://anu-rses-education.github.io/EMSC-3002/FrontPage.html)
-with lecture materials, practicals and live computational examples.
-
-  Wattle (when available), Programs and Courses
-
-  [Source code](https://github.com/underworld-geodynamics-cloud/self-managing-jupyterhub)
-</div>
