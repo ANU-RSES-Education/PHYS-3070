@@ -1015,7 +1015,7 @@ T = \erfc\left(\frac{z}{2\sqrt{t}}\right)
 <p><span class="math display">\[
 \begin{array} {lll}
   x \leftarrow d . x' &amp; \partial / \partial x \leftarrow  (1/d) . \partial / \partial x' &amp; \nabla \leftarrow (1/d) \nabla' \\
-  t \leftarrow d^2 / \kappa . t'   &amp; \partial / \partial x \leftarrow  (\kappa/d^2) . \partial / \partial x' &amp; \mbox{} \\
+  t \leftarrow d^2 / \kappa . t'   &amp; \partial / \partial t \leftarrow  (\kappa/d^2) . \partial / \partial t' &amp; \mbox{} \\
   T \leftarrow \Delta T . T'   &amp; \mbox{} &amp; \mbox{} \\
   \mathbf{v} \leftarrow (\kappa / d)  \mathbf{v}' &amp; \mbox{} &amp; \mbox{} \\
   p \leftarrow p_0 - (\eta \kappa / d^2 ) p'   &amp; \textrm{Note:} \; \nabla p_0 = - g \rho_0 &amp; \mbox{} \\
@@ -1148,69 +1148,27 @@ v_2 = \frac{\partial \psi}{\partial x_1} \quad
                     \frac{\partial ^4}{\partial x_2^4} \right)
 \]</span></p>
 </section></section>
-<section id="stop" class="title-slide slide level1 center">
-<h1>Stop !!</h1>
-<p>Construction work ahead</p>
-</section>
-
 <section id="does-the-rotation-of-the-earth-matter" class="title-slide slide level1 center">
 <h1>Does the rotation of the Earth matter ?</h1>
-<p>Yes and No !</p>
+<p>The Navier-Stokes equation describes the momentum balance in a viscous fluid in response to buoyancy forces and pressure gradients. In a rotating system, we may also need to consider the influence of Coriolis, and centrifugal forces</p>
+<p><span class="math display">\[
+\rho \frac{\partial \mathbf{v}}{\partial t} + \rho\left( \mathbf{v}\cdot \nabla \right) \mathbf{v} +
+2 \rho \boldsymbol{\Omega}\times \mathbf{v} + \rho \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{x}\right)
+= \nabla \eta \left( \nabla \mathbf{u} + \nabla\mathbf{u}^T \right) - \nabla p - g \rho_0 \alpha  \left( T - T_0 \right)  {\mathbf{z}}
+% \frac{1}{\mu_0}\nabla\times\mathbf{B}\times\mathbf{B}
+\]</span></p>
+<p><span class="math inline">\(\boldsymbol{\Omega}\)</span> is the rotation rate vector which we can also write as <span class="math inline">\(\;\boldsymbol{\Omega} \equiv \Omega_0 \mathbf{z}\)</span></p>
+<p><span class="math display">\[
+\frac{\rho _0 \kappa}{\eta _0}\left[ \frac{\partial \mathbf{v'}}{\partial t'} +
+\rho\left( \mathbf{v'}\cdot \nabla' \right) \mathbf{v'} + 2 {\Omega_0} \mathbf{\hat{z}} \times \mathbf{v'} \right]
+- \nabla' \eta \left( \nabla' \mathbf{v'} + \nabla'\mathbf{v'}^T \right) + \nabla' p^{*^{'}} =
+\frac{g \rho_0 \alpha \Delta T d^3}{\kappa \eta} T' {\mathbf{z}}
+\]</span></p>
+<p>Pressure-like terms are all gathered into <span class="math inline">\(p^*\)</span> and include contributions from the centrifugal force term</p>
 </section>
 
-<section id="convection-and-the-mantle" class="title-slide slide level1 center">
-<h1>Convection and the Mantle</h1>
-<p><img data-src="images/ConvectionCartoon.png" alt="Convection cartoon"> <!-- .element style="height:300px; float:right" --></p>
-<p>The soup analogy is quite helpful because it demonstrates how heat escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).</p>
-<p>This heat engine is the driving force behind tectonic motion and the constructive side of of the geological cycle.</p>
-<p><strong>Key differences</strong></p>
-<ul>
-<li>The Earth’s mantle is solid, the soup is liquid / a slurry.</li>
-<li>The soup does not show any evidence of plate tectonics.</li>
-<li>Hot and cold rocks have quite different physical properties (e.g.&nbsp;viscosity, elastic strength) even if they don’t melt.</li>
-</ul>
-</section>
-
-<section>
-<section id="lava-lakes" class="title-slide slide level1 center">
-<h1>Lava Lakes</h1>
-<p>There are some hints at plate-like surface motions in caldera lava lakes like this one from the USGS</p>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ybMekPyvq9Y?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</center>
-<p><em>April 17, 2021: The lava lake in Halema‘uma‘u Crater, at the summit of Kīlauea Volcano, remains active. This video is shown at 20x speed and shows the lava supplying the lake from the western fissure.</em></p>
-</section>
-<section id="lava-lakes-ii" class="slide level2 center">
-<h2>Lava Lakes (ii)</h2>
-<p>This shows the foundering of the cooler crust of the lake into the interior. New solid crust forms where the molten lava meets the atmosphere.</p>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/moWrOrPvaV0?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</center>
-<p><em>This video shows crustal foundering and resurfacing at the lava lake in Halema‘uma‘u, at the summit of Kīlauea on January 8, 2021. Recently this foundering process has been common in the eastern portion of the lake. The video is shown at 20x speed.</em></p>
-</section></section>
-<section id="discussion-points" class="title-slide slide level1 center">
-<h1>Discussion points</h1>
-<p><strong>What have we learned so far ?</strong></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>If the Earth really follows this cartoon, we need to understand how solid rock can deform as though it was a viscous liquid.</p>
-<ul>
-<li>How do we know that the mantle is solid ( * ) ?</li>
-<li>When/how does a solid act like a viscous fluid ( † ) ?</li>
-<li>What is the typical speed of viscous flow in the mantle ?</li>
-<li>How much energy is the Earth using up for plate tectonics ?</li>
-</ul>
-<p><strong>( * )</strong>: How do we know that the outer core is not solid ?</p>
-<p><strong>( † )</strong>: If you are interested, read about crystal defects and deformation</p>
-</div><div class="column" style="width:50%;">
-<img data-src="images/ConvectionCartoon.png" class="r-stretch" style="width:80%">
-</div></div>
-</section>
-
-<section id="a-toy-model" class="title-slide slide level1 center">
-<h1>A Toy Model</h1>
+<section id="convection-and-the-mantle-a-toy-model" class="title-slide slide level1 center">
+<h1>Convection and the Mantle: A Toy Model</h1>
 <center>
 <video autoplay="" controls="" height="315">
 <source src="movies/ReferenceSinker.mp4" type="video/mp4">
@@ -1243,9 +1201,10 @@ v_2 = \frac{\partial \psi}{\partial x_1} \quad
 <p><img data-src="images/ShearFlow.png" style="width:90%"></p>
 <p><img data-src="images/GravityCurrentAnim.gif" style="width:90%"></p>
 </div></div>
-</section>
-<section id="a-toy-model-1" class="slide level2 center">
-<h2>A Toy Model</h2>
+</section></section>
+<section>
+<section id="the-toy-model-examined" class="title-slide slide level1 center">
+<h1>The Toy Model Examined</h1>
 <center>
 <video autoplay="" controls="" loop="" height="315">
 <source src="movies/ReferenceSinker.mp4" type="video/mp4">
@@ -1256,10 +1215,10 @@ v_2 = \frac{\partial \psi}{\partial x_1} \quad
 <pre><code>Sorry, your browser doesn't support embedded videos.</code></pre>
 </video>
 </center>
-<p>In this toy model, do hot blobs and cold blobs behave in the same way (other than moving up v. moving down ?)</p>
+<p>In this toy model, do hot blobs and cold blobs behave in the same way (other than moving up v. moving down ?) - is this what you expect from the NS equation ?</p>
 </section>
-<section id="a-toy-model-2" class="slide level2 center">
-<h2>A Toy Model</h2>
+<section id="the-toy-model---examined" class="slide level2 center">
+<h2>The Toy Model - Examined</h2>
 <center>
 <video autoplay="" controls="" loop="" height="315">
 <source src="movies/ReferenceSinker.mp4" type="video/mp4">
@@ -1370,31 +1329,15 @@ v_2 = \frac{\partial \psi}{\partial x_1} \quad
 </section></section>
 <section id="convective-activity" class="title-slide slide level1 center">
 <h1>Convective Activity</h1>
-<p><strong>Intuition</strong> from these simple toy models suggests that the vigour of convection may depend upon the various system parameters according to the following equation:</p>
+<p><strong>Intuition</strong> from these simple toy models produces the same dominant effects as we obtained from the non-dimensionalisation.</p>
 <p><span class="math display">\[
 \mathrm{Activity} \propto \frac{\textrm{buoyancy} \times d}{\kappa \eta}
 \]</span></p>
-<p>This turns out to be roughly correct, but there is an actual relationship that looks like this (with buoyancy highlighted in <span style="color:blue;">blue</span>)</p>
+<p>cf.&nbsp;Rayleigh number that we found earlier.</p>
 <p><span class="math display">\[
 \mathrm{Activity} \propto \frac{\color{blue}{g\rho_0\alpha\Delta T} d^3}{\kappa \eta}
 \]</span></p>
-<p>One reason we know the latter to be the valid relationship is that this quantity <strong>has no units</strong> and these simple ratios often end up being important <em>universal</em> descriptions of convecting systems at all scales.</p>
-</section>
-
-<section id="dimensionless-numbers" class="title-slide slide level1 center">
-<h1>Dimensionless Numbers</h1>
-<p>Ratios where the units cancel are called <strong>dimensionless numbers</strong>. For fluid dynamics, the following numbers appear again and again</p>
-<div class="columns" style="display: flex; align-items: center;">
-<div class="column" style="'width:60%;">
-<p><strong>Rayleigh number</strong> measures the intensity of buoyancy forces</p>
-<p><span class="math display">\[ \mathrm{Ra} = \frac{g\rho_0\alpha\Delta T d^3}{\kappa \eta} \]</span></p>
-<p><strong>Reynolds number</strong> measures the relative importance of inertial to viscous forces</p>
-<p><span class="math display">\[ \mathrm{Re}=\frac{\rho V_0 d}{\eta} = \frac{V_0 d}{\nu}   \]</span></p>
-<p><strong>Prandtl number</strong> measures stress diffusion compared to thermal diffusion</p>
-<p><span class="math display">\[ \mathrm{Pr} = \frac{\eta}{\rho \kappa} = \frac{\nu}{\kappa} \]</span></p>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/AdvectionVDiffusion.png"></p>
-</div></div>
+<p>The advantage of the detailed analysis / re-scaling, is that we obtain the true dimensionless ratios.</p>
 </section>
 
 <section>
@@ -1626,7 +1569,6 @@ Sorry, your browser doesn’t support embedded videos. </video>
 
 <section id="end" class="title-slide slide level1 center">
 <h1>End</h1>
-
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>ANU Course : PHYS 3070</p>
