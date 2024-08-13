@@ -906,7 +906,7 @@ so these choices work, for example:
 $$
 \begin{array} {lll}
   x \leftarrow d . x' & \partial / \partial x \leftarrow  (1/d) . \partial / \partial x' & \nabla \leftarrow (1/d) \nabla' \\
-  t \leftarrow d^2 / \kappa . t'   & \partial / \partial x \leftarrow  (\kappa/d^2) . \partial / \partial x' & \mbox{} \\
+  t \leftarrow d^2 / \kappa . t'   & \partial / \partial t \leftarrow  (\kappa/d^2) . \partial / \partial t' & \mbox{} \\
   T \leftarrow \Delta T . T'   & \mbox{} & \mbox{} \\
   \mathbf{v} \leftarrow (\kappa / d)  \mathbf{v}' & \mbox{} & \mbox{} \\
   p \leftarrow p_0 - (\eta \kappa / d^2 ) p'   & \textrm{Note:} \; \nabla p_0 = - g \rho_0 & \mbox{} \\
@@ -1006,7 +1006,8 @@ In all the derivations so far we assume two incompatible things:
 
 It is not unusual to make the approximation that fluids are incompressible
 (even for air if the Mach number is “small”) and we do not lose a lot of detail if we do this.
-We assume that the density variations are small so they are only important when they appear in a term that does not depend on the actual density but only the density gradient (e.g. buoyancy)
+We assume that the density variations are small so they are only important when they appear in a term that
+does not depend on the actual density but only the density gradient (e.g. buoyancy)
 
   - This is called the Boussinesq approximation.
 
@@ -1095,86 +1096,32 @@ $$
 $$
 
 
-# Stop !!
-
-Construction work ahead
 
 # Does the rotation of the Earth matter ?
 
-  Yes and No !
+The Navier-Stokes equation describes the momentum balance in a viscous fluid in response to buoyancy forces and pressure gradients.
+In a rotating system, we may also need to consider the influence of Coriolis, and centrifugal forces
+
+$$
+\rho \frac{\partial \mathbf{v}}{\partial t} + \rho\left( \mathbf{v}\cdot \nabla \right) \mathbf{v} +
+2 \rho \boldsymbol{\Omega}\times \mathbf{v} + \rho \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{x}\right)
+= \nabla \eta \left( \nabla \mathbf{u} + \nabla\mathbf{u}^T \right) - \nabla p - g \rho_0 \alpha  \left( T - T_0 \right)  {\mathbf{z}}
+% \frac{1}{\mu_0}\nabla\times\mathbf{B}\times\mathbf{B}
+$$
+
+$\boldsymbol{\Omega}$ is the rotation rate vector which we can also write as $\;\boldsymbol{\Omega} \equiv \Omega_0 \mathbf{z}$
+
+$$
+\frac{\rho _0 \kappa}{\eta _0}\left[ \frac{\partial \mathbf{v'}}{\partial t'} +
+\rho\left( \mathbf{v'}\cdot \nabla' \right) \mathbf{v'} + 2 {\Omega_0} \mathbf{\hat{z}} \times \mathbf{v'} \right]
+- \nabla' \eta \left( \nabla' \mathbf{v'} + \nabla'\mathbf{v'}^T \right) + \nabla' p^{*^{'}} =
+\frac{g \rho_0 \alpha \Delta T d^3}{\kappa \eta} T' {\mathbf{z}}
+$$
+
+Pressure-like terms are all gathered into $p^*$ and include contributions from the centrifugal force term
 
 
-# Convection and the Mantle
-
-![Convection cartoon](images/ConvectionCartoon.png) <!-- .element style="height:300px; float:right" -->
-
-The soup analogy is quite helpful because it demonstrates how heat
-escaping from the interior of the planet can do mechanical work (a.k.a. a heat engine).
-
-This heat engine is the driving force behind tectonic motion and the
-constructive side of of the geological cycle.
-
-**Key differences**
-
-  - The Earth’s mantle is solid, the soup is liquid / a slurry.
-  - The soup does not show any evidence of plate tectonics.
-  - Hot and cold rocks have quite different physical properties
-      (e.g. viscosity, elastic strength) even if they don’t melt.
-
-# Lava Lakes
-
-There are some hints at plate-like surface motions in caldera lava lakes like this one from the USGS
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ybMekPyvq9Y?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-*April 17, 2021: The lava lake in Halema‘uma‘u Crater, at the summit of Kīlauea Volcano, remains active. This video is shown at 20x speed and shows the lava supplying the lake from the western fissure.*
-
-## Lava Lakes (ii)
-
-This shows the foundering of the cooler crust of the lake into the interior. New solid crust forms where the molten lava meets the atmosphere.
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/moWrOrPvaV0?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-
-*This video shows crustal foundering and resurfacing at the lava lake in Halema‘uma‘u, at the summit of Kīlauea on January 8, 2021. Recently this foundering process has been common in the eastern portion of the lake. The video is shown at 20x speed.*
-
-# Discussion points
-
-**What have we learned so far ?**
-
-
-::::{.columns}
-
-:::{.column style='width:50%;'}
-
-If the Earth really follows this cartoon, we need to understand how solid rock can deform as though it was a viscous liquid.
-
-  - How do we know that the mantle is solid ( * ) ?
-  - When/how does a solid act like a viscous fluid ( † )  ?
-  - What is the typical speed of viscous flow in the mantle ?
-  - How much energy is the Earth using up for plate tectonics ?
-
-**( * )**:  How do we know that the outer core is not solid ?
-
-**( † )**: If you are interested, read about crystal defects and deformation
-
-:::
-
-:::{.column style='width:50%;'}
-
-![](images/ConvectionCartoon.png){.r-stretch style="width:80%"}
-
-:::
-
-::::
-
-
-
-# A Toy Model
+# Convection and the Mantle: A Toy Model
 
 <center>
 <video autoplay controls height="315">
@@ -1231,9 +1178,7 @@ Viscosity only opposes the formation of velocity gradients; not a driving force,
 :::
 ::::
 
-
-
-## A Toy Model
+# The Toy Model Examined
 
 <center>
 <video autoplay controls loop height="315">
@@ -1253,11 +1198,10 @@ Viscosity only opposes the formation of velocity gradients; not a driving force,
 </center>
 
 In this toy model, do hot blobs and cold blobs behave in the same way
-(other than moving up v. moving down ?)
+(other than moving up v. moving down ?) - is this what you expect
+from the NS equation ?
 
-
-
-## A Toy Model
+## The Toy Model - Examined
 
 <center>
 <video autoplay controls loop height="315">
@@ -1427,53 +1371,24 @@ Is the flow moving faster when the box is larger ?
 
 # Convective Activity
 
-**Intuition** from these simple toy models suggests that the vigour of convection may depend upon the various system parameters according to the following equation:
+**Intuition** from these simple toy models produces the same dominant effects as
+we obtained from the non-dimensionalisation.
 
 $$
 \mathrm{Activity} \propto \frac{\textrm{buoyancy} \times d}{\kappa \eta}
 $$
 
-This turns out to be roughly correct, but there is an actual relationship that looks like this (with buoyancy highlighted in <span style="color:blue;">blue</span>)
+cf. Rayleigh number that we found earlier.
 
 $$
 \mathrm{Activity} \propto \frac{\color{blue}{g\rho_0\alpha\Delta T} d^3}{\kappa \eta}
 $$
 
-One reason we know the latter to be the valid relationship is that this quantity **has no units** and these simple ratios often end up being important *universal* descriptions of convecting systems at all scales.
+The advantage of the detailed analysis / re-scaling, is that we obtain the true
+dimensionless ratios.
 
 
 
-# Dimensionless Numbers
-
-Ratios where the units cancel are called **dimensionless numbers**.
-For fluid dynamics, the following numbers appear again and again
-
-
-::::{.columns style='display: flex; align-items: center;'}
-
-:::{.column style='width:60%;}
-
-
-**Rayleigh number** measures the intensity of buoyancy forces
-
-$$ \mathrm{Ra} = \frac{g\rho_0\alpha\Delta T d^3}{\kappa \eta} $$
-
-**Reynolds number** measures the relative importance of inertial to viscous forces
-
-$$ \mathrm{Re}=\frac{\rho V_0 d}{\eta} = \frac{V_0 d}{\nu}   $$
-
-**Prandtl number** measures stress diffusion compared to thermal diffusion
-
-$$ \mathrm{Pr} = \frac{\eta}{\rho \kappa} = \frac{\nu}{\kappa} $$
-:::
-
-:::{.column style='width:40%;'}
-
-![](images/AdvectionVDiffusion.png)
-
-:::
-
-::::
 
 # Thermal Convection
 
@@ -1816,5 +1731,3 @@ None of these simple models actually produce plate tectonics but they do still t
 <center>
 
 # End
-
-</center>

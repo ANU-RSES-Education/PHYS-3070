@@ -1,6 +1,10 @@
 # Outputs from the Examples
 
 Notebooks/*.png
+Notebooks/output
+Notebooks/.meshes
+Notebooks/.ipynb_checkpoints
+
 
 # quarto build relics
 
