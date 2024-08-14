@@ -4,7 +4,3 @@
 /.quarto/
 **/.ipynb_checkpoints/
 **/.ipynb_checkpoints/*
-
-Notebooks/output
-Notebooks/.meshes
-Notebooks/.ipynb_checkpoints

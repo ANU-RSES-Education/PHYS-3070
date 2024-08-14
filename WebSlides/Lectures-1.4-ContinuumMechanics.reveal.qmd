@@ -882,7 +882,7 @@ $$
   \hline \textrm{Viscosity}           & \eta             & Pa \cdot s \\
   \hline \textrm{Temperature scale}   & \Delta T = T-T_0 & K \\
   \hline \textrm{Lengths}             & x                & m \\
-  \hline \textrm{Thermal expansivity} & \alpha           & K \\
+  \hline \textrm{Thermal expansivity} & \alpha           & K^{-1} \\
   \hline \textrm{Gravity}             & g                & m.s^{-2} \\
   \hline \textrm{Density}             & \rho             & kg.m^{-3} \\
   \hline \textrm{Thermal diffusivity} & \kappa           & m^2.s^{-1} \\
@@ -1505,7 +1505,7 @@ The pattern is not changed much when we make the box a little wider
 
 Rayleigh number: $Ra=1,000,000$
 
-<video autoplay controls loop height="300">
+<video autoplay controls loop height="400">
     <source src="movies/Ra1e6-annu.mp4"
             type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
@@ -1513,7 +1513,23 @@ Rayleigh number: $Ra=1,000,000$
 
 </center>
 
-Nor does it make a qualitative difference if we account for the Earth's curvature
+Curvature does not qualitatively alter the picture
+
+## Flat Earth, Round Earth (iii)
+
+<center>
+
+Rayleigh number: $Ra=1,000,000$
+
+<video autoplay controls loop height="400">
+    <source src="movies/AnnulusRa1e5i.m4v"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+
+</center>
+
+Some sensitivity to initial conditions
 
 ## Flat Earth, Round Earth, 3D
 
@@ -1528,21 +1544,28 @@ In the sphere, the patterns are harder to see by eye, but it turns out that we c
 
 # Steady State Convection
 
-![Convection](images/AdvectionVDiffusion.png) <!-- .element style="width:33%; float:right" -->
 
-In many of the examples, we reach a *steady state* in which the system stops changing and the movies appear to be frozen.
+:::: {.columns}
+::: {.column width="60%"}
 
-<div style="width:60%">
+In many of the examples, we reach a *steady state* in which the system
+stops changing and the movies appear to be frozen.
+
 
 However, this steady state actually represents a dynamic balance between:
+
   - heat conduction into and out of the model at the bottom and top respectively
   - heat advection by continual rotation in the fluid that drags hot material between the two boundaries
 
-</div>
+:::
+
+::: {.column width="40%"}
+![Convection](images/AdvectionVDiffusion.png) <!-- .element style="width:33%; float:right" -->
+:::
+
+::::
 
 Again, the best thing is to watch the system evolve and get a feel for what happens.
-
-
 
 ## Steady State Convection (ii)
 
@@ -1571,8 +1594,6 @@ Rayleigh number: $Ra=1,000,000$
     Sorry, your browser doesn't support embedded videos.
 </video>
 </center>
-
-
 
 ## Steady State Convection
 
@@ -1607,26 +1628,23 @@ A relatively simple pattern emerges from the competition between advection of he
 ## Understanding Thermal Convection (ii)
 
 <center>
-
 ![](images/blt.png){style="height:200px;"}
-
 </center>
 
 Convection length and timescales are determined by the Rayleigh number.
 
-  - High $\mathrm{Ra}$ narrower boundary layers, higher temperature gradients
-  - High $\mathrm{Ra}$ more likely to be time-dependent, unsteady
-  - Low $\mathrm{Ra}$, convection suddenly shuts off
+   - High $\mathrm{Ra}$ narrower boundary layers, higher temperature gradients
 
+   - High $\mathrm{Ra}$ more likely to be time-dependent, unsteady
+
+   - Low $\mathrm{Ra}$, convection suddenly shuts off
 
 We will see this picture again when we consider the patterns of heat flow in the Earth's ocean floor.
 
 # Average temperature
 
 <center>
-
-![Taverage](images/ConvectionTgrads.png) <!-- .element style="height:450px;" -->
-
+![Taverage](images/ConvectionTgrads.png){style="height:400px;"}
 </center>
 
 The temperature (velocity, stress etc) profiles vary systematically with $\mathrm{Ra}$.
@@ -1718,7 +1736,8 @@ Convection is a heat engine (i.e. it converts heat energy into mechanical work)
 Convection is a balance between heat transported by fluid motion and diffusion.
 The fluid self-organises to create large scale patterns *“out of nowhere”*
 
-In tanks of viscous fluids like syrup or honey, convection depends on just the one free parameter which is a combination of fluid properties, geometry and boundary conditions — this is called the Rayleigh number (Ra).
+In tanks of viscous fluids like syrup or honey, convection depends on just the one free parameter
+which is a combination of fluid properties, geometry and boundary conditions — this is called the Rayleigh number (Ra).
 
 If we know Ra, we can predict the heat flow and typical velocity of the system
 

@@ -26,6 +26,7 @@ book:
     - part: "**Exercises**"
       chapters:
         - Exercises/ComparativePlanetology.qmd
+        - Exercises/Calculations.qmd
 
     # - part: "**Version Control**"
     #   chapters:
