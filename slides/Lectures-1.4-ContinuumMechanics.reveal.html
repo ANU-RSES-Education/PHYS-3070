@@ -1000,7 +1000,7 @@ T = \erfc\left(\frac{z}{2\sqrt{t}}\right)
   \hline \textrm{Viscosity}           &amp; \eta             &amp; Pa \cdot s \\
   \hline \textrm{Temperature scale}   &amp; \Delta T = T-T_0 &amp; K \\
   \hline \textrm{Lengths}             &amp; x                &amp; m \\
-  \hline \textrm{Thermal expansivity} &amp; \alpha           &amp; K \\
+  \hline \textrm{Thermal expansivity} &amp; \alpha           &amp; K^{-1} \\
   \hline \textrm{Gravity}             &amp; g                &amp; m.s^{-2} \\
   \hline \textrm{Density}             &amp; \rho             &amp; kg.m^{-3} \\
   \hline \textrm{Thermal diffusivity} &amp; \kappa           &amp; m^2.s^{-1} \\
@@ -1418,11 +1418,21 @@ Sorry, your browser doesn’t support embedded videos. </video>
 <h2>Flat Earth, Round Earth (ii)</h2>
 <center>
 <p>Rayleigh number: <span class="math inline">\(Ra=1,000,000\)</span></p>
-<video autoplay="" controls="" loop="" height="300">
+<video autoplay="" controls="" loop="" height="400">
 <source src="movies/Ra1e6-annu.mp4" type="video/mp4">
 <p>Sorry, your browser doesn’t support embedded videos. </p>
 </video></center>
-<p>Nor does it make a qualitative difference if we account for the Earth’s curvature</p>
+<p>Curvature does not qualitatively alter the picture</p>
+</section>
+<section id="flat-earth-round-earth-iii" class="slide level2 center">
+<h2>Flat Earth, Round Earth (iii)</h2>
+<center>
+<p>Rayleigh number: <span class="math inline">\(Ra=1,000,000\)</span></p>
+<video autoplay="" controls="" loop="" height="400">
+<source src="movies/AnnulusRa1e5i.m4v" type="video/mp4">
+<p>Sorry, your browser doesn’t support embedded videos. </p>
+</video></center>
+<p>Some sensitivity to initial conditions</p>
 </section>
 <section id="flat-earth-round-earth-3d" class="slide level2 center">
 <h2>Flat Earth, Round Earth, 3D</h2>
@@ -1438,11 +1448,17 @@ Sorry, your browser doesn’t support embedded videos. </video>
 <section>
 <section id="steady-state-convection" class="title-slide slide level1 center">
 <h1>Steady State Convection</h1>
-<p><img data-src="images/AdvectionVDiffusion.png" alt="Convection"> <!-- .element style="width:33%; float:right" --></p>
+<div class="columns">
+<div class="column" style="width:60%;">
 <p>In many of the examples, we reach a <em>steady state</em> in which the system stops changing and the movies appear to be frozen.</p>
-<div style="width:60%">
-<p>However, this steady state actually represents a dynamic balance between: - heat conduction into and out of the model at the bottom and top respectively - heat advection by continual rotation in the fluid that drags hot material between the two boundaries</p>
-</div>
+<p>However, this steady state actually represents a dynamic balance between:</p>
+<ul>
+<li>heat conduction into and out of the model at the bottom and top respectively</li>
+<li>heat advection by continual rotation in the fluid that drags hot material between the two boundaries</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/AdvectionVDiffusion.png" alt="Convection"> <!-- .element style="width:33%; float:right" --></p>
+</div></div>
 <p>Again, the best thing is to watch the system evolve and get a feel for what happens.</p>
 </section>
 <section id="steady-state-convection-ii" class="slide level2 center">
@@ -1490,14 +1506,14 @@ Sorry, your browser doesn’t support embedded videos. </video>
 <section id="understanding-thermal-convection-ii" class="slide level2 center">
 <h2>Understanding Thermal Convection (ii)</h2>
 <center>
-<p><img data-src="images/blt.png" style="height:200px;"></p>
+<img data-src="images/blt.png" style="height:200px;">
 </center>
 <p>Convection length and timescales are determined by the Rayleigh number.</p>
 <ul>
-<li>High <span class="math inline">\(\mathrm{Ra}\)</span> narrower boundary layers, higher temperature gradients
+<li><p>High <span class="math inline">\(\mathrm{Ra}\)</span> narrower boundary layers, higher temperature gradients</p>
 <ul>
-<li>High <span class="math inline">\(\mathrm{Ra}\)</span> more likely to be time-dependent, unsteady</li>
-<li>Low <span class="math inline">\(\mathrm{Ra}\)</span>, convection suddenly shuts off</li>
+<li><p>High <span class="math inline">\(\mathrm{Ra}\)</span> more likely to be time-dependent, unsteady</p></li>
+<li><p>Low <span class="math inline">\(\mathrm{Ra}\)</span>, convection suddenly shuts off</p></li>
 </ul></li>
 </ul>
 <p>We will see this picture again when we consider the patterns of heat flow in the Earth’s ocean floor.</p>
@@ -1505,7 +1521,12 @@ Sorry, your browser doesn’t support embedded videos. </video>
 <section id="average-temperature" class="title-slide slide level1 center">
 <h1>Average temperature</h1>
 <center>
-<p><img data-src="images/ConvectionTgrads.png" alt="Taverage"> <!-- .element style="height:450px;" --></p>
+<div class="quarto-figure quarto-figure-center" style="height:400px;">
+<figure>
+<p><img data-src="images/ConvectionTgrads.png"></p>
+<figcaption>Taverage</figcaption>
+</figure>
+</div>
 </center>
 <p>The temperature (velocity, stress etc) profiles vary systematically with <span class="math inline">\(\mathrm{Ra}\)</span>.</p>
 <div style="width:30%; float:right;">
