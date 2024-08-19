@@ -5,15 +5,14 @@ that we have seen or will soon see in the lecture notes and typical solutions th
 You are not required to derive the solutions as this is a verification task.
 When you are asked to show how an equation behaves you can either:
 
- * __Plot the results using python / R / Basic / ...__
+ * Plot the results using python / R / Basic / ...
 
  OR
 
-* __use a traditional curve-sketching approach to indicate maxima / minima / asymptotic behaviours and how those
-   change with the parameters of the model.__
+* Use a traditional curve-sketching approach to indicate maxima / minima / asymptotic behaviours and how those
+   change with the parameters of the model.
 
-
-::::{.callout-note}
+:::{.callout-note}
 ## Example question
 
 The general differential equation for the deflection of an elastic lithosphere
@@ -23,11 +22,10 @@ $$D\frac{d^4w}{dx^4} + P \frac{d^2w}{dx^2} + \Delta \rho g w(x) = q(x)$$
 
 If $P=0$ and $q(x)=\rho_c g h_0 \sin(kx)$, show that w=w_0 \sin(kx) is a suitable solution
 and sketch the value of $w_0$ as a function of $k$ .
+:::
 
-::::
 
-
-::::{.callout-tip}
+:::{.callout-tip}
 ## Example Answer
 
 The solution is easy to validate by substitution of the form of $q(x)$ and $w(x)$ into the given equation. And re-arranging to determine that:
@@ -37,7 +35,7 @@ $$ w_0=\frac{\rho_c g h_0}{\Delta\rho g + Dk^4}  $$
 We can make a plot:
 
 ![](Figures/calculations/ExampleAnswerPlot.png)
-::::
+:::
 
 ## Biharmonic equation
 
@@ -54,24 +52,23 @@ $$
 \frac{\partial^4 \psi}{\partial y^4} = 0
 $$
 
-::::{.callout-note}
+:::{.callout-note}
 ## Question: 3 / 25
 
 Show that $\psi_0 = \left( A \cosh ky + B \sinh ky \right) \sin kx$ is a solution.
 
-::::
+:::
 
 As pointed out in Turcotte and Schubert, 2002, we need four independent solutions / coefficients to form a complete set for this equation. The other term they suggest trying is $\psi_1 = y\psi_0$ .
 
-::::{.callout-note}
+:::{.callout-note}
 ## Question: 3 / 25
 
 Validate that $\psi_1$ is an eigenfunction of the biharmonic operator.
 
 How about $\psi_0 + \psi_1$ ?
 (That is to say, can you comment on whether/why this is a linear equation)
-
-::::
+:::
 
 Note: there are many different forms of the equations given in T&S's book and this really
 relates to choosing which functions are the best fit to the boundary conditions for the problem
@@ -98,15 +95,15 @@ $$ h(r,t) = \nu_N^{2/3}  t^{-1/4} \phi(\nu/\nu_N) $$
 where  $\nu =  r t^{-1 / 8}$ and $\phi({\nu}/{\nu_N}) = \left( \frac{3}{16}\right)^{\frac{1}{3}}
 \left( 1-\left({\nu}/{\nu_N}\right)^2 \right)^{\frac{1}{3}}$.
 
-$\nu_N $ is a constant with a value close to 1. The solution is made up of two parts: a scaling that stretches the shape in the radial direction and shrinks it in the vertical direction as time progresses, and the other part is the shape itself (the function $\phi$).
+$\nu_N$ is a constant with a value close to 1. The solution is made up of two parts: a scaling that stretches the shape in the radial direction and shrinks it in the vertical direction as time progresses, and the other part is the shape itself (the function $\phi$).
 
-::::{.callout-note}
+:::{.callout-note}
 ## Question: 8 / 25
 
 Make a sketch or plot of $h(x)$  at four different values of $t$: 1.0, 10.0, 100.0, 1000.0
-::::
+:::
 
-::::{.callout-tip}
+:::{.callout-tip}
 ## Hint
 
  - This looks a bit complicated but first write a function to compute $\nu(r,t)$ and then a function to compute $\phi(\nu)$.
@@ -120,7 +117,7 @@ Make a sketch or plot of $h(x)$  at four different values of $t$: 1.0, 10.0, 100
  - Calculate values up to r=4.0. You should see the dome spreading out with time
    as long as you make sure that the values outside the valid range are properly zeroed out.
 
-::::
+:::
 
 
 ## Oceanic Heat Flux
@@ -129,16 +126,16 @@ Make a sketch or plot of $h(x)$  at four different values of $t$: 1.0, 10.0, 100
 The surface heat flux in the oceanic lithosphere follows the square root of its age.
 The explanation for this is that we can use a 1d diffusion equation and assume that heat has been conducted vertically out of the lithosphere from the moment of formation until now. The solution to this problem can be looked up in many standard textbooks (e.g. Turcotte & Schubert, 2002) and I want you to assume the solution, not derive it. The solution gives us the temperature, $T(z,t)$ for a given age ($t$) and depth ($z$) and now we need to know the heat flux (or temperature gradient).
 
-::::{.callout-note}
+:::{.callout-note}
 ## Question: 5 / 25
 
 Assume that the temperature is given by a simple error-function, $T(z,t) = \mathrm{erf}(z/\sqrt{\kappa t})$.
 
 Show how to obtain $\left. \partial T / \partial z \right|_{z=0}$  from this expression.
-::::
+:::
 
 
-::::{.callout-tip}
+:::{.callout-tip}
 ## Hint
 
 Here are a couple of useful reminders that might be helpfulc:
@@ -149,7 +146,7 @@ $$\frac{d}{dx}\int_0^x f(\alpha) d\alpha = f(x)$$
 
 $$\frac{dF(\alpha)}{dx}=\frac{dF}{d\alpha}\frac{d\alpha}{dx}$$
 
-::::
+:::
 
 
 ## Lithospheric Flexure
@@ -158,21 +155,25 @@ The general differential equation for the vertical deflection (w) of a flat-lyin
 
 $$D\frac{d^4w}{dx^4} + P \frac{d^2w}{dx^2} + \Delta \rho g w(x) = q(x)$$
 
-:::{admonition} 3 / 25
+:::{.callout-note}
+## Question: 3 / 25
 If $P=0$  and $q(x)=0$, show that $w = w_0 e^{-x/\alpha} \left[ \cos(x/\alpha) +  \sin(x/\alpha)  \right]$ is a potential solution. This will give a relationship between $D$ and $\alpha$.
-::::
+:::
 
 You can now plot the shape of  for three different values of .
-To make a connection between the magnitude of the load and the response, we note (see Turcotte & Schubert) that this expression has to hold:
+To make a connection between the magnitude of the load and the response,
+we note (see Turcotte & Schubert) that this expression has to hold:
 
 $$\frac{V_0}{2} = D \left. \frac{d^3 w}{dx^3} \right|_{x=0}$$
 
 :::{.callout-note}
 ## Question: 3 / 25
 Sketch the flexural profile, $w$ for three different values of $\alpha$ (or $D$).
-::::
+:::
 
-Note: The flexural profile is the shape the lithosphere will take in response to a load. A typical example is when a sea mount chain (e.g. Hawaii) is dumped onto the oceanic lithosphere.  We assume that we are looking at a cross section of the lithosphere and the extent out-of-the-page is infinite.
+Note: The flexural profile is the shape the lithosphere will take in response to a load.
+A typical example is when a sea mount chain (e.g. Hawaii) is dumped onto the oceanic lithosphere.
+We assume that we are looking at a cross section of the lithosphere and the extent out-of-the-page is infinite.
 
 
 ## References
