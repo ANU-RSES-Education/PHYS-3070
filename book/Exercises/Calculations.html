@@ -263,11 +263,11 @@ window.Quarto = {
 
 <p>This assessment task is intended to familiarise you with some of the equations that we have seen or will soon see in the lecture notes and typical solutions that are in common use. You are not required to derive the solutions as this is a verification task. When you are asked to show how an equation behaves you can either:</p>
 <ul>
-<li><strong>Plot the results using python / R / Basic / …</strong></li>
+<li>Plot the results using python / R / Basic / …</li>
 </ul>
 <p>OR</p>
 <ul>
-<li><strong>use a traditional curve-sketching approach to indicate maxima / minima / asymptotic behaviours and how those change with the parameters of the model.</strong></li>
+<li>Use a traditional curve-sketching approach to indicate maxima / minima / asymptotic behaviours and how those change with the parameters of the model.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -350,7 +350,7 @@ Question: 3 / 25
 <p><span class="math display">\[ h(r,t) = \nu_N^{2/3}  t^{-1/4} \phi(\nu/\nu_N) \]</span></p>
 <p>where <span class="math inline">\(\nu =  r t^{-1 / 8}\)</span> and <span class="math inline">\(\phi({\nu}/{\nu_N}) = \left( \frac{3}{16}\right)^{\frac{1}{3}}
 \left( 1-\left({\nu}/{\nu_N}\right)^2 \right)^{\frac{1}{3}}\)</span>.</p>
-<p>$_N $ is a constant with a value close to 1. The solution is made up of two parts: a scaling that stretches the shape in the radial direction and shrinks it in the vertical direction as time progresses, and the other part is the shape itself (the function <span class="math inline">\(\phi\)</span>).</p>
+<p><span class="math inline">\(\nu_N\)</span> is a constant with a value close to 1. The solution is made up of two parts: a scaling that stretches the shape in the radial direction and shrinks it in the vertical direction as time progresses, and the other part is the shape itself (the function <span class="math inline">\(\phi\)</span>).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -421,7 +421,19 @@ Hint
 <h2 class="anchored" data-anchor-id="lithospheric-flexure">Lithospheric Flexure</h2>
 <p>The general differential equation for the vertical deflection (w) of a flat-lying, 2D, elastic plate with an end load <span class="math inline">\(P\)</span> and a horizontal load <span class="math inline">\(q(x)\)</span>, is given by</p>
 <p><span class="math display">\[D\frac{d^4w}{dx^4} + P \frac{d^2w}{dx^2} + \Delta \rho g w(x) = q(x)\]</span></p>
-<p>:::{admonition} 3 / 25 If <span class="math inline">\(P=0\)</span> and <span class="math inline">\(q(x)=0\)</span>, show that <span class="math inline">\(w = w_0 e^{-x/\alpha} \left[ \cos(x/\alpha) +  \sin(x/\alpha)  \right]\)</span> is a potential solution. This will give a relationship between <span class="math inline">\(D\)</span> and <span class="math inline">\(\alpha\)</span>. ::::</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question: 3 / 25
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If <span class="math inline">\(P=0\)</span> and <span class="math inline">\(q(x)=0\)</span>, show that <span class="math inline">\(w = w_0 e^{-x/\alpha} \left[ \cos(x/\alpha) +  \sin(x/\alpha)  \right]\)</span> is a potential solution. This will give a relationship between <span class="math inline">\(D\)</span> and <span class="math inline">\(\alpha\)</span>.</p>
+</div>
+</div>
 <p>You can now plot the shape of for three different values of . To make a connection between the magnitude of the load and the response, we note (see Turcotte &amp; Schubert) that this expression has to hold:</p>
 <p><span class="math display">\[\frac{V_0}{2} = D \left. \frac{d^3 w}{dx^3} \right|_{x=0}\]</span></p>
 <div class="callout callout-style-default callout-note callout-titled">
