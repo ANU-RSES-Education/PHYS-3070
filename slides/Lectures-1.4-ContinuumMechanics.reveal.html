@@ -1485,8 +1485,8 @@ Sorry, your browser doesn’t support embedded videos. </video>
 <p>Rayleigh number: <span class="math inline">\(Ra=10,000,000\)</span></p>
 <video autoplay="" controls="" loop="" height="450">
 <source src="movies/Ra1e7tr.m4v" type="video/mp4">
-Sorry, your browser doesn’t support embedded videos. </video>
-</center>
+<p>Sorry, your browser doesn’t support embedded videos. </p>
+</video></center>
 </section></section>
 <section>
 <section id="understanding-thermal-convection" class="title-slide slide level1 center">
@@ -1520,41 +1520,104 @@ Sorry, your browser doesn’t support embedded videos. </video>
 </section></section>
 <section id="average-temperature" class="title-slide slide level1 center">
 <h1>Average temperature</h1>
-<center>
-<div class="quarto-figure quarto-figure-center" style="height:400px;">
-<figure>
-<p><img data-src="images/ConvectionTgrads.png"></p>
-<figcaption>Taverage</figcaption>
-</figure>
-</div>
-</center>
+<p><img data-src="images/ConvectionTgrads.png" style="height:350px;"> <img data-src="images/NuExperiment.png" style="height:350px;"></p>
 <p>The temperature (velocity, stress etc) profiles vary systematically with <span class="math inline">\(\mathrm{Ra}\)</span>.</p>
-<div style="width:30%; float:right;">
-<p><img data-src="images/ConvectionTgrads.png" alt="Taverage"> <!-- .element style="width:100%; " --> <img data-src="images/NuExperiment.png" alt="Nusselt"> <!-- .element style="width:100%;" --></p>
-</div>
 </section>
 
 <section id="nusselt-number" class="title-slide slide level1 center">
 <h1>Nusselt number</h1>
-<div style="width:65%">
-<p>Another, independent, dimensionless quantity can be derived for the convecting system and it is called the <em>Nusslet number</em>.</p>
+<p>Another, independent, dimensionless quantity can be derived for the convecting system and it is called the <em>Nusselt number</em>.</p>
+<div class="columns">
+<div class="column" style="width:65%;">
 <p><span class="math display">\[ \mathrm{Nu} = \frac{Q d}{k \Delta T} \]</span></p>
 <p>Which is the ratio of the heat transported in the convection model (<span class="math inline">\(Q\)</span>) compared to what would be transported if only conduction were at work. It turns out that</p>
 <p><span class="math display">\[ \mathrm{Nu} \propto \mathrm{Ra}^{1/3} \]</span></p>
-</div>
+</div><div class="column" style="width:35%;">
+<p><img data-src="images/NuExperiment.png"></p>
+</div></div>
 <p><em>The results (right) are from an experiment using liquid He which could not be much more different that solid rock but the principals still hold and the agreement with theory is excellent</em></p>
 </section>
 
+<section>
+<section id="boundary-layer-approximation" class="title-slide slide level1 center">
+<h1>Boundary layer approximation</h1>
+<center>
+<img data-src="images/blt.png" style="height:200px;">
+</center>
+<ul>
+<li><p>&nbsp;</p>
+<ul>
+<li><p>Thin horizontal boundary layers where heat diffuses into the layer and is carried away by horizontal advection. These are connected by vertical boundary layers of similar dimension.</p></li>
+<li><p>Gradients along boundary layers are typically on a scale of the layer depth (large so leads to small gradients). Gradients across the boundary layers are typically large because the boundary layers are thin</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="boundary-layer-approximation-2" class="slide level2 center">
+<h2>Boundary layer approximation (2)</h2>
+<p>For the vertical thermal boundary layer, assume that:</p>
+<p><span class="math display">\[
+  \frac{\partial v_2}{\partial x_2} \sim \frac{V}{\delta} ; \quad
+  \frac{\partial v_2}{\partial x_1} \sim \frac{V}{d} ; \quad
+  v_1 = 0 ; \quad
+  \frac{\partial T}{\partial x_1} \sim \frac{\Delta T}{\delta} ; \quad
+\]</span></p>
+<p>Then the curl of the Stokes equation (or the biharmonic equation, substituting for the stream function),</p>
+<p><span class="math display">\[
+\frac{\partial^3 v_2}{\partial x_1^3} - \frac{\partial^3 v_1}{\partial x_2^3} +
+\frac{\partial^3 v_2}{\partial x_1 \partial x_2^2} - \frac{\partial^3 v_1}{\partial x_2 \partial x_1^2} =
+\frac{g\rho\alpha}{\eta} \frac{\partial T}{\partial x_1}
+\]</span></p>
+<p>becomes</p>
+<p><span class="math display">\[ \frac{V}{d^3} + \frac{V}{d\delta} \sim \frac{g\rho\alpha}{\eta} \frac{\Delta T}{\delta} \quad \quad
+{\color{DarkRed} \frac{Vd^3}{d\delta^2} \sim \frac{g\rho\alpha d^3}{\eta} \frac{\Delta T}{\delta}}
+\]</span></p>
+</section>
+<section id="boundary-layer-approximation-3" class="slide level2 center">
+<h2>Boundary layer approximation (3)</h2>
+<p>For the energy equation, assume steady state:</p>
+<p><span class="math display">\[
+  \kappa \nabla^2 T = \left( \mathbf{v}\cdot\nabla \right) T
+\]</span></p>
+<p>For the horizontal thermal boundary layer, assume that:</p>
+<p><span class="math display">\[
+\frac{\partial T}{\partial x_1} \sim \frac{\Delta T}{d} ; \quad
+\frac{\partial T}{\partial x_2} \sim \frac{\Delta T}{\delta} ; \quad
+  v_1 \sim V ; \quad v_2 \sim 0
+\]</span></p>
+<p>Then the curl of the Stokes equation (or the biharmonic equation, substituting for the stream function),</p>
+<p><span class="math display">\[
+\frac{\partial^3 v_2}{\partial x_1^3} - \frac{\partial^3 v_1}{\partial x_2^3} +
+\frac{\partial^3 v_2}{\partial x_1 \partial x_2^2} - \frac{\partial^3 v_1}{\partial x_2 \partial x_1^2} =
+\frac{g\rho\alpha}{\eta} \frac{\partial T}{\partial x_1}
+\]</span></p>
+<p>becomes</p>
+<p><span class="math display">\[   \kappa \nabla^2 T = \left( \mathbf{v}\cdot\nabla \right) T \quad \quad
+{\color{DarkRed} \frac{\kappa \Delta T}{\delta^2} \sim \frac{V \Delta T}{d}}
+\]</span></p>
+</section>
+<section id="boundary-layer-approximation-4" class="slide level2 center">
+<h2>Boundary layer approximation (4)</h2>
+<p>Now we have <span class="math inline">\(V/d \sim \kappa / \delta^2\)</span> and some rearrangement of the previous approximations gives us</p>
+<p><span class="math display">\[
+  V \sim \frac{\kappa}{d} \textrm{Ra}^{2/3}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+  \textrm{Nu} \sim \frac{\delta}{d} \sim \textrm{Ra}^{-1/3}
+\]</span></p>
+<p>This approach balances the transfer of momentum and thermal energy vertically into the horizontal boundary layer (diffusion) with advection of each quantity along the boundary layer in a steady state.</p>
+</section></section>
 <section id="critical-rayleigh-number" class="title-slide slide level1 center">
 <h1>Critical Rayleigh number</h1>
 <p>It can be a little difficult to see from a small set of movies, but if we reduce the Rayleigh number enough, conduction completely wins over advection and no motion takes place at all.</p>
-<p><img data-src="images/crit_ra.png" alt="Critical Ra"> <!-- .element style="width:35%; float:right " --></p>
-<div style="width:65%">
+<center>
+<img data-src="images/crit_ra.png">
+</center>
 <p>This can be approached theoretically, and we find that there is a critical value of the Rayleigh number and a critical wavelength where this transition occurs.</p>
-<p><span class="math display">\[\mathrm{Ra}_c = \frac{27}{4} \pi^4 = 657.51 \]</span></p>
-<p>and</p>
-<p><span class="math display">\[ k = \frac{\pi}{\sqrt{2}} = 2.22 \]</span></p>
-</div>
+<p><span class="math display">\[
+\mathrm{Ra}_c = \frac{27}{4} \pi^4 = 657.51 \quad \textrm{and} \quad
+k = \frac{\pi}{\sqrt{2}} = 2.22
+\]</span></p>
 <p>If <span class="math inline">\(\mathrm{Ra} \gg \mathrm{Ra}_c\)</span> then convective motion is inevitable</p>
 </section>
 
