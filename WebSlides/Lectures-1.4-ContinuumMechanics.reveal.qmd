@@ -1607,9 +1607,8 @@ Rayleigh number: $Ra=10,000,000$
             type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
 </video>
+
 </center>
-
-
 
 # Understanding Thermal Convection
 
@@ -1643,54 +1642,145 @@ We will see this picture again when we consider the patterns of heat flow in the
 
 # Average temperature
 
-<center>
-![Taverage](images/ConvectionTgrads.png){style="height:400px;"}
-</center>
+![](images/ConvectionTgrads.png){style="height:350px;"}
+![](images/NuExperiment.png){style="height:350px;"}
 
 The temperature (velocity, stress etc) profiles vary systematically with $\mathrm{Ra}$.
 
-<div style="width:30%; float:right;">
-
-![Taverage](images/ConvectionTgrads.png) <!-- .element style="width:100%; " -->
-![Nusselt](images/NuExperiment.png) <!-- .element style="width:100%;" -->
-
-</div>
-
 # Nusselt number
 
-<div style="width:65%">
-Another, independent, dimensionless quantity can be derived for the convecting system and it is called the *Nusslet number*.
+Another, independent, dimensionless quantity can be derived for the convecting system and it is called the *Nusselt number*.
+
+::::{.columns}
+
+:::{.column width="65%"}
 
 $$ \mathrm{Nu} = \frac{Q d}{k \Delta T} $$
 
-Which is the ratio of the heat transported in the convection model ($Q$) compared to what would be transported if
+Which is the ratio of the heat transported in the convection model ($Q$)
+compared to what would be transported if
 only conduction were at work. It turns out that
 
 $$ \mathrm{Nu} \propto \mathrm{Ra}^{1/3} $$
 
-</div>
+:::
 
-*The results (right) are from an experiment using liquid He which could not be much more different that solid rock but the principals still hold and the agreement with theory is excellent*
+:::{.column width="35%"}
 
+![](images/NuExperiment.png)
+
+:::
+
+::::
+
+*The results (right) are from an experiment using liquid He which
+could not be much more different that solid rock but the principals
+still hold and the agreement with theory is excellent*
+
+# Boundary layer approximation
+
+<center>
+![](images/blt.png){style="height:200px;"}
+</center>
+
+  * &nbsp;
+
+  * Thin horizontal boundary layers  where heat diffuses into the
+    layer and is carried away by horizontal advection.
+    These are connected by vertical boundary layers of similar dimension.
+
+  * Gradients along boundary layers are typically on a scale of the layer depth
+  (large so leads to small gradients). Gradients across the boundary layers are
+  typically large because the boundary layers are thin
+
+## Boundary layer approximation (2)
+
+For the vertical thermal boundary layer, assume that:
+
+$$
+  \frac{\partial v_2}{\partial x_2} \sim \frac{V}{\delta} ; \quad
+  \frac{\partial v_2}{\partial x_1} \sim \frac{V}{d} ; \quad
+  v_1 = 0 ; \quad
+  \frac{\partial T}{\partial x_1} \sim \frac{\Delta T}{\delta} ; \quad
+$$
+
+Then the curl of the Stokes equation (or the biharmonic equation, substituting for the stream function),
+
+$$
+\frac{\partial^3 v_2}{\partial x_1^3} - \frac{\partial^3 v_1}{\partial x_2^3} +
+\frac{\partial^3 v_2}{\partial x_1 \partial x_2^2} - \frac{\partial^3 v_1}{\partial x_2 \partial x_1^2} =
+\frac{g\rho\alpha}{\eta} \frac{\partial T}{\partial x_1}
+$$
+
+becomes
+
+$$ \frac{V}{d^3} + \frac{V}{d\delta} \sim \frac{g\rho\alpha}{\eta} \frac{\Delta T}{\delta} \quad \quad
+ {\color{DarkRed} \frac{Vd^3}{d\delta^2} \sim \frac{g\rho\alpha d^3}{\eta} \frac{\Delta T}{\delta}}
+$$
+
+
+## Boundary layer approximation (3)
+
+For the energy equation, assume steady state:
+
+$$
+  \kappa \nabla^2 T = \left( \mathbf{v}\cdot\nabla \right) T
+$$
+
+For the horizontal thermal boundary layer, assume that:
+
+$$
+\frac{\partial T}{\partial x_1} \sim \frac{\Delta T}{d} ; \quad
+\frac{\partial T}{\partial x_2} \sim \frac{\Delta T}{\delta} ; \quad
+  v_1 \sim V ; \quad v_2 \sim 0
+$$
+
+Then the curl of the Stokes equation (or the biharmonic equation, substituting for the stream function),
+
+$$
+\frac{\partial^3 v_2}{\partial x_1^3} - \frac{\partial^3 v_1}{\partial x_2^3} +
+\frac{\partial^3 v_2}{\partial x_1 \partial x_2^2} - \frac{\partial^3 v_1}{\partial x_2 \partial x_1^2} =
+\frac{g\rho\alpha}{\eta} \frac{\partial T}{\partial x_1}
+$$
+
+becomes
+
+$$   \kappa \nabla^2 T = \left( \mathbf{v}\cdot\nabla \right) T \quad \quad
+ {\color{DarkRed} \frac{\kappa \Delta T}{\delta^2} \sim \frac{V \Delta T}{d}}
+$$
+
+## Boundary layer approximation (4)
+
+Now we have $V/d \sim \kappa / \delta^2$ and some rearrangement of the previous approximations gives us
+
+$$
+  V \sim \frac{\kappa}{d} \textrm{Ra}^{2/3}
+$$
+
+and
+
+$$
+  \textrm{Nu} \sim \frac{\delta}{d} \sim \textrm{Ra}^{-1/3}
+$$
+
+This approach balances the transfer of momentum and thermal energy vertically into the horizontal boundary layer (diffusion)
+with advection of each quantity along the boundary layer in a steady state.
 
 
 # Critical Rayleigh number
 
 It can be a little difficult to see from a small set of movies, but if we reduce the Rayleigh number enough, conduction completely wins over advection and no motion takes place at all.
 
-![Critical Ra](images/crit_ra.png) <!-- .element style="width:35%; float:right " -->
-
-<div style="width:65%">
+<center>
+![](images/crit_ra.png)
+</center>
 
 This can be approached theoretically, and we find that there is a critical value of the Rayleigh number and a critical wavelength where this transition occurs.
 
-$$\mathrm{Ra}_c = \frac{27}{4} \pi^4 = 657.51 $$
-
-and
-
-$$ k = \frac{\pi}{\sqrt{2}} = 2.22 $$
-
-</div>
+$$
+ \mathrm{Ra}_c = \frac{27}{4} \pi^4 = 657.51 \quad \textrm{and} \quad
+ k = \frac{\pi}{\sqrt{2}} = 2.22
+$$
 
 If $\mathrm{Ra} \gg \mathrm{Ra}_c$ then convective motion is inevitable
 
@@ -1726,8 +1816,6 @@ $$  \mathrm{Ra}_{\textrm{Earth}} = ? $$
 **Is it above the critical value ?**
 
 **What does that tell us ?**
-
-
 
 # Summary
 

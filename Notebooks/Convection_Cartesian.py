@@ -58,10 +58,10 @@ meshbox = uw.meshing.UnstructuredSimplexBox(
     cellSize=1/resolution, 
     degree=1, 
     qdegree=3,
-    regular=True,
+    regular=False,
 )
 
-meshbox.return_coords_to_bounds = None
+# meshbox.return_coords_to_bounds = None
 meshbox.dm.view()
 
 x,y  = meshbox.CoordinateSystem.X
@@ -93,12 +93,19 @@ stokes.constitutive_model.Parameters.viscosity = 1.0
 
 stokes.tolerance = 0.001
 
+penalty = max(1000000, 10*rayleigh_number.sym)
+
 # Prevent flow crossing the boundaries
 
-stokes.add_natural_bc(10*rayleigh_number * v_soln.sym[1] * y_vector, "Top")
-stokes.add_natural_bc(10*rayleigh_number * v_soln.sym[1] * y_vector, "Bottom")
-stokes.add_natural_bc(10*rayleigh_number * v_soln.sym[0] * x_vector, "Left")
-stokes.add_natural_bc(10*rayleigh_number * v_soln.sym[0] * x_vector, "Right")
+# stokes.add_natural_bc(penalty * v_soln.sym[1] * y_vector, "Top")
+# stokes.add_natural_bc(penalty * v_soln.sym[1] * y_vector, "Bottom")
+# stokes.add_natural_bc(penalty * v_soln.sym[0] * x_vector, "Left")
+# stokes.add_natural_bc(penalty * v_soln.sym[0] * x_vector, "Right")
+
+stokes.add_essential_bc((None, 0.0), "Top")
+stokes.add_essential_bc((None, 0.0), "Bottom")
+stokes.add_essential_bc((0.0, None), "Left")
+stokes.add_essential_bc((0.0, None), "Right")
 
 stokes.bodyforce = y_vector * rayleigh_number * t_soln.sym[0]
 
@@ -163,7 +170,7 @@ output = os.path.join(output_dir, expt_name)
 for step in range(0, max_steps):
     stokes.solve(zero_init_guess=False)
         
-    delta_t = 2.0 * stokes.estimate_dt()
+    delta_t = 1.0 * stokes.estimate_dt()
     adv_diff.solve(timestep=delta_t)
 
     # stats then loop
