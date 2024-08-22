@@ -132,6 +132,17 @@
     ]
   },
   {
+    "objectID": "LectureDescriptions/Lecture_Lithosphere.html",
+    "href": "LectureDescriptions/Lecture_Lithosphere.html",
+    "title": "Lecture - Deformation of the lithosphere",
+    "section": "",
+    "text": "It’s difficult to ignore the fact that the convecting mantle is beneath a strong and heterogeneous layer of lithosphere. We will have trouble understanding what the mantle is doing if we don’t know how to deconvolve the filter that the lithosphere imposes on signals from depth. In this lecture we run focus on topography and the way in which elasticity of the lithosphere, changes in crustal thickness in response to lateral stresses, and glacial isostatic adjustment of the free surface.\n\n\n\n\n\n Lectures Slides / Continuum Mechanics \nLink to index of presentations",
+    "crumbs": [
+      "**Lectures**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Lecture - Deformation of the lithosphere</span>"
+    ]
+  },
+  {
     "objectID": "Exercises/ComparativePlanetology.html",
     "href": "Exercises/ComparativePlanetology.html",
     "title": "Exercise: Comparative Planetology",
@@ -139,7 +150,7 @@
     "text": "Title slide: Earth — is it just like any other planet ?\nMake sure you include your name and an “interesting” image of the Earth, an equivalent image of one of the other planets, and include a caption",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -150,7 +161,7 @@
     "text": "Slide 1: Topography\nThe Earth’s topography is “bimodal” and so is the topography of Mars. Explain what that means (in a technical sense) and show what this looks like each case.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -161,7 +172,7 @@
     "text": "Slide 2: Volcanoes\nThere are volcanoes in many places in the solar system. Not all of them erupt molten rock - can you find an example of one of those ? Find some images of volcanoes from Earth and from one or two other places in the solar system for your slide. Which is the largest volcano we know about, is it on Earth ?",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -172,7 +183,7 @@
     "text": "Slide 3: Surface Erosion/ Weather / Rivers etc\nThe Earth’s surface is heavily influenced by surface erosion and sedimentation due to rain, landslides and so on. Can you find an image that highlights this on Earth and are there similar processes somewhere else in the solar system. Similar here could just be “looks the same” (hint - Mars and Titan!)",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -183,7 +194,7 @@
     "text": "Slide 4: Surface Age\nThe Earth has a very distinctive pattern of surface age (continents different from oceans, oceans have an age pattern). Make a slide that contrasts this with planet that also has a bimodal age distribution (e.g. Mars, the Moon) and point out the differences / how we know the information we do.\nYou should be sure to define what a craton is and why this is interesting in telling the story of surface age for the Earth",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -194,7 +205,7 @@
     "text": "Slide 5: Faults\nFind a few images of faults from the Earth and at least one from another world. Faults are very important in geophysics / geology and are the places most earthquakes are generated.\nInclude a definition of a fault for your slide.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -205,7 +216,7 @@
     "text": "Slide 6: Habitability / Life\nWhat do we look for in suggesting a planet could be habitable ? In the solar system, where are there habitable zones now and where might there have been habitable zones in the past ? Why might that change over the age of the solar system ?",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -216,7 +227,7 @@
     "text": "Conclusion Slide:\nGeology / geophysics has many common processes across different planets. How special is the Earth ? Give your opinion on how likely we are to find Earth-like exoplanets!",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -227,7 +238,7 @@
     "text": "References Slide:\nAdd a final slide with full citations of your references from the slides",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
     ]
   },
   {
@@ -238,7 +249,7 @@
     "text": "Biharmonic equation\nThe biharmonic equation describes two dimensional, incompressible Stokes flow. It is a fourth order PDE written as:\n\\[\\nabla^4 \\psi = -Ra \\frac{\\partial T}{\\partial x}\\]\nFor the purposes of this question, we will work in Cartesian coordinates and we will identify solutions to the homogeneous equation, i.e.\n\\[\n\\frac{\\partial^4 \\psi}{\\partial x^4} +\n2\\frac{\\partial^4 \\psi}{\\partial x^2 \\partial y^2} +\n\\frac{\\partial^4 \\psi}{\\partial y^4} = 0\n\\]\nAs pointed out in Turcotte and Schubert, 2002, we need four independent solutions / coefficients to form a complete set for this equation. The other term they suggest trying is \\(\\psi_1 = y\\psi_0\\) .\nNote: there are many different forms of the equations given in T&S’s book and this really relates to choosing which functions are the best fit to the boundary conditions for the problem and which, as a result, give the simplest expressions.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   },
   {
@@ -249,7 +260,7 @@
     "text": "Question: 3 / 25\n\n\n\nShow that \\(\\psi_0 = \\left( A \\cosh ky + B \\sinh ky \\right) \\sin kx\\) is a solution.\n\n\n\n\n\n\n\n\n\nQuestion: 3 / 25\n\n\n\nValidate that \\(\\psi_1\\) is an eigenfunction of the biharmonic operator.\nHow about \\(\\psi_0 + \\psi_1\\) ? (That is to say, can you comment on whether/why this is a linear equation)",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   },
   {
@@ -260,7 +271,7 @@
     "text": "Gravity Currents / Lava domes\nPancake lava domes on Venus can be modelled as though they are blobs of viscous lava that spread out after an initial eruption. In a 1982 paper, Huppert found a mathematical expression for the spreading of viscous fluids on a flat surface. The solution assumes either fixed volume or a known injection rate. For a fixed volume, the solution is interesting because it keeps the same shape but just scales horizontally / vertically.\n\n\n\nThe solution looks like this:\n\\[ h(r,t) = \\nu_N^{2/3}  t^{-1/4} \\phi(\\nu/\\nu_N) \\]\nwhere \\(\\nu =  r t^{-1 / 8}\\) and \\(\\phi({\\nu}/{\\nu_N}) = \\left( \\frac{3}{16}\\right)^{\\frac{1}{3}}\n\\left( 1-\\left({\\nu}/{\\nu_N}\\right)^2 \\right)^{\\frac{1}{3}}\\).\n\\(\\nu_N\\) is a constant with a value close to 1. The solution is made up of two parts: a scaling that stretches the shape in the radial direction and shrinks it in the vertical direction as time progresses, and the other part is the shape itself (the function \\(\\phi\\)).\n\n\n\n\n\n\nQuestion: 8 / 25\n\n\n\nMake a sketch or plot of \\(h(x)\\) at four different values of \\(t\\): 1.0, 10.0, 100.0, 1000.0\n\n\n\n\n\n\n\n\nHint\n\n\n\n\nThis looks a bit complicated but first write a function to compute \\(\\nu(r,t)\\) and then a function to compute \\(\\phi(\\nu)\\).\n\\(\\phi(\\nu)\\) is only valid if $ 0 &lt; &lt; 1$ so be sure to check and return 0.0 if \\(\\nu\\) is outside that range (it will be since you want to plot a region into which the blob begins to spread).\n\nCalculate values up to r=4.0. You should see the dome spreading out with time as long as you make sure that the values outside the valid range are properly zeroed out.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   },
   {
@@ -271,7 +282,7 @@
     "text": "Oceanic Heat Flux\nThe surface heat flux in the oceanic lithosphere follows the square root of its age. The explanation for this is that we can use a 1d diffusion equation and assume that heat has been conducted vertically out of the lithosphere from the moment of formation until now. The solution to this problem can be looked up in many standard textbooks (e.g. Turcotte & Schubert, 2002) and I want you to assume the solution, not derive it. The solution gives us the temperature, \\(T(z,t)\\) for a given age (\\(t\\)) and depth (\\(z\\)) and now we need to know the heat flux (or temperature gradient).\n\n\n\n\n\n\nQuestion: 5 / 25\n\n\n\nAssume that the temperature is given by a simple error-function, \\(T(z,t) = \\mathrm{erf}(z/\\sqrt{\\kappa t})\\).\nShow how to obtain \\(\\left. \\partial T / \\partial z \\right|_{z=0}\\) from this expression.\n\n\n\n\n\n\n\n\nHint\n\n\n\nHere are a couple of useful reminders that might be helpfulc:\n\\[\\mathrm{erf}(x) = \\frac{2}{\\sqrt{\\pi}}\\int_0^x e^{-\\alpha^2}d\\alpha\\]\n\\[\\frac{d}{dx}\\int_0^x f(\\alpha) d\\alpha = f(x)\\]\n\\[\\frac{dF(\\alpha)}{dx}=\\frac{dF}{d\\alpha}\\frac{d\\alpha}{dx}\\]",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   },
   {
@@ -282,7 +293,7 @@
     "text": "Lithospheric Flexure\nThe general differential equation for the vertical deflection (w) of a flat-lying, 2D, elastic plate with an end load \\(P\\) and a horizontal load \\(q(x)\\), is given by\n\\[D\\frac{d^4w}{dx^4} + P \\frac{d^2w}{dx^2} + \\Delta \\rho g w(x) = q(x)\\]\n\n\n\n\n\n\nQuestion: 3 / 25\n\n\n\nIf \\(P=0\\) and \\(q(x)=0\\), show that \\(w = w_0 e^{-x/\\alpha} \\left[ \\cos(x/\\alpha) +  \\sin(x/\\alpha)  \\right]\\) is a potential solution. This will give a relationship between \\(D\\) and \\(\\alpha\\).\n\n\nYou can now plot the shape of for three different values of . To make a connection between the magnitude of the load and the response, we note (see Turcotte & Schubert) that this expression has to hold:\n\\[\\frac{V_0}{2} = D \\left. \\frac{d^3 w}{dx^3} \\right|_{x=0}\\]\n\n\n\n\n\n\nQuestion: 3 / 25\n\n\n\nSketch the flexural profile, \\(w\\) for three different values of \\(\\alpha\\) (or \\(D\\)).\n\n\nNote: The flexural profile is the shape the lithosphere will take in response to a load. A typical example is when a sea mount chain (e.g. Hawaii) is dumped onto the oceanic lithosphere. We assume that we are looking at a cross section of the lithosphere and the extent out-of-the-page is infinite.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   },
   {
@@ -293,7 +304,7 @@
     "text": "References\nHuppert, Herbert E. “The Propagation of Two-Dimensional and Axisymmetric Viscous Gravity Currents over a Rigid Horizontal Surface.” Journal of Fluid Mechanics 121, no. 1 (August 1982): 43. https://doi.org/10.1017/S0022112082001797.\nTurcotte, Donald Lawson, and Gerald Schubert. Geodynamics. 2nd ed. Cambridge ; New York: Cambridge University Press, 2002.",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   },
   {
@@ -304,7 +315,7 @@
     "text": "Afterword\nOK - that’s all. If you look closely, you will see that we mostly left out the constants and material properties from these examples (especially 2 and 3) as it just makes it more complicated to write out.\nIf you are interested in seeing the derivations in more detail, you should take a look at the book Geodynamics by Turcotte & Schubert. The elastic flexure equations are in chapter 3, and the derivation of the boundary layer structure for the oceanic lithosphere is in chapter 4 (of the 2nd edition which is the more commonly available version).",
     "crumbs": [
       "**Exercises**",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
     ]
   }
 ]
