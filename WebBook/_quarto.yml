@@ -22,6 +22,7 @@ book:
         - LectureDescriptions/Lecture_Planets.qmd
         - LectureDescriptions/Lecture_HistoryOfData.qmd
         - LectureDescriptions/Lecture_ContinuumMechanics.qmd
+        - LectureDescriptions/Lecture_Lithosphere.qmd
 
     - part: "**Exercises**"
       chapters:

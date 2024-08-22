@@ -25,8 +25,8 @@ width = 6
 # These can be set when launching the script as
 # mpirun python3 scriptname -uw_resolution=0.1 etc
 
-ra_expt = uw.options.getReal("ra_expt",6) 
-resolution = uw.options.getInt("resolution", default=15)
+ra_expt = uw.options.getReal("ra_expt", default=4) 
+resolution = uw.options.getInt("resolution", default=8)
 max_steps = uw.options.getInt("max_steps", default=201)
 restart_step = uw.options.getInt("restart_step", default=-1)
 expt_desc = uw.options.getString("expt_description", default="")
@@ -53,12 +53,11 @@ os.makedirs(output_dir, exist_ok=True)
 
 
 meshbox = uw.meshing.UnstructuredSimplexBox(
+    cellSize=1/resolution,
     minCoords=(0.0,0.0),
     maxCoords=(width,1.0), 
-    cellSize=1/resolution, 
     degree=1, 
     qdegree=3,
-    regular=False,
 )
 
 # meshbox.return_coords_to_bounds = None
@@ -91,7 +90,7 @@ stokes = Stokes(
 stokes.constitutive_model = uw.constitutive_models.ViscousFlowModel
 stokes.constitutive_model.Parameters.viscosity = 1.0
 
-stokes.tolerance = 0.001
+stokes.tolerance = 0.00001
 
 penalty = max(1000000, 10*rayleigh_number.sym)
 
@@ -117,7 +116,7 @@ adv_diff = uw.systems.AdvDiffusion(
     u_Field=t_soln,
     V_fn=v_soln,
     solver_name="adv_diff",
-    order=3,
+    order=2,
 )
 
 adv_diff.constitutive_model = uw.constitutive_models.DiffusionModel
@@ -128,12 +127,12 @@ adv_diff.constitutive_model.Parameters.diffusivity = 1
 adv_diff.add_dirichlet_bc(1.0, "Bottom")
 adv_diff.add_dirichlet_bc(0.0, "Top")
 
+
 # +
 # The advection / diffusion equation is an initial value problem
 # We set this up to have 
 
-abs_r = sympy.sqrt(meshbox.rvec.dot(meshbox.rvec))
-init_t = 0.25 * sympy.sin(20.0 * x) + (1-y)
+init_t =  0.25 * sympy.cos(8.0 * sympy.pi * x) * sympy.sin(sympy.pi * y) + (1-y)
 
 with meshbox.access(t_soln):
     t_soln.data[...] = uw.function.evaluate(init_t, t_soln.coords).reshape(-1, 1)
@@ -168,9 +167,12 @@ elapsed_time=0.0
 output = os.path.join(output_dir, expt_name)
 
 for step in range(0, max_steps):
-    stokes.solve(zero_init_guess=False)
+    
+    stokes.solve(zero_init_guess=True)
+    with meshbox.access(v_soln):
+        v_soln.data[...] = 0.0
         
-    delta_t = 1.0 * stokes.estimate_dt()
+    delta_t = adv_diff.estimate_dt()
     adv_diff.solve(timestep=delta_t)
 
     # stats then loop
