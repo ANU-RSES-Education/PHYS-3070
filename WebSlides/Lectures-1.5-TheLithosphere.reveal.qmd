@@ -333,7 +333,7 @@ We can re-arrange this and pull the water layer out from the integral
 
 $$ w\left(\rho_w - \rho_m\right) + \int_{d_r}^{z_L}\left( \rho(z)-\rho_m\right) dz = 0 $$
 
-But we also know $￼\left( \rho -\rho_m\right) = \rho_m \alpha \left(T_1 - T \right) $ and ￼$T(z)$ we calculated earlier. So if we combine these pieces of information we have
+But we also know $\left( \rho -\rho_m\right) = \rho_m \alpha \left(T_1 - T \right)$ and ￼$T(z)$ we calculated earlier. So if we combine these pieces of information we have
 
 $$ w\left(\rho_w - \rho_m\right) = \rho_m \alpha \int_0^\infty \textrm{erfc} \left[ \frac{z}{2} \left(\frac{v}{\kappa x}\right)^{1/2}\right] $$
 
