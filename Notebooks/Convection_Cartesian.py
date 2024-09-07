@@ -13,7 +13,6 @@ from underworld3.systems import Stokes
 from underworld3 import function
 import mpi4py
 
-# -
 
 
 # +
@@ -22,22 +21,24 @@ import mpi4py
 # mesh parameters
 
 width = 1
-
-visc_exp = 4
-
+visc_expt = 4.5
+ra_expt=7
+resolution=15
+expt_desc="tau_y_ii"
+restart_step=550
 
 # Parameters that define the notebook
 # These can be set when launching the script as
 # mpirun python3 scriptname -uw_resolution=0.1 etc
 
-ra_expt = uw.options.getReal("ra_expt", default=6)
-visc_expt = uw.options.getReal("visc_expt", default=0)
-width = uw.options.getInt("width", default=1)
-resolution = uw.options.getInt("resolution", default=15)
+ra_expt = uw.options.getReal("ra_expt", default=ra_expt)
+visc_expt = uw.options.getReal("visc_expt", default=visc_expt)
+width = uw.options.getInt("width", default=width)
+resolution = uw.options.getInt("resolution", default=resolution)
 resolution_in = uw.options.getInt("resolution_in", default=-1)
 max_steps = uw.options.getInt("max_steps", default=201)
-restart_step = uw.options.getInt("restart_step", default=-1)
-expt_desc = uw.options.getString("expt_description", default="")
+restart_step = uw.options.getInt("restart_step", default=restart_step)
+expt_desc = uw.options.getString("expt_description", default=expt_desc)
 
 if expt_desc != "":
     expt_desc += "_"
@@ -54,8 +55,8 @@ rayleigh_number = uw.function.expression(
     r"\textrm{Ra}", pow(10, ra_expt), "Rayleigh number"  # / (r_o-r_i)**3 ,
 )
 
-old_expt_name = f"{expt_desc}Ra1e{ra_expt}_visc{visc_exp}_res{resolution_in}"
-expt_name = f"{expt_desc}Ra1e{ra_expt}_visc{visc_exp}_res{resolution}"
+old_expt_name = f"{expt_desc}Ra1e{ra_expt}_visc{visc_expt}_res{resolution_in}"
+expt_name = f"{expt_desc}Ra1e{ra_expt}_visc{visc_expt}_res{resolution}"
 output_dir = os.path.join("output", f"cartesian_{width}x1", f"Ra1e{ra_expt}")
 
 os.makedirs(output_dir, exist_ok=True)
@@ -82,10 +83,7 @@ y_vector = meshbox.CoordinateSystem.unit_e_1
 v_soln = uw.discretisation.MeshVariable("U", meshbox, meshbox.dim, degree=2)
 p_soln = uw.discretisation.MeshVariable("P", meshbox, 1, degree=1)
 t_soln = uw.discretisation.MeshVariable("T", meshbox, 1, degree=3)
-
-# +
-# passive_swarm = uw.swarm.Swarm(mesh=meshbox)
-# passive_swarm.populate(fill_param=3)
+eta_soln =  uw.discretisation.MeshVariable("\eta_n", meshbox, 1, degree=1)
 
 # +
 # Create solver to solver the momentum equation (Stokes flow)
@@ -97,14 +95,14 @@ stokes = Stokes(
     solver_name="stokes",
 )
 
-C = uw.function.expression("C", sympy.log(sympy.Pow(10, sympy.sympify(visc_exp))))
+C = uw.function.expression("C", sympy.log(sympy.Pow(10, sympy.sympify(visc_expt))))
 visc_fn = uw.function.expression(
     r"\eta",
-    sympy.exp(-C.sym * t_soln.sym[0]) * sympy.Pow(10, sympy.sympify(visc_exp)),
+    sympy.exp(-C.sym * t_soln.sym[0]) * sympy.Pow(10, sympy.sympify(visc_expt)),
     "1",
 )
 
-stokes.constitutive_model = uw.constitutive_models.ViscousFlowModel
+stokes.constitutive_model = uw.constitutive_models.ViscoPlasticFlowModel
 stokes.constitutive_model.Parameters.shear_viscosity_0 = visc_fn
 
 stokes.tolerance = 1e-6
@@ -120,12 +118,6 @@ stokes.add_essential_bc((0.0, None), "Left")
 stokes.add_essential_bc((0.0, None), "Right")
 
 stokes.bodyforce = y_vector * rayleigh_number * t_soln.sym[0]
-# -
-
-stokes.constitutive_model.Parameters.shear_viscosity_0
-
-
-visc_fn._expr_count
 
 # +
 # Create solver for the energy equation (Advection-Diffusion of temperature)
@@ -146,6 +138,11 @@ adv_diff.constitutive_model.Parameters.diffusivity = 1
 
 adv_diff.add_dirichlet_bc(+1.0, "Bottom")
 adv_diff.add_dirichlet_bc(-0.0, "Top")
+# -
+
+eta_solver = uw.systems.Projection(meshbox, eta_soln)
+eta_solver.uw_function = stokes.constitutive_model.viscosity
+eta_solver.smoothing = 0.0
 
 # +
 # The advection / diffusion equation is an initial value problem
@@ -155,7 +152,7 @@ adv_diff.add_dirichlet_bc(-0.0, "Top")
 # Add some perturbation and try to offset this on the different boundary
 # layers to avoid too much symmetry
 
-delta = 0.2
+delta = 0.1
 aveT = 0.5 - 0.5 * (sympy.tanh(2 * y / delta) - sympy.tanh(2 * (1 - y) / delta))
 
 init_t = (
@@ -176,14 +173,23 @@ if restart_step != -1:
         outputPath=output_dir,
     )
 
+# +
+# linear solve first
+
+stokes.constitutive_model.Parameters.yield_stress = sympy.oo
+stokes.solve()
+eta_solver.solve()
+
+
 
 # +
-# Solution strategy: solve for the velocity field, then update the temperature field.
-# First we check this works for a tiny timestep, later we will repeat this to
-# model the passage of time.
+# now add non-linear effects 
 
+stokes.constitutive_model.Parameters.yield_stress = 1e5 + 1e7 * (1-y) 
+stokes.constitutive_model.Parameters.shear_viscosity_min = 0.5
 stokes.solve()
-# adv_diff.solve(timestep=0.00001 * stokes.estimate_dt())
+eta_solver.solve()
+
 
 # +
 if restart_step == -1:
@@ -201,6 +207,7 @@ output = os.path.join(output_dir, expt_name)
 for step in range(0, max_steps):
 
     stokes.solve(zero_init_guess=False)
+    eta_solver.solve()
 
     delta_t = 2.0 * adv_diff.estimate_dt()
     delta_ta = stokes.estimate_dt()
@@ -219,8 +226,16 @@ for step in range(0, max_steps):
         filename=f"{expt_name}",
         index=timestep,
         outputPath=output_dir,
-        meshVars=[v_soln, p_soln, t_soln],
+        meshVars=[v_soln, p_soln, t_soln, eta_soln],
     )
 
     timestep += 1
     elapsed_time += delta_t
+# +
+
+
+
+# -
+
+
+
