@@ -59,7 +59,7 @@
     "href": "Background_Reading.html",
     "title": "Background Reading",
     "section": "",
-    "text": "Lecture notes\nThese lecture notes are a selective compilation of many of the results in the reference texts as well as a short introduction to computational fluid dynamics.",
+    "text": "Lecture notes\nThese reading materials may be helpful to clarify exercises or for background. Note that these are all textbooks except for the paper by Ricard which is a comprehensive review of mantle convection theory which covers many derivations and scaling arguments.\nThese lecture notes are a selective compilation of many of the results in the reference texts as well as a short introduction to computational fluid dynamics.",
     "crumbs": [
       "**Introduction**",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Background Reading</span>"
@@ -147,7 +147,7 @@
     "href": "Exercises/ComparativePlanetology.html",
     "title": "Exercise: Comparative Planetology",
     "section": "",
-    "text": "Title slide: Earth — is it just like any other planet ?\nMake sure you include your name and an “interesting” image of the Earth, an equivalent image of one of the other planets, and include a caption",
+    "text": "Title slide: Earth — is it just like any other planet ?\nThis practical session will give you a good sense of how planetary scientists approach their work. We are going to create a short “presentation” (you will just need to provide some powerpoint / pdf slides, not present to the class).\nThe slides that you will produce are outlined below. You will need to look up the information and cite your sources. Make sure you explain terms or have an explanation ready in the speaker notes.\nNote: Advanced-level students, please write two slides for each of 1 through 6 below: a general, explanatory slide and another with detailed comparison of one additional example (e.g. for slide 1, include another planetary surface in addition to Mars; in slide 2, show examples of both rock volcanoes and cryvolcanos)\nInstructions for each slide are the italic text under the title.\nMake sure you include your name and an “interesting” image of the Earth, an equivalent image of one of the other planets, and include a caption",
     "crumbs": [
       "**Exercises**",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Exercise: Comparative Planetology</span>"
@@ -246,7 +246,7 @@
     "href": "Exercises/Calculations.html",
     "title": "Exercise: Simple Equations and Some Calculations",
     "section": "",
-    "text": "Biharmonic equation\nThe biharmonic equation describes two dimensional, incompressible Stokes flow. It is a fourth order PDE written as:\n\\[\\nabla^4 \\psi = -Ra \\frac{\\partial T}{\\partial x}\\]\nFor the purposes of this question, we will work in Cartesian coordinates and we will identify solutions to the homogeneous equation, i.e.\n\\[\n\\frac{\\partial^4 \\psi}{\\partial x^4} +\n2\\frac{\\partial^4 \\psi}{\\partial x^2 \\partial y^2} +\n\\frac{\\partial^4 \\psi}{\\partial y^4} = 0\n\\]\nAs pointed out in Turcotte and Schubert, 2002, we need four independent solutions / coefficients to form a complete set for this equation. The other term they suggest trying is \\(\\psi_1 = y\\psi_0\\) .\nNote: there are many different forms of the equations given in T&S’s book and this really relates to choosing which functions are the best fit to the boundary conditions for the problem and which, as a result, give the simplest expressions.",
+    "text": "Biharmonic equation\nThis assessment task is intended to familiarise you with some of the equations that we have seen or will soon see in the lecture notes and typical solutions that are in common use. You are not required to derive the solutions as this is a verification task. When you are asked to show how an equation behaves you can either:\nOR\nThe biharmonic equation describes two dimensional, incompressible Stokes flow. It is a fourth order PDE written as:\n\\[\\nabla^4 \\psi = -Ra \\frac{\\partial T}{\\partial x}\\]\nFor the purposes of this question, we will work in Cartesian coordinates and we will identify solutions to the homogeneous equation, i.e.\n\\[\n\\frac{\\partial^4 \\psi}{\\partial x^4} +\n2\\frac{\\partial^4 \\psi}{\\partial x^2 \\partial y^2} +\n\\frac{\\partial^4 \\psi}{\\partial y^4} = 0\n\\]\nAs pointed out in Turcotte and Schubert, 2002, we need four independent solutions / coefficients to form a complete set for this equation. The other term they suggest trying is \\(\\psi_1 = y\\psi_0\\) .\nNote: there are many different forms of the equations given in T&S’s book and this really relates to choosing which functions are the best fit to the boundary conditions for the problem and which, as a result, give the simplest expressions.",
     "crumbs": [
       "**Exercises**",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Exercise: Simple Equations and Some Calculations</span>"
