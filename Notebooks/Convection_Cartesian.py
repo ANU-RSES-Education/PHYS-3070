@@ -119,6 +119,27 @@ stokes.add_essential_bc((0.0, None), "Right")
 
 stokes.bodyforce = y_vector * rayleigh_number * t_soln.sym[0]
 
+stokes.petsc_options["snes_type"] = "newtonls"
+stokes.petsc_options["ksp_type"] = "fgmres"
+
+# stokes.petsc_options.setValue("fieldsplit_velocity_pc_type", "mg")
+stokes.petsc_options.setValue("fieldsplit_velocity_pc_mg_type", "kaskade")
+stokes.petsc_options.setValue("fieldsplit_velocity_pc_mg_cycle_type", "w")
+
+stokes.petsc_options["fieldsplit_velocity_mg_coarse_pc_type"] = "svd"
+stokes.petsc_options[f"fieldsplit_velocity_ksp_type"] = "fcg"
+stokes.petsc_options[f"fieldsplit_velocity_mg_levels_ksp_type"] = "chebyshev"
+stokes.petsc_options[f"fieldsplit_velocity_mg_levels_ksp_max_it"] = 7
+stokes.petsc_options[f"fieldsplit_velocity_mg_levels_ksp_converged_maxits"] = None
+
+# gasm is super-fast ... but mg seems to be bulletproof
+# gamg is toughest wrt viscosity
+
+stokes.petsc_options.setValue("fieldsplit_pressure_pc_type", "gamg")
+stokes.petsc_options.setValue("fieldsplit_pressure_pc_mg_type", "additive")
+stokes.petsc_options.setValue("fieldsplit_pressure_pc_mg_cycle_type", "v")
+
+
 # +
 # Create solver for the energy equation (Advection-Diffusion of temperature)
 
@@ -185,9 +206,20 @@ eta_solver.solve()
 # +
 # now add non-linear effects 
 
+stokes.constitutive_model.Parameters.yield_stress = 1e7 + 1e7 * (1-y) 
+stokes.constitutive_model.Parameters.shear_viscosity_min = 1.0
+stokes.solve(zero_init_guess=False)
+
+if uw.mpi.rank == 0:
+    print("NL Solve 1", flush=True)
+
 stokes.constitutive_model.Parameters.yield_stress = 1e5 + 1e7 * (1-y) 
-stokes.constitutive_model.Parameters.shear_viscosity_min = 0.5
-stokes.solve()
+stokes.constitutive_model.Parameters.shear_viscosity_min = 1.0
+stokes.solve(zero_init_guess=False)
+
+if uw.mpi.rank == 0:
+    print("NL Solve 2", flush=True)
+
 eta_solver.solve()
 
 

@@ -37,7 +37,7 @@ can be considered universal and which are unique to Earth.*
 :::
 
 ::: {.column width="40%"}
-![](Images/AuWorldEQ.png){fig-align="right"}
+![](images/AuWorldEQ.png){fig-align="right"}
 :::
 
 ::::
@@ -47,8 +47,8 @@ can be considered universal and which are unique to Earth.*
 Geologists don't get to choose the experiments they would like to see the Earth perform for them.  They compare events from different places (and times) and assume they can generalize processes.
 
 <center>
-![](Images/nz-map-all.jpg){height="320px"} &nbsp;&nbsp;&nbsp;
-![](Images/san-andreas-transform-plate-boundary-10x.jpg){height="320px"}
+![](images/nz-map-all.jpg){height="320px"} &nbsp;&nbsp;&nbsp;
+![](images/san-andreas-transform-plate-boundary-10x.jpg){height="320px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -60,7 +60,7 @@ Uniformity of processes from place to place and time to time (**the present is t
 # Planetary Scale Comparisons
 
 <center>
-![](Images/orbits-planets-bodies-solar-system.jpg){height="350px"}
+![](images/orbits-planets-bodies-solar-system.jpg){height="350px"}
 </center>
 
 It's much harder to find analogues when it comes to processes on the scale of the whole planet. We can try to look at other planets in the solar system.
@@ -68,7 +68,7 @@ It's much harder to find analogues when it comes to processes on the scale of th
 ## Planetary Scale Comparisons (2)
 
 <center>
-![](Images/Moons2Scale.png){height="400px"}
+![](images/Moons2Scale.png){height="400px"}
 </center>
 
 We can also look at the mini-solar systems of the giant planets. Some of the moons of Jupiter and Saturn are the size of small planets.
@@ -76,7 +76,7 @@ We can also look at the mini-solar systems of the giant planets. Some of the moo
 ## Planetary Scale Comparisons (3)
 
 <center>
-![](Images/MoonsPlusDwarfPlanets.jpg){height="400px"} &nbsp;
+![](images/MoonsPlusDwarfPlanets.jpg){height="400px"} &nbsp;
 </center>
 
 There are a number of dwarf planets and asteroids that are of significant size and that we can use as analogues for theories of planetary geology.
@@ -84,7 +84,7 @@ There are a number of dwarf planets and asteroids that are of significant size a
 ## Planetary Scale Comparisons (4)
 
 <center>
-![](Images/ExoplanetsGalore.jpg){height="400px"} &nbsp;
+![](images/ExoplanetsGalore.jpg){height="400px"} &nbsp;
 </center>
 
 It would be nice if we could add all the exoplanets into this story but, regardless of the detail shown in these images, we only really know mass, radius and surface temperature.
@@ -92,7 +92,7 @@ It would be nice if we could add all the exoplanets into this story but, regardl
 ## Solar System Comparisons
 
 <center>
-![](Images/SolarSystem_vs_Trappist.tiff){height="400px"} &nbsp;
+![](images/SolarSystem_vs_Trappist.tiff){height="400px"} &nbsp;
 </center>
 
 Look at how close these exoplanets are to their star and look at their orbital periods. Trappist is a cool dwarf star but the habitable zone around it is debated. Do you think these Earth-like images are a fair representation of the weather systems ? Tidal heating, spin-orbit coupling, intense radiation / magnetic fields are likely to affect these planets as they do the moons of Jupiter in our solar system.
@@ -150,7 +150,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 ## Venus Landforms - Tesserae
 
 <center>
-![](Images/VenusTessera.jpg){height="400px"}
+![](images/VenusTessera.jpg){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -165,7 +165,7 @@ after the tessera.Image: NASA / JPL / mapaplanet.org / Emily Lakdawalla*
 ## Venus Landforms - Volcanoes
 
 <center>
-![](Images/VenusVolcano.jpg){height="400px"}
+![](images/VenusVolcano.jpg){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -179,7 +179,7 @@ fractured plains shown in the foreground, to the base of Maat Mons.
 ## Venus Landforms - Active Volcanoes
 
 <center>
-![](Images/VenusActiveVolcano.jpg){height="400px"}
+![](images/VenusActiveVolcano.jpg){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -191,7 +191,7 @@ apparent in the cycle 1 image.*
 ## Venus Landforms - Coronae
 
 <center>
-![](Images/VenusArtemisCorona.jpg){height="400px"}
+![](images/VenusArtemisCorona.jpg){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -256,8 +256,8 @@ Key Discoveries from the Past Decade (NAS -2023)
 ## Mars Landforms - Volcanoes
 
 <center>
-![](Images/Mars_OlympusMons_Getty.jpg){height="300px"}
-![](Images/Mars_Tharsis_Valles_Marineris_MOLA.jpg){height="300px"}
+![](images/Mars_OlympusMons_Getty.jpg){height="300px"}
+![](images/Mars_Tharsis_Valles_Marineris_MOLA.jpg){height="300px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -267,7 +267,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 ## Mars Landforms - Tectonic Rifting
 
 <center>
-![](Images/Mars_Valles_Marineris_ESA_Annotated.png){height="400px"}
+![](images/Mars_Valles_Marineris_ESA_Annotated.png){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -277,8 +277,8 @@ Key Discoveries from the Past Decade (NAS -2023)
 ## Mars Landforms - Landslides
 
 <center>
-![](Images/Mars_SlopeSlump.jpg){height="400px"}
-![](Images/Mars_Avalanche.jpg){height="400px"}
+![](images/Mars_SlopeSlump.jpg){height="400px"}
+![](images/Mars_Avalanche.jpg){height="400px"}
 
 </center>
 
@@ -290,7 +290,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 ## Mars Landforms - Sand Dunes
 
 <center>
-![](Images/Mars_CorduroySandDunes.jpg){height="400px"}
+![](images/Mars_CorduroySandDunes.jpg){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -300,7 +300,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 ## Mars Landforms - Ancient Rivers
 
   <center>
-  ![](Images/Mars_jezero-crater-delta-paleochannel.jpg){height="400px"}
+  ![](images/Mars_jezero-crater-delta-paleochannel.jpg){height="400px"}
   </center>
 
   :::{style="font-size:75%;"}
@@ -314,7 +314,7 @@ Duncombe, J. (2019), What ancient rivers on Mars reveal about its “great dryin
 ## Mars Landforms - Ancient Rivers (2)
 
   <center>
-  ![](Images/Mars_TopographyDriedOutRivers.jpg){height="400px"}
+  ![](images/Mars_TopographyDriedOutRivers.jpg){height="400px"}
   </center>
 
   :::{style="font-size:75%;"}
@@ -327,7 +327,7 @@ Duncombe, J. (2019), What ancient rivers on Mars reveal about its “great dryin
 ## Mars Landforms - Evidence of Groundwater
 
   <center>
-  ![](Images/Mars_EarthBeach_MarsCraterFlows.jpg){height="400px"}
+  ![](images/Mars_EarthBeach_MarsCraterFlows.jpg){height="400px"}
   </center>
 
 :::{style="font-size:75%;"}
@@ -338,7 +338,7 @@ Duncombe, J. (2019), What ancient rivers on Mars reveal about its “great dryin
 ## Mars Landforms - Evidence of Groundwater (2)
 
 <center>
-![](Images/Mars_Warm_Season_Flows_on_Slope_in_Horowitz_Crater.gif){height="400px"}
+![](images/Mars_Warm_Season_Flows_on_Slope_in_Horowitz_Crater.gif){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -370,7 +370,7 @@ Key Discoveries from the Past Decade (NAS - 2023)
 ## Mercury - Evidence of Cooling and Contraction
 
 <center>
-![](Images/MercuryContractionFeature.png){height="400px"}
+![](images/MercuryContractionFeature.png){height="400px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -385,8 +385,8 @@ Key Discoveries from the Past Decade (NAS - 2023)
 ## Mercury, a Cratered / Impacted Body
 
 <center>
-![](Images/Mercury_CalorisBasin.png){height="350px"} &nbsp;&nbsp;
-![](Images/Mercury_ShockTerrain.jpg){height="350px"}
+![](images/Mercury_CalorisBasin.png){height="350px"} &nbsp;&nbsp;
+![](images/Mercury_ShockTerrain.jpg){height="350px"}
 </center>
 
 :::{style="font-size:75%;"}
@@ -399,7 +399,7 @@ The inner-solar system location of Mercury means that impacts have very high kin
 ## Mercury - Volatiles Near the Surface
 
 <center>
-![](Images/MercuryCraterVolatiles.png){height="400px"}
+![](images/MercuryCraterVolatiles.png){height="400px"}
 </center>
 
 *Despite their hot surroundings, permanently shadowed regions near Mercury’s poles stay cold enough to host abundant deposits of water ice. SOURCE: Courtesy of N.L. Chabot with MESSENGER data from NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington; and Armytage et al. (2018).*
@@ -430,7 +430,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 
 - Newly discovered tectonic features indicate locations of eruptions may be influenced by tidal interactions with Earth and orbital recession away from Earth, and movement along these faults likely continues into the present day.
 
-- Images of craters that have formed after LRO began its mission indicate that impacts affect the surface far from the impact site, and secondary cratering overturns regolith at rates more than 100 times higher than previously thought.
+- images of craters that have formed after LRO began its mission indicate that impacts affect the surface far from the impact site, and secondary cratering overturns regolith at rates more than 100 times higher than previously thought.
 
 - Water ice lies at the surface within some regions of permanent shadow at the Moon’s poles. New results confirm that at least some polar H is present as H2O, although its origin and abundance is still not known.
 
@@ -456,7 +456,7 @@ Topography is dominated by craters and smooth areas known as the *maria*. Note t
 ## Earth's Moon Surface Features: Craters
 
 <center>
-![](Images/Moon_ESA_Craters.jpg){height="350px"} &nbsp;&nbsp;
+![](images/Moon_ESA_Craters.jpg){height="350px"} &nbsp;&nbsp;
 </center>
 
 :::{style="font-size:70%;"}
@@ -468,8 +468,8 @@ Atlas is ~2km deep and ~90 km in diameter. The crater floor is peppered with hil
 ## Earth's Moon Surface Features: Maria
 
 <center>
-![](Images/Moon_MareImbrium.jpg){height="330px"} &nbsp;&nbsp;
-![](Images/Moon_MareIngenii-Cont.jpg){height="330px"}
+![](images/Moon_MareImbrium.jpg){height="330px"} &nbsp;&nbsp;
+![](images/Moon_MareIngenii-Cont.jpg){height="330px"}
 </center>
 
 :::{style="font-size:70%;"}
@@ -554,7 +554,7 @@ Topography is bimodal (true of other planets as well) with many other surface fe
 ## Earth - Thickness of the Lithosphere
 
 <center>
-![](Images/LABDepth.png){height="425px"}
+![](images/LABDepth.png){height="425px"}
 </center>
 
 This map shows the lithospheric thickness coloured as though it refers to temperature (thin lithosphere is in warm colours, thick is in cool colours) which does have some physical relevance. The greyscale is topography.
@@ -562,7 +562,7 @@ This map shows the lithospheric thickness coloured as though it refers to temper
 ## Earth - Thickness of the Continental Lithosphere
 
 <center>
-![](Images/LithosphereThickness.png){height="425px"}
+![](images/LithosphereThickness.png){height="425px"}
 </center
 >
 A similar map that *contours* the thickest parts of the lithosphere (scale is in km) and leaves out the oceans altogether.
@@ -570,7 +570,7 @@ A similar map that *contours* the thickest parts of the lithosphere (scale is in
 ## Earth - Relative thickness of Crust and Lithosphere
 
 <center>
-![](Images/LithosphereRelativeThickness.svg){height="425px"}
+![](images/LithosphereRelativeThickness.svg){height="425px"}
 </center>
 
 This map shows the relative thickness of the crust and the lithosphere (thick crust is dark). You can immediately see how important the mechanical structure of the lithosphere is when it comes to the response to geological stresses. *The coloured dots are earthquake hypocentres coloured by depth and mostly show where the slabs are located.*
@@ -578,7 +578,7 @@ This map shows the relative thickness of the crust and the lithosphere (thick cr
 ## Earth - Global Stress
 
 <center>
-![](Images/World_Stress_Map.jpeg){height="350px"}
+![](images/World_Stress_Map.jpeg){height="350px"}
 </center>
 The World Stress Map (WSM) 2016 displays the contemporary crustal stress orientation in the upper 40 km based on the WSM database release 2016. Lines show the orientation of maximum horizontal stress. The colours indicate whether stresses are associated with a) Normal faulting, b) strike-slip faulting, or c) thrust faulting.Note that the **magnitude** of the stress is not part of this map.
 
@@ -600,7 +600,7 @@ Usually this takes the form of a fault that already exists sliding because the s
 ## Earth - Global Strain rate
 
 <center>
-![](Images/GlobalStrainRate.png){height="350px"}
+![](images/GlobalStrainRate.png){height="350px"}
 </center>
 
 The strain rate is a measure of how fast deformation is taking place. Strain rate is a measure of the rate of change of length (units are $s^{-1}$) *and* it is a tensor: there are multiple components that represent normal and shear strains. The measure shown here is an average (the second invariant).
@@ -614,7 +614,7 @@ Kreemer, C., Blewitt, G., & Klein, E. C. (2014). A geodetic plate motion and Glo
 ## Earth - Global Volcanism
 
 <center>
-![](Images/GlobalVolcanismMap.png){height="350px"}
+![](images/GlobalVolcanismMap.png){height="350px"}
 </center>
 
 Volcanic activity is distributed similarly to that of seismicity and mostly occurs at convergent and divergent plate boundaries. There is also a significant level of intra-plate volcanism. Magma pathways within the crust are influenced by the stress field and we can analyse volcanic structures to determine the ambient stress field at the time they were formed.
@@ -626,7 +626,7 @@ Make your own map from the NOAA natural hazards interactive web page: [https://m
 ## Earth - Global Heat-flow
 
 <center>
-![](Images/GlobalHeatFlowPoints.png){height="350px"}
+![](images/GlobalHeatFlowPoints.png){height="350px"}
 </center>
 
 Raw data compiled by Davies & Davies 2013. *There are really not very many reliable measurements*.
@@ -635,7 +635,7 @@ Raw data compiled by Davies & Davies 2013. *There are really not very many relia
 ## Earth - Surface Motions
 
 <center>
-![](Images/PlateMotionsMollweide.png){height="350px"}&nbsp;&nbsp;
+![](images/PlateMotionsMollweide.png){height="350px"}&nbsp;&nbsp;
 </center>
 
 Directly observed plate motions (GPS, satellite ranging, very-long-baseline interferometry). Also shown, the strain-rate field, contoured to show highlight regions of high deformation rate.
@@ -643,8 +643,8 @@ Directly observed plate motions (GPS, satellite ranging, very-long-baseline inte
 ## Earth - Magnetic Field
 
 <center>
-![](Images/Earth_MagfieldradialCMB-potsdam.png){height="250px"}&nbsp;&nbsp;
-![](Images/Earth_Magfieldradial_Surface_potsdam.png){height="250px"}
+![](images/Earth_MagfieldradialCMB-potsdam.png){height="250px"}&nbsp;&nbsp;
+![](images/Earth_Magfieldradial_Surface_potsdam.png){height="250px"}
 </center>
 
 The Earth has a strong, dominantly dipolar, magnetic field which reverses chaotically but relatively regularly. These two features together allow
@@ -655,8 +655,8 @@ The Earth has a strong, dominantly dipolar, magnetic field which reverses chaoti
 ## Earth - Sea Floor Magnetisation
 
 <center>
-![](Images/VineMatthews_JDFstripes.png){height="400px"} &nbsp; &nbsp;
-![](Images/diagram-magnetic-reversals-ocean-ridge-800x600.png){height="400px"}
+![](images/VineMatthews_JDFstripes.png){height="400px"} &nbsp; &nbsp;
+![](images/diagram-magnetic-reversals-ocean-ridge-800x600.png){height="400px"}
 </center>
 
 The morphology and bathymetry information comes to life when combined with
@@ -665,7 +665,7 @@ the magnetic intensity maps of the mid-ocean ridge system. Chaotic magnetic reve
 ## Earth - Sea Floor Age
 
 <center>
-![](Images/AgeGrid_plate_carree.png){height="400px"}
+![](images/AgeGrid_plate_carree.png){height="400px"}
 </center>
 
 Age distribution in the ocean floor  is systematic and regular. It ranges from 0 (forming now) to ~200Myr. (credit: Earthbyte.org / Dietmar Müller)
@@ -673,7 +673,7 @@ Age distribution in the ocean floor  is systematic and regular. It ranges from 0
 ## Earth - Seismic Imaging / Tomography
 
 <center>
-![](Images/Ramanowicz2008Nature_TomographyComparisons.jpg){height="400px"}
+![](images/Ramanowicz2008Nature_TomographyComparisons.jpg){height="400px"}
 </center>
 
 Each column of images represents a different model of mantle shear-velocity structure (using various data sources) shown at three representative depths (140 km, 925 km and 2,770 km). From Ramanowicz, 2008, Nature.
@@ -681,7 +681,7 @@ Each column of images represents a different model of mantle shear-velocity stru
 ## Earth - Sedimentary Records
 
 <center>
-![](Images/Source-to-sink-block-diag.jpg){height="360px"}
+![](images/Source-to-sink-block-diag.jpg){height="360px"}
 </center>
 
 The linkages among the components of sediment routing systems: the source area (erosion), the transfer zone (rivers etc), and sinks (basins, deltas). In each zone, sediment may be stored temporarily, or accumulate in sinks if there is sufficient long-term accommodation.

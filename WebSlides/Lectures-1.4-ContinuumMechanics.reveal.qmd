@@ -5,7 +5,7 @@ institute: Australian National University
 # date: '666-6-6'
 
 title-slide-attributes:
-  data-background-image: images/custom/anu_general.png
+  data-background-image: Images/custom/anu_general.png
   data-background-size: contain
 
 format: anu_slides-revealjs
