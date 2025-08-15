@@ -261,7 +261,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 </center>
 
 :::{style="font-size:75%;"}
-  *Olympus Mons (left), the largest volcano in the Tharsis region (right) and, we believe, the largest volcano in the solar system*
+*Olympus Mons (left), the largest volcano in the Tharsis region (right) and, we believe, the largest volcano in the solar system*
 :::
 
 ## Mars Landforms - Tectonic Rifting
@@ -271,7 +271,7 @@ Key Discoveries from the Past Decade (NAS -2023)
 </center>
 
 :::{style="font-size:75%;"}
-  *ESA’s Mars Express High Resolution Stereo Camera (HRSC) global colour mosaic of Mars. Image shows the canyon system **Valles Marineris** with annotated surface details: sulphate deposits, haze and fog, and cloud cover. This tectonic feature stretches more than 4000 km east-west and up to 700 km north-south, and is the biggest and most dramatic canyon system in the Solar System.*
+*ESA’s Mars Express High Resolution Stereo Camera (HRSC) global colour mosaic of Mars. Image shows the canyon system **Valles Marineris** with annotated surface details: sulphate deposits, haze and fog, and cloud cover. This tectonic feature stretches more than 4000 km east-west and up to 700 km north-south, and is the biggest and most dramatic canyon system in the Solar System.*
 :::
 
 ## Mars Landforms - Landslides
@@ -283,8 +283,8 @@ Key Discoveries from the Past Decade (NAS -2023)
 </center>
 
 :::{style="font-size:75%;"}
-  *(Left) Lobate flows / landslides from a Martian scarp.
-  (Right)A Mars Avalanche, taken by NASAs HiRISE instrument on the Mars Reconnaisance Orbiter (Credit: NASA/HiRISE)*
+*(Left) Lobate flows / landslides from a Martian scarp.
+(Right)A Mars Avalanche, taken by NASAs HiRISE instrument on the Mars Reconnaisance Orbiter (Credit: NASA/HiRISE)*
 :::
 
 ## Mars Landforms - Sand Dunes
@@ -294,18 +294,18 @@ Key Discoveries from the Past Decade (NAS -2023)
 </center>
 
 :::{style="font-size:75%;"}
-  *This image from NASA's Mars Reconnaissance Orbiter (MRO) shows the permanent polar cap of Mars, encircled by sand dunes and looking like pulled threads, these dunes march across a fabric of patterned ground.*
+*This image from NASA's Mars Reconnaissance Orbiter (MRO) shows the permanent polar cap of Mars, encircled by sand dunes and looking like pulled threads, these dunes march across a fabric of patterned ground.*
 :::
 
 ## Mars Landforms - Ancient Rivers
 
-  <center>
-  ![](images/Mars_jezero-crater-delta-paleochannel.jpg){height="400px"}
-  </center>
+<center>
+![](images/Mars_jezero-crater-delta-paleochannel.jpg){height="400px"}
+</center>
 
-  :::{style="font-size:75%;"}
-  *The grooved channels of an ancient river delta thread through Jezero crater on Mars. Credit: NASA/JPL-Caltech/MSSS/JHUAPL*
-  ::
+:::{style="font-size:75%;"}
+*The grooved channels of an ancient river delta thread through Jezero crater on Mars. Credit: NASA/JPL-Caltech/MSSS/JHUAPL*
+:::
 
 Less that 1 Gyr ago, there was liquid water flowing across Mars. This has significant implications for atmospheric pressure and temperature at that time.
 
@@ -313,16 +313,15 @@ Duncombe, J. (2019), What ancient rivers on Mars reveal about its “great dryin
 
 ## Mars Landforms - Ancient Rivers (2)
 
-  <center>
-  ![](images/Mars_TopographyDriedOutRivers.jpg){height="400px"}
-  </center>
+<center>
+![](images/Mars_TopographyDriedOutRivers.jpg){height="400px"}
+</center>
 
-  :::{style="font-size:75%;"}
-  *This colour-coded topographic view shows the relative heights of the terrain in and around a network of dried-up valleys on Mars.
+:::{style="font-size:75%;"}
+*This colour-coded topographic view shows the relative heights of the terrain in and around a network of dried-up valleys on Mars.
 
-  Lower parts of the surface are shown in blues and purples, while higher altitude regions show up in whites, yellows, and reds, as indicated on the scale to the top right. This view is based on a digital terrain model of the region, from which the topography of the landscape can be derived. It comprises data obtained by the High Resolution Stereo Camera on Mars Express on 19 November 2018 during Mars Express orbit 18831. Credit:ESA/DLR/FU Berlin*
-  ::
-
+Lower parts of the surface are shown in blues and purples, while higher altitude regions show up in whites, yellows, and reds, as indicated on the scale to the top right. This view is based on a digital terrain model of the region, from which the topography of the landscape can be derived. It comprises data obtained by the High Resolution Stereo Camera on Mars Express on 19 November 2018 during Mars Express orbit 18831. Credit:ESA/DLR/FU Berlin*
+:::
 
 ## Mars Landforms - Evidence of Groundwater
 
@@ -332,7 +331,7 @@ Duncombe, J. (2019), What ancient rivers on Mars reveal about its “great dryin
 
 :::{style="font-size:75%;"}
 
-  A) Beach drainage pattern on the order of 1 meter (Source: https://epod.usra.edu/blog/2017/01/beach-drainage.html), B) Martian “alcoves” suggesting groundwater seepage.
+*A) Beach drainage pattern on the order of 1 meter (Source: https://epod.usra.edu/blog/2017/01/beach-drainage.html), B) Martian “alcoves” suggesting groundwater seepage.*
 :::
 
 ## Mars Landforms - Evidence of Groundwater (2)
@@ -402,7 +401,9 @@ The inner-solar system location of Mercury means that impacts have very high kin
 ![](images/MercuryCraterVolatiles.png){height="400px"}
 </center>
 
+:::{style="font-size:75%;"}
 *Despite their hot surroundings, permanently shadowed regions near Mercury’s poles stay cold enough to host abundant deposits of water ice. SOURCE: Courtesy of N.L. Chabot with MESSENGER data from NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington; and Armytage et al. (2018).*
+:::
 
 # Earth's Moon
 
@@ -690,7 +691,7 @@ See: [Geological Digressions: Source to Sink]( https://www.geological-digression
 
 ## Earth - Summary
 
-We have huge advantages in understanding the Earth because we have nearly unlimited access to the surface, limited access to the subsurface by drilling, digging, sampling. We can go "wherever we want" to take measurements or
+We have huge advantages in understanding the Earth because we have nearly unlimited access to the surface, limited access to the subsurface by drilling, digging, sampling. We can go "wherever we want" to take measurements or samples.
 
 <center>
 ![](https://eospso.nasa.gov/sites/default/files/u15/fleet-swoosh-082922_Sept27.png){height="300px"}
