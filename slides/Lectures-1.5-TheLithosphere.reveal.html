@@ -6,8 +6,8 @@
 <script src="Lectures-1.5-TheLithosphere.reveal_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="Lectures-1.5-TheLithosphere.reveal_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="Lectures-1.5-TheLithosphere.reveal_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Lectures-1.5-TheLithosphere.reveal_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="Lectures-1.5-TheLithosphere.reveal_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Prof Louis Moresi">
   <title>PHYS 3070 - S2, 2024</title>
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Lectures-1.5-TheLithosphere.reveal_files/libs/revealjs/dist/theme/quarto-b1d4383523e58bfd727452f7dd85d83e.css">
+  <link rel="stylesheet" href="Lectures-1.5-TheLithosphere.reveal_files/libs/revealjs/dist/theme/quarto-9004ca8975cd1a179936270a1a69dbc1.css">
   <link href="Lectures-1.5-TheLithosphere.reveal_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Lectures-1.5-TheLithosphere.reveal_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="Lectures-1.5-TheLithosphere.reveal_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -559,7 +559,7 @@ Prof Louis Moresi
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -633,13 +633,14 @@ Prof Louis Moresi
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
