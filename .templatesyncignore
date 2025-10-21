@@ -1,0 +1,26 @@
+# Ignore course-specific content files during template sync
+# Only sync infrastructure/theme files, not course content
+
+# Course content - these are specific to PHYS-3070
+WebBook/_quarto.yml
+WebBook/index.qmd
+WebBook/Background_Reading.qmd
+WebBook/Lecture_Content.qmd
+WebBook/LectureDescriptions/**
+WebBook/Exercises/**
+WebBook/Introduction2VersionControl/**
+WebBook/DevSkills/**
+WebBook/Notebooks/**
+WebBook/LectureSlides/**
+
+# Course-specific assets
+WebBook/assets/AuWorldEQ.jpg
+
+# Keep these synced from template:
+# WebBook/assets/theme.scss
+# WebBook/assets/styles.css
+# WebBook/assets/font_button.js
+# .github/workflows/
+# update-template.sh
+# pixi.toml
+# pixi.lock

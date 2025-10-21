@@ -63,15 +63,14 @@ book:
 
   navbar:
     search: true
-    logo: assets/ANU-logo.jpg
-    background: "white"
-    foreground: "#C58812" # ANU honey colour
+    logo: assets/ANU-logo.png
+    background: "#C58812"  # ANU honey colour
+    foreground: white
 
   sidebar:
-    # logo: Images/COS-EarthSciences-800.jpg
     logo: assets/AuWorldEQ.jpg
-    background: "white"
-    # foreground: "#C58812" # ANU honey colour
+    style: "docked"
+    background: light
 
 bibliography: references.bib
 
@@ -80,10 +79,12 @@ execute:
 
 format:
   html:
-    theme: [united, "assets/theme.scss"] # united / simplex / flatly
-    mainfont: "Jost"
-    fontsize: 0.9em
-    linestretch: 1.7
+    theme: [cosmo, "assets/theme.scss"]
+    css: assets/styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-fold: false
     linkcolor: "#C58812"
     number-sections: false
     number-depth: 1
